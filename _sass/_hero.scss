@@ -11,4 +11,19 @@
 		@include shift(1);
 		@include omega;
 	}
+	p {
+		@include span-columns(6);
+		@include shift(3);
+		margin-bottom: $space;
+	}
+}
+
+.hero-logo {
+	margin-bottom: $space;
+	img {
+		width: 2*$space;
+	}
+}
+
+.hero-cta {
 }

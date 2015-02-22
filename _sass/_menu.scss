@@ -1,31 +1,39 @@
 .menu {
-  @include clearfix;
-  margin-bottom: 3*$space;
-}
-
-.menu-list {
-  float: right;
-}
-
-.menu-logo {
-  float: left;
-  img {
-    height: 24px;
-  }
-}
-
-.menu-item {
-  display: inline-block;
-  margin-right: 20px;
-  text-align: right;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.menu-item-link {
-  font-size: 18px;
-  font-weight: bold;
-  color: $red;
+    @include clearfix;
+    background: $light-gray;
+    padding: {
+      top: $space;
+      bottom: $space;
+    }
+    .menu-logo {
+      font-weight: bold;
+      color: $red;
+      text-transform: lowercase;
+    }
+    .menu-list {
+      text-align: center;
+        .menu-item {
+            display: inline-block;
+            margin-right: $space;
+            text-align: right;
+            &:last-child {
+                margin-right: 0;
+            }
+            .menu-item-link {
+                font-size: 18px;
+                color: $red;
+                text-transform: lowercase;
+            }
+        }
+    }
+    .social-list {
+        text-align: right;
+        .social-item {
+            display: inline-block;
+            text-align: right;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
