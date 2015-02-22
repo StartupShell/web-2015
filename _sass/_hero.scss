@@ -2,7 +2,7 @@
   @include clearfix;
   text-align: center;
   background: $light-gray;
-  padding: 2*$space 0 6*$space;
+  padding: 0 0 6*$space;
 }
 
 .hero-content {
@@ -19,7 +19,7 @@
 }
 
 .hero-logo {
-	margin-bottom: 2*$space;
+	margin-bottom: $space;
 	img {
 		width: 2*$space;
 	}

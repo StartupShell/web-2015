@@ -225,7 +225,7 @@ section, .section {
 .hero {
   text-align: center;
   background: #F4F4F4;
-  padding: 80px 0 240px; }
+  padding: 0 0 240px; }
   .hero::after {
     clear: both;
     content: "";
@@ -251,13 +251,14 @@ section, .section {
     margin-right: 0; }
 
 .hero-logo {
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
   .hero-logo img {
     width: 80px; }
 
 .menu {
-  background: #EEE;
-  padding-top: 40px; }
+  background: #F4F4F4;
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .menu::after {
     clear: both;
     content: "";
