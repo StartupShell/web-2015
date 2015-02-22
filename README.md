@@ -1,4 +1,4 @@
-### Startup Shell Redesign 2015
+## Startup Shell Redesign 2015
 
 Install jekyll
 
