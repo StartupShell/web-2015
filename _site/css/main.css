@@ -206,7 +206,7 @@ section, .section {
     content: "";
     display: table; }
   .menu .menu-logo {
-    font-weight: bold;
+    font-weight: 600;
     color: #D74035;
     text-transform: lowercase; }
   .menu .menu-list {

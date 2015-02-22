@@ -2,11 +2,13 @@
     @include clearfix;
     background: $light-gray;
     padding: $space 2*$space;
+
     .menu-logo {
-      font-weight: bold;
+      font-weight: 600;
       color: $red;
       text-transform: lowercase;
     }
+
     .menu-list {
       text-align: center;
         .menu-item {
