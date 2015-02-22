@@ -1,10 +1,7 @@
 .menu {
     @include clearfix;
     background: $light-gray;
-    padding: {
-      top: $space;
-      bottom: $space;
-    }
+    padding: $space 2*$space;
     .menu-logo {
       font-weight: bold;
       color: $red;

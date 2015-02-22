@@ -200,8 +200,7 @@ section, .section {
 
 .menu {
   background: #F4F4F4;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding: 40px 80px; }
   .menu::after {
     clear: both;
     content: "";
@@ -256,6 +255,6 @@ footer {
   .home .hero-content p:last-child {
     margin-right: 0; }
 .home .hero-logo {
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
   .home .hero-logo img {
     width: 80px; }
