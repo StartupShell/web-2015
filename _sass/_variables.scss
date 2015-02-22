@@ -32,5 +32,7 @@ $large-size:	em(1224);
 // TRANSITIONS
 
 .transition {
-  	@include transition(all .15s);
+  	@include transition(color .15s);
+  	@include transition(background .15s);
+  	@include transition(border .15s);
 }

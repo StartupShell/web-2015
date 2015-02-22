@@ -10,9 +10,9 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  @extend .transition;
+    @extend .transition;
   &:hover {
-  	background-color: $dark-red;
+  	background: $dark-red;
     cursor: pointer;
   }
 }

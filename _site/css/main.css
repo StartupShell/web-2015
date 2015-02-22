@@ -121,9 +121,15 @@ html {
   border-top-left-radius: 4px; }
 
 .transition, .button, .contact .contact-box:hover {
-  -webkit-transition: all 0.15s;
-  -moz-transition: all 0.15s;
-  transition: all 0.15s; }
+  -webkit-transition: color 0.15s;
+  -moz-transition: color 0.15s;
+  transition: color 0.15s;
+  -webkit-transition: background 0.15s;
+  -moz-transition: background 0.15s;
+  transition: background 0.15s;
+  -webkit-transition: border 0.15s;
+  -moz-transition: border 0.15s;
+  transition: border 0.15s; }
 
 body {
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -277,7 +283,7 @@ section, .section {
   text-transform: uppercase;
   color: #FFF; }
   .button:hover {
-    background-color: #b52e24;
+    background: #b52e24;
     cursor: pointer; }
 
 input {
