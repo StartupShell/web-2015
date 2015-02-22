@@ -249,4 +249,5 @@ section, .section {
   color: #FFF; }
 
 footer {
-  background: #EEE; }
+  background: #EEE;
+  padding: 40px; }
