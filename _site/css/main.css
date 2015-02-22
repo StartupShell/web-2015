@@ -365,9 +365,12 @@ footer {
     display: block;
     width: 40px;
     height: 40px;
-    background: #D74035;
     float: left;
     margin: 0 40px 0 0; }
+  .contact .contact-box.address:before {
+    background: url("/assets/icons/pin.svg") no-repeat; }
+  .contact .contact-box.email:before {
+    background: url("/assets/icons/mail.svg") no-repeat; }
   .contact .contact-box p {
     margin: -7px 0; }
   .contact .contact-box:hover {
