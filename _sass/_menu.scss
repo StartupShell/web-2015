@@ -4,12 +4,14 @@
     padding: $space 2*$space;
 
     .menu-logo {
+      @include span-columns(2);
       font-weight: 600;
       color: $red;
       text-transform: lowercase;
     }
 
     .menu-list {
+      @include span-columns(8);
       text-align: center;
         .menu-item {
             display: inline-block;
@@ -25,6 +27,7 @@
         }
     }
     .social-list {
+        @include span-columns(2);
         text-align: right;
         .social-item {
             display: inline-block;
