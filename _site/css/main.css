@@ -218,7 +218,6 @@ section, .section {
       .menu .menu-list .menu-item:last-child {
         margin-right: 0; }
       .menu .menu-list .menu-item .menu-item-link {
-        font-size: 18px;
         color: #D74035;
         text-transform: lowercase; }
   .menu .social-list {
