@@ -1,29 +1,11 @@
 .button {
-  display: block;
-
-  @include size(300px 80px);
-  margin: $space auto 0;
-  padding-top: 30px;
-
-  font-size: 24px;
-  font-weight: bold;
+  display: inline-block;
+  background: $red;
+  padding: $space/2 $space;
+  margin: 0 auto;
+  @extend .rounded;
+  @extend .h2;
   text-align: center;
   text-transform: uppercase;
   color: $white;
-}
-
-.social-links {
-
-}
-
-.social-item {
-
-}
-
-.social-item-link {
-
-}
-
-.copy {
-
 }

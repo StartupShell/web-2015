@@ -10,9 +10,14 @@ $light-gray:	#EEE;
 $red: 			#D74035;
 
 
-// SPACING
+// DIMENSIONS
 
-$space: 40px;
+$space:		40px;
+$radius:	4px;
+
+.rounded {
+	@include border-radius($radius);
+}
 
 
 // BREAKPOINTS
@@ -21,3 +26,4 @@ $mobile-size:	em(320);
 $tablet-size:	720px;
 $desktop-size:	em(960);
 $large-size:	em(1224);
+
