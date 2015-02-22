@@ -22,6 +22,11 @@ section, .section {
   margin-bottom: $space/2;
 }
 
+.col-extra {
+  @extend %col;
+  @include span-columns(8);
+}
+
 .col-large {
   @extend %col;
   @include span-columns(4);
