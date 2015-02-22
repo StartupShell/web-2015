@@ -2,12 +2,14 @@
     @include clearfix;
     background: $light-gray;
     padding: $space 2*$space;
+
     .menu-logo {
       @include span-columns(2);
-      font-weight: bold;
+      font-weight: 600;
       color: $red;
       text-transform: lowercase;
     }
+
     .menu-list {
       @include span-columns(8);
       text-align: center;
