@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: $gray;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 
@@ -21,6 +21,7 @@ body {
 h1, .h1 {
 	font-size: 48px;
 	font-weight: 700;
+	margin-bottom: $space;
 }
 
 h2, .h2 {
@@ -31,4 +32,8 @@ h2, .h2 {
 h3, .h3 {
 	font-size: 18px;
 	font-weight: 600;
+}
+
+p {
+	line-height: 1.5;
 }
