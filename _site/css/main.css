@@ -217,7 +217,7 @@ section, .section {
 .hero {
   text-align: center;
   background: #EEE;
-  padding: 80px 0 160px; }
+  padding: 80px 0 240px; }
   .hero::after {
     clear: both;
     content: "";
@@ -244,6 +244,8 @@ section, .section {
 
 .hero-logo {
   margin-bottom: 80px; }
+  .hero-logo img {
+    width: 80px; }
 
 .menu {
   margin-bottom: 120px; }
