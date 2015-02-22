@@ -132,11 +132,11 @@ h1, .h1 {
   font-weight: 700;
   margin-bottom: 40px; }
 
-h2, .h2, .button {
+h2, .h2 {
   font-size: 24px;
   font-weight: 600; }
 
-h3, .h3 {
+h3, .h3, .button {
   font-size: 18px;
   font-weight: 600; }
 
@@ -216,7 +216,7 @@ section, .section {
 
 .hero {
   text-align: center;
-  background: #EEE;
+  background: #F4F4F4;
   padding: 80px 0 240px; }
   .hero::after {
     clear: both;
@@ -284,5 +284,5 @@ section, .section {
   color: #FFF; }
 
 footer {
-  background: #EEE;
+  background: #F4F4F4;
   padding: 40px; }
