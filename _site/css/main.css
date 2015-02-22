@@ -159,65 +159,16 @@ p {
 section, .section {
   margin-bottom: 120px; }
 
+.tight {
+  margin-bottom: 80px; }
+
 .full {
   max-width: 100%; }
-
-.row::after {
-  clear: both;
-  content: "";
-  display: table; }
-
-.col-large, .col-med, .col-small {
-  height: 80px;
-  margin-bottom: 20px; }
-
-.col-large {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%; }
-  .col-large:last-child {
-    margin-right: 0; }
-  .col-large:nth-child(3n) {
-    margin-right: 0; }
-  .col-large:nth-child(3n+1) {
-    clear: left; }
-
-.col-med {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-  .col-med:last-child {
-    margin-right: 0; }
-  .col-med:nth-child(4n) {
-    margin-right: 0; }
-  .col-med:nth-child(4n+1) {
-    clear: left; }
-
-.col-small {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%; }
-  .col-small:last-child {
-    margin-right: 0; }
-  .col-small:nth-child(6n) {
-    margin-right: 0; }
-  .col-small:nth-child(6n+1) {
-    clear: left; }
-
-.col-center {
-  margin-left: 34.11922%; }
-
-.row > div img {
-  height: 100%;
-  width: 100%; }
 
 .hero {
   text-align: center;
   background: #F4F4F4;
-  padding: 80px 0 240px; }
+  padding: 160px 0; }
   .hero::after {
     clear: both;
     content: "";
@@ -232,20 +183,6 @@ section, .section {
   margin-right: 0; }
   .hero-content h1:last-child {
     margin-right: 0; }
-.hero-content p {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
-  margin-bottom: 40px; }
-  .hero-content p:last-child {
-    margin-right: 0; }
-
-.hero-logo {
-  margin-bottom: 80px; }
-  .hero-logo img {
-    width: 80px; }
 
 .menu {
   margin-bottom: 120px; }
@@ -286,3 +223,20 @@ section, .section {
 footer {
   background: #F4F4F4;
   padding: 40px; }
+
+.home .hero {
+  background: #F4F4F4;
+  padding: 80px 0 240px; }
+.home .hero-content p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  margin-bottom: 40px; }
+  .home .hero-content p:last-child {
+    margin-right: 0; }
+.home .hero-logo {
+  margin-bottom: 80px; }
+  .home .hero-logo img {
+    width: 80px; }
