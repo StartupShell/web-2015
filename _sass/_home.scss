@@ -3,6 +3,7 @@
 	.hero {
 	  background: $light-gray;
 	  padding: 2*$space 0 6*$space;
+	  margin-bottom: -3*$space;
 	}
 
 	.hero-content {
@@ -23,4 +24,38 @@
 	.hero-cta {
 	}
 
+}
+
+.video {
+	@include clearfix;
+	.video-thumb {
+		@include span-columns(4);
+		height: 300px;
+		background: $red;
+		@extend .rounded;
+	}
+}
+
+.contact {
+	.contact-box {
+		@include span-columns(6);
+		background: $light-gray;
+		@extend .rounded;
+		padding: $space;
+		&:before {
+			content: "";
+			display: block;
+			width: $space;
+			height: $space;
+			background: $red;
+			float: left;
+			margin: 0 $space 0 0;
+		}
+		p {
+			margin: -7px 0;
+		}
+	}
+	a, a:visited {
+		color: $gray;
+	}
 }
