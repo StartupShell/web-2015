@@ -247,6 +247,18 @@ section, .section {
     .menu .social-list .social-item {
       display: inline-block;
       text-align: right; }
+      .menu .social-list .social-item .icon {
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat; }
+        .menu .social-list .social-item .icon.facebook {
+          background-image: url("/assets/icons/facebook.svg"); }
+        .menu .social-list .social-item .icon.twitter {
+          background-image: url("/assets/icons/twitter.svg"); }
+        .menu .social-list .social-item .icon.instagram {
+          background-image: url("/assets/icons/instagram.svg"); }
+        .menu .social-list .social-item .icon.medium {
+          background-image: url("/assets/icons/medium.svg"); }
     .menu .social-list:last-child {
       margin-right: 0; }
 
