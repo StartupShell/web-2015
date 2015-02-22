@@ -48,9 +48,18 @@
 			display: block;
 			width: $space;
 			height: $space;
-			background: $red;
 			float: left;
 			margin: 0 $space 0 0;
+		}
+		&.address {
+			&:before {
+				background:url('/assets/icons/pin.svg') no-repeat;
+			}
+		}
+		&.email {
+			&:before {
+				background:url('/assets/icons/mail.svg') no-repeat;
+			}
 		}
 		p {
 			margin: -7px 0;
