@@ -110,7 +110,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-.rounded, .button, .video .video-thumb, .contact .contact-box {
+.rounded, .button, input[type="email"], input[type="text"], footer .subscribe, .video .video-thumb, .contact .contact-box {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -120,7 +120,7 @@ html {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px; }
 
-.transition, .button:hover, .contact .contact-box:hover {
+.transition, .button, .contact .contact-box:hover {
   -webkit-transition: all 0.15s;
   -moz-transition: all 0.15s;
   transition: all 0.15s; }
@@ -251,7 +251,8 @@ section, .section {
       margin-right: 0; }
     .menu .social-list .social-item {
       display: inline-block;
-      text-align: right; }
+      text-align: right;
+      margin-left: 20px; }
       .menu .social-list .social-item .icon {
         width: 32px;
         height: 32px;
@@ -276,7 +277,22 @@ section, .section {
   text-transform: uppercase;
   color: #FFF; }
   .button:hover {
-    background: #b52e24; }
+    background-color: #b52e24;
+    cursor: pointer; }
+
+input {
+  border: 0;
+  outline: 0; }
+  input:hover, input:focus {
+    border: 0;
+    outline: 0; }
+
+input[type="email"], input[type="text"] {
+  padding: 20px 40px;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  background: #FFF;
+  border: 0; }
 
 footer {
   background: #F4F4F4;
@@ -287,36 +303,23 @@ footer {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    padding-top: 12px; }
+    line-height: 67px; }
     footer .copy:last-child {
       margin-right: 0; }
   footer .subscribe {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%; }
+    width: 48.82117%;
+    margin-left: 25.58941%;
+    background: #FFF; }
     footer .subscribe:last-child {
       margin-right: 0; }
-    footer .subscribe form {
-      float: right; }
-      footer .subscribe form input {
-        border: 0;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        border-top-right-radius: 4px;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
-        border-bottom-left-radius: 4px;
-        border-top-left-radius: 4px;
-        padding: 8px; }
-        footer .subscribe form input[type="email"] {
-          width: 320px; }
-        footer .subscribe form input[type="submit"] {
-          margin-left: -10px;
-          padding-left: 16px;
-          padding-right: 16px;
-          color: #fff; }
+    footer .subscribe .button {
+      float: right;
+      background: #999; }
+      footer .subscribe .button:hover {
+        background: #222; }
 
 .home .hero {
   background: #F4F4F4;

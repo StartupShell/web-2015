@@ -4,31 +4,19 @@ footer {
 	color: $medium-gray;
 	.copy {
 		@include span-columns(3);
-		padding: {
-			top: 12px;
-		}
+		line-height: 67px;
 	}
 	.subscribe {
-		@include span-columns(9);
-		form {
+		@include span-columns(6);
+		@include shift(3);
+		@extend .rounded;
+		background: $white;
+		.button {
 			float: right;
-			input {
-				border: 0;
-				@include border-radius($radius);
-				padding: 8px;
-				&[type="email"] {
-					width: 320px;
-				}
-				&[type="submit"] {
-					margin: {
-						left: -10px;
-					}
-					padding: {
-						left: 16px;
-						right: 16px;
-					}
-					color: #fff;
-				}
+			background: $medium-gray;
+
+			&:hover {
+				background: $gray;
 			}
 		}
 	}
