@@ -110,43 +110,24 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-@font-face {
-  font-family: "Aleo";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/Aleo/Aleo-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Aleo/Aleo-Regular.woff2") format("woff2"), url("/fonts/Aleo/Aleo-Regular.woff") format("woff"), url("/fonts/Aleo/Aleo-Regular.ttf") format("truetype"), url("/fonts/Aleo/Aleo-Regular.svg#Aleo") format("svg"); }
-@font-face {
-  font-family: "Aleo";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/Aleo/Aleo-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Aleo/Aleo-Bold.woff2") format("woff2"), url("/fonts/Aleo/Aleo-Bold.woff") format("woff"), url("/fonts/Aleo/Aleo-Bold.ttf") format("truetype"), url("/fonts/Aleo/Aleo-Bold.svg#Aleo") format("svg"); }
-@font-face {
-  font-family: "Avenir";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/Avenir/Avenir-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Avenir/Avenir-Regular.woff2") format("woff2"), url("/fonts/Avenir/Avenir-Regular.woff") format("woff"), url("/fonts/Avenir/Avenir-Regular.ttf") format("truetype"), url("/fonts/Avenir/Avenir-Regular.svg#Avenir") format("svg"); }
-@font-face {
-  font-family: "Avenir";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/Avenir/Avenir-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Avenir/Avenir-Bold.woff2") format("woff2"), url("/fonts/Avenir/Avenir-Bold.woff") format("woff"), url("/fonts/Avenir/Avenir-Bold.ttf") format("truetype"), url("/fonts/Avenir/Avenir-Bold.svg#Avenir") format("svg"); }
 body {
-  font-family: "Aleo", Georgia, Serif;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 32px; }
+  font-size: 18px;
+  color: #222;
+  line-height: 1.5; }
 
 h1 {
-  line-height: 144px;
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-  font-size: 120px;
-  color: #1a2e33;
-  text-transform: uppercase; }
+  font-size: 48px;
+  font-weight: 700; }
 
 h2 {
+  font-size: 24px;
+  font-weight: 600; }
+
+h3 {
   font-size: 18px;
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-  color: #1a2e33;
-  text-transform: uppercase; }
+  font-weight: 600; }
 
 .container, section, .section {
   max-width: 960px;
@@ -221,119 +202,12 @@ section, .section {
 
 .hero {
   padding: 80px 0 120px 0;
-  background-color: #CBF2FF;
-  text-align: center;
-  height: 100%; }
+  background-color: #EEE;
+  text-align: center; }
   .hero::after {
     clear: both;
     content: "";
     display: table; }
-
-.hero-text {
-  margin-bottom: 40px;
-  clear: both; }
-  @media screen and (max-width: 790px) {
-    .hero-text {
-      display: none; } }
-
-.hero-info {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  margin-bottom: 80px; }
-  .hero-info:last-child {
-    margin-right: 0; }
-
-.hero-info-text {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 40.29137%;
-  font-size: 24px;
-  line-height: 80px;
-  color: #528CA5; }
-  .hero-info-text:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 790px) {
-    .hero-info-text {
-      display: none; } }
-
-#hero-info-date {
-  text-align: right; }
-
-#hero-info-city {
-  text-align: left;
-  margin-right: 0; }
-
-#hero-info-logo {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%; }
-  #hero-info-logo:last-child {
-    margin-right: 0; }
-  #hero-info-logo img {
-    height: 80px;
-    width: 80px; }
-    @media screen and (max-width: 790px) {
-      #hero-info-logo img {
-        display: none; } }
-  @media screen and (max-width: 790px) {
-    #hero-info-logo {
-      font-size: 18px;
-      line-height: 80px;
-      color: #528CA5;
-      float: left;
-      display: block;
-      margin-right: 4.82916%;
-      width: 65.05695%;
-      margin-left: 17.47153%; }
-      #hero-info-logo:after {
-        content: "April 10-12, 2015 \0020 \0020 \00B7 \0020 \0020 College Park, MD"; }
-      #hero-info-logo:last-child {
-        margin-right: 0; } }
-
-#hero-info-badge {
-  display: none; }
-  @media screen and (max-width: 790px) {
-    #hero-info-badge {
-      float: left;
-      display: block;
-      margin-right: 4.82916%;
-      width: 30.11389%;
-      margin-left: 34.94305%; }
-      #hero-info-badge:last-child {
-        margin-right: 0; }
-      #hero-info-badge img {
-        width: 100px;
-        height: 106px;
-        max-width: 100%;
-        max-height: 100%; } }
-
-@media screen and (max-width: 790px) {
-  .hero-cta {
-    clear: both; } }
-
-.info {
-  text-align: center; }
-
-.info-title {
-  margin-bottom: 80px;
-  font-size: 18px;
-  color: #1a2e33;
-  text-transform: uppercase; }
-
-.info-text {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%;
-  line-height: 48px;
-  color: #7F6C5F; }
-  .info-text:last-child {
-    margin-right: 0; }
 
 .menu {
   margin-bottom: 120px; }
@@ -358,10 +232,9 @@ section, .section {
     margin-right: 0; }
 
 .menu-item-link {
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
   font-size: 18px;
   font-weight: bold;
-  color: #528CA5; }
+  color: #D74035; }
 
 .button {
   display: block;
@@ -369,49 +242,11 @@ section, .section {
   width: 300px;
   margin: 40px auto 0;
   padding-top: 30px;
-  background: url("/img/button.svg") center center no-repeat;
   font-size: 24px;
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   color: #FFF; }
 
-.photo-feature {
-  height: 720px;
-  display: block;
-  background-size: cover; }
-
-#photo-1 {
-  background: url("/img/photo-colorwar.jpg") center center no-repeat; }
-
-#photo-2 {
-  background: url("/img/photo-smores.jpg") center center no-repeat; }
-
-#photo-3 {
-  background: url("/img/photo-dave.jpg") center center no-repeat; }
-
 footer {
-  margin-bottom: 120px;
-  text-align: center; }
-  footer p {
-    font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-    font-size: 18px;
-    color: #528CA5; }
-
-.copy {
-  margin-bottom: 40px; }
-
-.social-links {
-  margin-top: 40px; }
-
-.social-item {
-  display: inline-block;
-  margin: 0 20px; }
-  .social-item img {
-    width: 40px; }
-
-.social-item-link {
-  float: left; }
-  .social-item-link img {
-    width: 40px; }
+  background: #EEE; }

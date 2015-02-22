@@ -11,9 +11,6 @@
   float: left;
   img {
     height: 24px;
-    // svg {
-    //   fill: $medium-blue;
-    // }
   }
 }
 
@@ -28,8 +25,7 @@
 }
 
 .menu-item-link {
-  font-family: $sans;
   font-size: 18px;
   font-weight: bold;
-  color: $medium-blue;
+  color: $red;
 }
