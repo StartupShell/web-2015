@@ -206,11 +206,23 @@ section, .section {
     content: "";
     display: table; }
   .menu .menu-logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
     font-weight: bold;
     color: #D74035;
     text-transform: lowercase; }
+    .menu .menu-logo:last-child {
+      margin-right: 0; }
   .menu .menu-list {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
     text-align: center; }
+    .menu .menu-list:last-child {
+      margin-right: 0; }
     .menu .menu-list .menu-item {
       display: inline-block;
       margin-right: 40px;
@@ -222,7 +234,13 @@ section, .section {
         color: #D74035;
         text-transform: lowercase; }
   .menu .social-list {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
     text-align: right; }
+    .menu .social-list:last-child {
+      margin-right: 0; }
     .menu .social-list .social-item {
       display: inline-block;
       text-align: right; }
