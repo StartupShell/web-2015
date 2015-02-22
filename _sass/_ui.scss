@@ -8,4 +8,8 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
+  &:hover {
+  	background: $dark-red;
+  	@extend .transition;
+  }
 }

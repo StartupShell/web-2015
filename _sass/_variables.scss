@@ -8,6 +8,7 @@ $medium-gray:	#999;
 $light-gray:	#F4F4F4;
 
 $red: 			#D74035;
+$dark-red:		darken($red,10%);
 
 
 // DIMENSIONS
@@ -27,3 +28,9 @@ $tablet-size:	720px;
 $desktop-size:	em(960);
 $large-size:	em(1224);
 
+
+// TRANSITIONS
+
+.transition {
+  	@include transition(all .15s);
+}
