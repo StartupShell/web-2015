@@ -1,7 +1,14 @@
-<footer> <!-- footer -->
-  <div class="container">
+<footer>
+    <!-- footer -->
+    <div class="container">
 
-    <p class="copy">&copy; {{ site.time | date: '%Y' }} Startup Shell</p>
-
-  </div>
-</footer> <!-- /footer -->
+        <div class="copy">&copy; {{ site.time | date: '%Y' }} Startup Shell</div>
+        <div class="subscribe">
+            <form>
+                <input type="email" name="email" placeholder="your email address">
+                <input type="submit" name="submit" value="SUBSCRIBE">
+            </form>
+        </div>
+    </div>
+</footer>
+<!-- /footer -->
