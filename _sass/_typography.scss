@@ -36,6 +36,7 @@ h3, .h3 {
 
 p {
 	line-height: 1.5;
+	margin: 0 0 $space/4 0;
 }
 
 
@@ -44,4 +45,14 @@ p {
 a, a:visited {
 	color: $red;
 	text-decoration: none;
+}
+
+// PARAGRAPH
+
+p.sub {
+	font-size: 80%;
+	color: $medium-gray;
+}
+p a {
+	font-weight: 600;
 }

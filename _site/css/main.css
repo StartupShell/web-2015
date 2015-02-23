@@ -131,6 +131,12 @@ html {
   -moz-transition: border 0.15s;
   transition: border 0.15s; }
 
+.fade-up {
+  background-color: #999;
+  background-image: -webkit-linear-gradient(bottom, #999, rgba(255, 0, 0, 0));
+  background-image: linear-gradient(to top,#999, rgba(255, 0, 0, 0));
+  height: 100%; }
+
 body {
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -152,11 +158,19 @@ h3, .h3, .button {
   font-weight: 600; }
 
 p {
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin: 0 0 10px 0; }
 
 a, a:visited {
   color: #D74035;
   text-decoration: none; }
+
+p.sub {
+  font-size: 80%;
+  color: #999; }
+
+p a {
+  font-weight: 600; }
 
 .content, .container, section, .section {
   max-width: 960px;
@@ -402,29 +416,29 @@ footer {
 
 .page-about .hero {
   background: url(/assets/photo-about.jpg) center no-repeat; }
-.page-about .areas .area {
-  margin: 0 0 80px 0; }
-  .page-about .areas .area::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .page-about .areas .area .description {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .page-about .areas .area .description:last-child {
-      margin-right: 0; }
-  .page-about .areas .area .area-image {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
-    .page-about .areas .area .area-image:last-child {
-      margin-right: 0; }
-    .page-about .areas .area .area-image img {
-      width: 100%;
-      height: auto; }
+.page-about .area .description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin: -15px 0 0 0; }
+  .page-about .area .description:last-child {
+    margin-right: 0; }
+.page-about .area .area-image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-left: 8.5298%; }
+  .page-about .area .area-image:last-child {
+    margin-right: 0; }
+  .page-about .area .area-image img {
+    width: 100%;
+    height: auto; }
+.page-about .area:nth-child(odd) .description {
+  margin-left: 8.5298%; }
+.page-about .area:nth-child(odd) .area-image {
+  margin-left: 0%; }
 
 .venture-item {
   display: block;

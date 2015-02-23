@@ -36,3 +36,8 @@ $large-size:	em(1224);
   	@include transition(background .15s);
   	@include transition(border .15s);
 }
+
+.fade-up {
+    @include linear-gradient(to top, $medium-gray, rgba(255,0,0,0));
+    height: 100%;
+}

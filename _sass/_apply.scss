@@ -2,19 +2,25 @@
 	.hero {
 		background: url(/assets/photo-about.jpg) center no-repeat;
 	}
-	.areas {
-		.area {
-			@include clearfix;
-			margin:0 0 $space*2 0;
+	.area {
+		.description {
+			@include span-columns(4);
+			margin: -15px 0 0 0;
+		}
+		.area-image {
+			@include span-columns(7);
+			@include shift(1);
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		&:nth-child(odd) {
 			.description {
-				@include span-columns(4);
+				@include shift(1);
 			}
 			.area-image {
-				@include span-columns(8);
-				img {
-					width: 100%;
-					height: auto;
-				}
+				@include shift(0);
 			}
 		}
 	}
