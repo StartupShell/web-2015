@@ -1,34 +1,34 @@
-name,link,logo
-Austin Hou Photography,https://500px.com/austinh,austinhou
-bgoti,http://bgoti.com,bgoti
-Bitcamp,http://bitca.mp,bitcamp
-Blissic,http://blissic.com,blissic
-Custom Spray Solutions,http://customspraysolutions.com,customspraysolutions
-Cyber Skyline,http://www.cyberskyline.com,cyberskyline
-Daocloud,http://daocloud.com,daocloud
-Elite Open Source Hardware,http://www.eliteoshw.com,elite
-Essential School Tools,http://essentialschool.tools,essential
-Food Recovery Network,http://www.foodrecoverynetwork.org,frn
-Grandy,http://grandy.io,grandy
-Hidden UMD,http://hiddenumd.weebly.com,hiddenumd
-Imaginex,http://imaginex.co,imaginex
-Javazen,http://drinkjavazen.com,javazen
-Kivvik,http://kivvik.com,kivvik
-M3D,http://printm3d.com,m3d
-MADE,http://www.madefinlit.org,made
-Mindforge Design,http://mindforgedesign.com,mindforge
-Parallel,http://parallel.fm,parallel
-Puzzable,http://puzzable.org,puzzable
-Research Connection,http://researchconnection.com,researchconnection
-Rushgreek,http://rushgreek.com,rushgreek
-Sambition,http://sambitionphotos.com,sambition
-Spothauc,http://spothauc.com,spothauc
-Student Voice,http://stuvoice.org,studentvoice
-Sweet Buds,http://facebook.com/sweetbudsjewelry,sweetbuds
-Terp Gear,http://terpgear.com,terpgear
-Towards The Sun,http://www.shoptowardsthesun.com,towardsthesun
-Unwritten,http://shopunwritten.com,unwritten
-VentureBoard,http://ventureboard.co,ventureboard
-VentureU,http://ventureuniversity.co,ventureu
-Vumble,http://vumble.com,vumble
-Yolkd,http://www.yolkd.com,yolkd
+name,logo,url
+Austin Hou Photography,		austinhou,				https://500px.com/austinh
+bgoti,						bgoti,					http://bgoti.com
+Bitcamp,					bitcamp,				http://bitca.mp
+Blissic,					blissic,				http://blissic.com
+Custom Spray Solutions,		customspraysolutions,	http://customspraysolutions.com
+Cyber Skyline,				cyberskyline,			http://www.cyberskyline.com
+Daocloud,					daocloud,				http://daocloud.com
+Elite Open Source Hardware,	elite,					http://www.eliteoshw.com
+Essential School Tools,		essential,				http://essentialschool.tools
+Food Recovery Network,		frn,					http://www.foodrecoverynetwork.org
+Grandy,						grandy,					http://grandy.io
+Hidden UMD,					hiddenumd,				http://hiddenumd.weebly.com
+Imaginex,					imaginex,				http://imaginex.co
+Javazen,					javazen,				http://drinkjavazen.com
+Kivvik,						kivvik,					http://kivvik.com
+M3D,						m3d,					http://printm3d.com
+MADE,						made,					http://www.madefinlit.org
+Mindforge Design,			mindforge,				http://mindforgedesign.com
+Parallel,					parallel,				http://parallel.fm
+Puzzable,					puzzable,				http://puzzable.org
+Research Connection,		researchconnection,		http://researchconnection.com
+Rushgreek,					rushgreek,				http://rushgreek.com
+Sambition,					sambition,				http://sambitionphotos.com
+Spothauc,					spothauc,				http://spothauc.com
+Student Voice,				studentvoice,			http://stuvoice.org
+Sweet Buds,					sweetbuds,				http://facebook.com/sweetbudsjewelry
+Terp Gear,					terpgear,				http://terpgear.com
+Towards The Sun,			towardsthesun,			http://www.shoptowardsthesun.com
+Unwritten,					unwritten,				http://shopunwritten.com
+VentureBoard,				ventureboard,			http://ventureboard.co
+VentureU,					ventureu,				http://ventureuniversity.co
+Vumble,						vumble,					http://vumble.com
+Yolkd,						yolkd,					http://www.yolkd.com

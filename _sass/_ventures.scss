@@ -4,3 +4,10 @@
 	margin-bottom: $space/2;
 	@include omega(12n);
 }
+
+.ventures {
+	.venture-item {
+		@include span-columns(3);
+		@include omega(4n);
+	}
+}
