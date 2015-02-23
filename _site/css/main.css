@@ -257,7 +257,7 @@ section, .section {
     content: "";
     display: table; }
   .menu.gray {
-    background: #F4F4F4; }
+    background: #EEE; }
   .menu .menu-logo {
     float: left;
     display: block;
@@ -341,7 +341,7 @@ input[type="email"], input[type="text"] {
   border: 0; }
 
 footer {
-  background: #F4F4F4;
+  background: #EEE;
   padding: 40px;
   color: #999; }
   footer .copy {
@@ -368,7 +368,7 @@ footer {
         background: #222; }
 
 .home .hero {
-  background: #F4F4F4;
+  background: #EEE;
   padding: 80px 0 240px;
   margin-bottom: -140px; }
 .home .hero-content h1 {
@@ -407,7 +407,7 @@ footer {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  background: #F4F4F4;
+  background: #EEE;
   padding: 40px; }
   .contact .contact-box:last-child {
     margin-right: 0; }
