@@ -413,3 +413,15 @@ footer {
     margin-right: 0; }
   .venture-item:nth-child(12n+1) {
     clear: left; }
+
+.ventures .venture-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .ventures .venture-item:last-child {
+    margin-right: 0; }
+  .ventures .venture-item:nth-child(4n) {
+    margin-right: 0; }
+  .ventures .venture-item:nth-child(4n+1) {
+    clear: left; }

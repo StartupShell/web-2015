@@ -10,7 +10,7 @@
 
     <ul class="social-list">
       {% for link in site.data.links %}
-        <li class="social-item"><a href="{{ social.link }}" target="_blank"><div class="icon {{ social.name }}"></div></a></li>
+        <li class="social-item"><a href="{{ link.url }}" target="_blank"><div class="icon {{ link.name }}"></div></a></li>
       {% endfor %}
     </ul>
 
