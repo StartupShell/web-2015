@@ -1,7 +1,7 @@
 .hero {
   @include clearfix;
   text-align: center;
-  background: $light-gray;
+  background-size: cover;
   padding: 4*$space 0;
 }
 

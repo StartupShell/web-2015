@@ -194,7 +194,7 @@ section, .section {
 
 .hero {
   text-align: center;
-  background: #F4F4F4;
+  background-size: cover;
   padding: 160px 0; }
   .hero::after {
     clear: both;
@@ -394,7 +394,7 @@ footer {
   .contact .contact-box.address:before {
     background: url("/assets/icons/pin.svg") no-repeat; }
   .contact .contact-box.email:before {
-    background: url("/assets/icons/mail.svg") no-repeat; }
+    background: url("/assets/icons/email.svg") no-repeat; }
   .contact .contact-box p {
     margin: -7px 0; }
 .contact a, .contact a:visited {
@@ -425,5 +425,3 @@ footer {
     margin-right: 0; }
   .page-ventures .venture-item:nth-child(4n+1) {
     clear: left; }
-.page-ventures .hero {
-  background: url(/assets/photo-ventures.jpg) center no-repeat; }
