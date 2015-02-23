@@ -1,0 +1,6 @@
+.venture-item {
+	display: block;
+	@include span-columns(1);
+	margin-bottom: $space/2;
+	@include omega(12n);
+}
