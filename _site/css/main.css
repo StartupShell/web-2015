@@ -361,6 +361,8 @@ footer {
   background: #F4F4F4;
   padding: 80px 0 240px;
   margin-bottom: -140px; }
+.home .hero-content h1 {
+  color: #222; }
 .home .hero-content p {
   float: left;
   display: block;
@@ -416,7 +418,9 @@ footer {
   color: #222; }
 
 .page-about .hero {
-  background: url(/assets/photo-about.jpg) center no-repeat; }
+  background: url(/assets/about-hero.jpg) center no-repeat; }
+  .page-about .hero h1 {
+    color: #FFF; }
 .page-about .area .description {
   float: left;
   display: block;
@@ -435,7 +439,7 @@ footer {
     margin-right: 0; }
   .page-about .area .area-image img {
     width: 100%;
-    height: auto; }
+    height: 330px; }
 .page-about .area:nth-child(odd) .description {
   margin-left: 8.5298%; }
 .page-about .area:nth-child(odd) .area-image {

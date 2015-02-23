@@ -1,0 +1,30 @@
+.page-about {
+	.hero {
+		background: url(/assets/about-hero.jpg) center no-repeat;
+		h1 {
+			color: $white;
+		}
+	}
+	.area {
+		.description {
+			@include span-columns(4);
+			margin: -15px 0 0 0;
+		}
+		.area-image {
+			@include span-columns(7);
+			@include shift(1);
+			img {
+				width: 100%;
+				height: 330px; // this needs to be dynamic in the future
+			}
+		}
+		&:nth-child(odd) {
+			.description {
+				@include shift(1);
+			}
+			.area-image {
+				@include shift(0);
+			}
+		}
+	}
+}
