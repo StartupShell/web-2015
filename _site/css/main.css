@@ -400,6 +400,32 @@ footer {
 .contact a, .contact a:visited {
   color: #222; }
 
+.page-about .hero {
+  background: url(/assets/photo-about.jpg) center no-repeat; }
+.page-about .areas .area {
+  margin: 0 0 80px 0; }
+  .page-about .areas .area::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .page-about .areas .area .description {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .page-about .areas .area .description:last-child {
+      margin-right: 0; }
+  .page-about .areas .area .area-image {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .page-about .areas .area .area-image:last-child {
+      margin-right: 0; }
+    .page-about .areas .area .area-image img {
+      width: 100%;
+      height: auto; }
+
 .venture-item {
   display: block;
   float: left;
