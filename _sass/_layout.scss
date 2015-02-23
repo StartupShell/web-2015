@@ -16,9 +16,21 @@ section, .section {
 }
 
 .info {
-	font-size: 24px;
-	text-align: center;
-	@include span-columns(8);
-	@include shift(2);
-	@include omega;
+  text-align: center;
+  .info-text {
+    font-size: 24px;
+    @include span-columns(8);
+    @include shift(2);
+    @include omega;
+    margin-bottom: $space;
+  }
+}
+
+::selection {
+  background: $red;
+  color: $white;
+}
+::-moz-selection {
+  background: $red;
+  color: $white;
 }
