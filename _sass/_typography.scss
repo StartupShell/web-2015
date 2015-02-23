@@ -43,7 +43,6 @@ p {
 // LINKS
 
 a, a:visited {
-	color: $red;
 	text-decoration: none;
 }
 
@@ -55,4 +54,5 @@ p.sub {
 }
 p a {
 	font-weight: 600;
+	color: $red;
 }

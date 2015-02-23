@@ -1,6 +1,6 @@
 // BUTTON
 
-.button {
+.button, a.button, a.button:visited {
   display: inline-block;
   background: $red;
   padding: $space/2 $space;
@@ -10,7 +10,6 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
-    @extend .transition;
   &:hover {
   	background: $dark-red;
     cursor: pointer;
