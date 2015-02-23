@@ -5,9 +5,12 @@
 	@include omega(12n);
 }
 
-.ventures {
+.page-ventures {
 	.venture-item {
 		@include span-columns(3);
 		@include omega(4n);
+	}
+	.hero {
+		background: url(/assets/photo-ventures.jpg) center no-repeat;
 	}
 }
