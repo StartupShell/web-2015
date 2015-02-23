@@ -2,11 +2,15 @@
     @include clearfix;
     // background: $light-gray;
     padding: $space 2*$space;
+    &.gray {
+        background: $light-gray;
+    }
     .menu-logo {
         @include span-columns(2);
         font-weight: 600;
         color: $red;
         text-transform: lowercase;
+        line-height: 32px;
     }
     .menu-list {
         @include span-columns(8);
@@ -15,6 +19,7 @@
             display: inline-block;
             margin: 0 $space/2;
             text-align: right;
+            line-height: 32px;
             &:last-child {
                 margin-right: 0;
             }
