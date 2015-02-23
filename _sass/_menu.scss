@@ -1,6 +1,6 @@
 .menu {
     @include clearfix;
-    background: $light-gray;
+    // background: $light-gray;
     padding: $space 2*$space;
     .menu-logo {
         @include span-columns(2);
@@ -13,7 +13,7 @@
         text-align: center;
         .menu-item {
             display: inline-block;
-            margin-right: $space;
+            margin: 0 $space/2;
             text-align: right;
             &:last-child {
                 margin-right: 0;

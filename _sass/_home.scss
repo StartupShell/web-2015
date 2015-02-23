@@ -51,23 +51,16 @@
 			float: left;
 			margin: 0 $space 0 0;
 		}
-		&.address {
-			&:before {
-				background:url('/assets/icons/pin.svg') no-repeat;
-			}
+		&.address:before {
+			background:url('/assets/icons/pin.svg') no-repeat;
 		}
-		&.email {
-			&:before {
-				background:url('/assets/icons/mail.svg') no-repeat;
-			}
+		&.email:before {
+			background:url('/assets/icons/mail.svg') no-repeat;
 		}
 		p {
 			margin: -7px 0;
 		}
 		&:hover {
-			background: $red;
-			color: $white;
-			@extend .transition;
 		}
 	}
 	a, a:visited {

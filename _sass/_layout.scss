@@ -1,4 +1,4 @@
-.container, section, .section {
+.content, .container, section, .section {
   @include outer-container;
   @include clearfix;
 }
@@ -13,4 +13,12 @@ section, .section {
 
 .full {
   max-width: 100%;
+}
+
+.info {
+	font-size: 24px;
+	text-align: center;
+	@include span-columns(8);
+	@include shift(2);
+	@include omega;
 }

@@ -120,7 +120,7 @@ html {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px; }
 
-.transition, .button, .contact .contact-box:hover {
+.transition, .button {
   -webkit-transition: color 0.15s;
   -moz-transition: color 0.15s;
   transition: color 0.15s;
@@ -158,15 +158,15 @@ a, a:visited {
   color: #D74035;
   text-decoration: none; }
 
-.container, section, .section {
+.content, .container, section, .section {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
-  .container::after, section::after, .section::after {
+  .content::after, .container::after, section::after, .section::after {
     clear: both;
     content: "";
     display: table; }
-  .container::after, section::after, .section::after {
+  .content::after, .container::after, section::after, .section::after {
     clear: both;
     content: "";
     display: table; }
@@ -179,6 +179,18 @@ section, .section {
 
 .full {
   max-width: 100%; }
+
+.info {
+  font-size: 24px;
+  text-align: center;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  margin-right: 0; }
+  .info:last-child {
+    margin-right: 0; }
 
 .hero {
   text-align: center;
@@ -214,7 +226,6 @@ section, .section {
     width: 80px; }
 
 .menu {
-  background: #F4F4F4;
   padding: 40px 80px; }
   .menu::after {
     clear: both;
@@ -240,7 +251,7 @@ section, .section {
       margin-right: 0; }
     .menu .menu-list .menu-item {
       display: inline-block;
-      margin-right: 40px;
+      margin: 0 20px;
       text-align: right; }
       .menu .menu-list .menu-item:last-child {
         margin-right: 0; }
@@ -382,8 +393,5 @@ footer {
     background: url("/assets/icons/mail.svg") no-repeat; }
   .contact .contact-box p {
     margin: -7px 0; }
-  .contact .contact-box:hover {
-    background: #D74035;
-    color: #FFF; }
 .contact a, .contact a:visited {
   color: #222; }
