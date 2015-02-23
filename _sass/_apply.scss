@@ -1,0 +1,21 @@
+.page-about {
+	.hero {
+		background: url(/assets/photo-about.jpg) center no-repeat;
+	}
+	.areas {
+		.area {
+			@include clearfix;
+			margin:0 0 $space*2 0;
+			.description {
+				@include span-columns(4);
+			}
+			.area-image {
+				@include span-columns(8);
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}
