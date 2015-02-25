@@ -1,6 +1,8 @@
 .page-about {
 	.hero {
-		background: url(/assets/about-hero.jpg) center no-repeat;
+		background-image: url(/assets/about-hero.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
 		h1 {
 			color: $white;
 		}
@@ -8,7 +10,7 @@
 	.area {
 		.description {
 			@include span-columns(4);
-			margin: -15px 0 0 0;
+			margin: -13px 0 0 0;
 		}
 		.area-image {
 			@include span-columns(7);
