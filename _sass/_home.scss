@@ -67,10 +67,10 @@
 			@include span-columns(4 of 12);
 			@include shift(0);
 		}
-		height: 300px;
+	}
+	.video-item {
 		background: $red;
 		@extend .rounded;
-		display: block;
 	}
 }
 @include media($mobile) {

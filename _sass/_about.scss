@@ -23,6 +23,7 @@
 			}
 		}
 		.area-image {
+			overflow: hidden;
 			@include media($mobile) {
 				@include span-columns(4);
 			}
@@ -39,8 +40,9 @@
 				@include shift(1);
 			}
 			img {
+				vertical-align: middle;
 				width: 100%;
-				// height: 330px; // this needs to be dynamic in the future
+				height: auto; // this needs to be dynamic in the future
 			}
 		}
 		&:nth-child(odd) {

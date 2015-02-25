@@ -46,6 +46,38 @@ section, .section {
   }
 }
 
+
+// RATIO SIZE HACK
+
+.ratio {
+  display: inline-block;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+  }
+}
+
+.ratio > * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.square:after {
+  margin-top: 100%;
+}
+
+.fivetothree:after {
+  margin-top: 60%;
+}
+
+
+// SELECTION
+
 ::selection {
   background: $red;
   color: $white;
