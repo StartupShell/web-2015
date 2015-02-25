@@ -13,18 +13,15 @@
         line-height: 32px;
     }
     .menu-list {
+        list-style: none outside none;
         @include span-columns(8);
         text-align: center;
         .menu-item {
             display: inline-block;
-            margin: 0 $space/2;
-            text-align: right;
             line-height: 32px;
-            &:last-child {
-                margin-right: 0;
-            }
             .menu-item-link {
                 color: $red;
+                padding: $space $space/2;
                 text-transform: lowercase;
             }
         }

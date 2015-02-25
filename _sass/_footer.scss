@@ -11,6 +11,9 @@ footer {
 		@include shift(3);
 		@extend .rounded;
 		background: $white;
+		input[type="email"] {
+			padding-right: 0;
+		}
 		.button {
 			float: right;
 			background: $medium-gray;
