@@ -131,30 +131,32 @@ html {
   -moz-transition: border 0.15s;
   transition: border 0.15s; }
 
-.fade-up {
-  background-color: #999;
-  background-image: -webkit-linear-gradient(bottom, #999, rgba(255, 0, 0, 0));
-  background-image: linear-gradient(to top,#999, rgba(255, 0, 0, 0));
-  height: 100%; }
-
 body {
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 18px;
   color: #222;
   line-height: 1.25; }
+  @media screen and (min-width: 20em) {
+    body {
+      font-size: 16px; } }
+  @media screen and (min-width: 720px) {
+    body {
+      font-size: 18px; } }
+  @media screen and (min-width: 76.5em) {
+    body {
+      font-size: 24px; } }
 
 h1, .h1 {
-  font-size: 48px;
+  font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 40px; }
 
 h2, .h2 {
-  font-size: 24px;
+  font-size: 1.25em;
   font-weight: 600; }
 
 h3, .h3, .button, a.button, a.button:visited {
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 600; }
 
 p {
@@ -182,15 +184,41 @@ p a {
     content: "";
     display: table; }
 
-.hero-content h1 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%;
-  margin-right: 0; }
-  .hero-content h1:last-child {
-    margin-right: 0; }
+@media screen and (min-width: 20em) {
+  .hero-content h1 {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%; }
+    .hero-content h1:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 720px) {
+  .hero-content h1 {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 74.10533%;
+    margin-left: 12.94733%; }
+    .hero-content h1:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 60em) {
+  .hero-content h1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .hero-content h1:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 76.5em) {
+  .hero-content h1 {
+    float: left;
+    display: block;
+    margin-right: 1.75788%;
+    width: 74.56053%;
+    margin-left: 12.71973%; }
+    .hero-content h1:last-child {
+      margin-right: 0; } }
 .hero-content p {
   float: left;
   display: block;
@@ -271,11 +299,21 @@ p a {
 .content, .container, section, .section {
   max-width: 960px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 40px; }
   .content::after, .container::after, section::after, .section::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 76.5em) {
+    .content, .container, section, .section {
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto; }
+      .content::after, .container::after, section::after, .section::after {
+        clear: both;
+        content: "";
+        display: table; } }
   .content::after, .container::after, section::after, .section::after {
     clear: both;
     content: "";
@@ -293,7 +331,7 @@ section, .section {
 .info {
   text-align: center; }
   .info .info-text {
-    font-size: 24px;
+    font-size: 1.25em;
     float: left;
     display: block;
     margin-right: 2.35765%;

@@ -7,10 +7,25 @@
 
 .hero-content {
 	h1 {
-		@include span-columns(10);
-		@include shift(1);
-		@include omega;
-		// color: $white;
+		// @include span-columns(10);
+		// @include shift(1);
+		// @include omega;
+		@include media($mobile) {
+		  @include span-columns(4);
+		}
+		@include media($tablet) {
+		  @include span-columns(6);
+		  @include shift(1);
+		}
+		@include media($desktop) {
+		  @include span-columns(10);
+		  @include shift(1);
+		}
+		@include media($large) {
+		  @include span-columns(12);
+		  @include shift(2);
+		}
+
 	}
 	p {
 		@include span-columns(6);

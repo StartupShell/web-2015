@@ -37,7 +37,10 @@ $large-size:	em(1224);
   	@include transition(border .15s);
 }
 
-.fade-up {
-    @include linear-gradient(to top, $medium-gray, rgba(255,0,0,0));
-    height: 100%;
-}
+
+// TYPOGRAPHY
+
+$base-size: 1em;
+$h1-size: 2.5em;
+$h2-size: 1.25em;
+$h3-size: $base-size;
