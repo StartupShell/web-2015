@@ -226,6 +226,7 @@ p a {
     .menu .menu-logo:last-child {
       margin-right: 0; }
   .menu .menu-list {
+    list-style: none outside none;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -235,13 +236,10 @@ p a {
       margin-right: 0; }
     .menu .menu-list .menu-item {
       display: inline-block;
-      margin: 0 20px;
-      text-align: right;
       line-height: 32px; }
-      .menu .menu-list .menu-item:last-child {
-        margin-right: 0; }
       .menu .menu-list .menu-item .menu-item-link {
         color: #D74035;
+        padding: 40px 20px;
         text-transform: lowercase; }
   .menu .social-list {
     float: left;
