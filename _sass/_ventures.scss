@@ -31,23 +31,23 @@
 .page-ventures {
 	.venture-item {
 		@include media($mobile) {
-			@include span-columns(1);
-			@include omega(4n);
+			@include span-columns(2);
+			@include omega(2n);
 		}
 		@include media($tablet) {
-			@include omega-reset(4n); // figure out this omega-reset situation
-			@include span-columns(1);
-			@include omega(8n);
+			@include omega-reset(2n); // figure out this omega-reset situation
+			@include span-columns(2);
+			@include omega(4n);
 		}
 		@include media($desktop) {
-			@include omega-reset(8n);
-			@include span-columns(1);
-			@include omega(12n);
+			@include omega-reset(4n);
+			@include span-columns(3);
+			@include omega(4n);
 		}
 		@include media($large) {
-			@include omega-reset(12n);
-			@include span-columns(1);
-			@include omega(16n);
+			@include omega-reset(4n);
+			@include span-columns(4);
+			@include omega(4n);
 		}
 	}
 	.hero {
