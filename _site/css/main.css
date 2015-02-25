@@ -222,43 +222,6 @@ p a {
       margin-left: 12.71973%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
-.hero-content p {
-  margin-bottom: 2em; }
-  @media screen and (min-width: 20em) {
-    .hero-content p {
-      float: left;
-      display: block;
-      margin-right: 7.42297%;
-      width: 100%; }
-      .hero-content p:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 720px) {
-    .hero-content p {
-      float: left;
-      display: block;
-      margin-right: 3.57866%;
-      width: 74.10533%;
-      margin-left: 12.94733%; }
-      .hero-content p:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 60em) {
-    .hero-content p {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-left: 25.58941%; }
-      .hero-content p:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 76.5em) {
-    .hero-content p {
-      float: left;
-      display: block;
-      margin-right: 1.75788%;
-      width: 10.96186%;
-      margin-left: 25.43947%; }
-      .hero-content p:last-child {
-        margin-right: 0; } }
 
 .hero-logo {
   margin-bottom: 2em; }
@@ -440,34 +403,106 @@ footer {
   color: #222;
   margin-bottom: 0.5em; }
 .home .hero-content p {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
   margin-bottom: 2em; }
-  .home .hero-content p:last-child {
-    margin-right: 0; }
+  @media screen and (min-width: 20em) {
+    .home .hero-content p {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .home .hero-content p:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 720px) {
+    .home .hero-content p {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 48.21067%;
+      margin-left: 25.89467%; }
+      .home .hero-content p:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 60em) {
+    .home .hero-content p {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 25.58941%; }
+      .home .hero-content p:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 76.5em) {
+    .home .hero-content p {
+      float: left;
+      display: block;
+      margin-right: 1.75788%;
+      width: 49.12106%;
+      margin-left: 25.43947%; }
+      .home .hero-content p:last-child {
+        margin-right: 0; } }
 .home .hero-logo {
   margin-bottom: 2em; }
   .home .hero-logo img {
     width: 4em; }
 
+@media screen and (min-width: 76.5em) {
+  .video .video-row {
+    float: left;
+    display: block;
+    margin-right: 1.75788%;
+    width: 74.56053%;
+    margin-left: 12.71973%; }
+    .video .video-row:last-child {
+      margin-right: 0; } }
 .video::after {
   clear: both;
   content: "";
   display: table; }
 .video .video-thumb {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
   height: 300px;
   background: #D74035;
   display: block; }
-  .video .video-thumb:last-child {
-    margin-right: 0; }
+  @media screen and (min-width: 20em) {
+    .video .video-thumb {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .video .video-thumb:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 720px) {
+    .video .video-thumb {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 74.10533%;
+      margin-left: 12.94733%; }
+      .video .video-thumb:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 60em) {
+    .video .video-thumb {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 0%; }
+      .video .video-thumb:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 76.5em) {
+    .video .video-thumb {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 0%; }
+      .video .video-thumb:last-child {
+        margin-right: 0; } }
 
+@media screen and (min-width: 20em) {
+  #video-2, #video-3 {
+    display: none; } }
+@media screen and (min-width: 60em) {
+  #video-2, #video-3 {
+    display: block; } }
 .contact .contact-box {
   float: left;
   display: block;

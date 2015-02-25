@@ -25,25 +25,6 @@
 		}
 
 	}
-	p {
-		@include media($mobile) {
-			@include span-columns(4);
-		}
-		@include media($tablet) {
-			@include span-columns(6);
-			@include shift(1);
-		}
-		@include media($desktop) {
-			@include span-columns(6);
-			@include shift(3);
-		}
-		@include media($large) {
-			@include span-columns(2);
-			@include shift(4);
-		}
-
-		margin-bottom: $space;
-	}
 }
 
 .hero-logo {

@@ -1,6 +1,5 @@
 .menu {
     @include clearfix;
-    // background: $light-gray;
     padding: $space 2*$space;
     &.gray {
         background: $light-gray;
