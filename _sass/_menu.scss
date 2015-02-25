@@ -8,9 +8,7 @@
     .menu-logo {
         @include span-columns(2);
         font-weight: 600;
-        color: $red;
         text-transform: lowercase;
-        line-height: 32px;
     }
     .menu-list {
         list-style: none outside none;
@@ -18,9 +16,7 @@
         text-align: center;
         .menu-item {
             display: inline-block;
-            line-height: 32px;
             .menu-item-link {
-                color: $red;
                 padding: $space $space/2;
                 text-transform: lowercase;
             }
@@ -34,8 +30,8 @@
             text-align: right;
             margin-left: $space/2;
             .icon {
-                width: 32px;
-                height: 32px;
+                width: 1.5em;
+                height: 1.5em;
                 background-repeat: no-repeat;
                 &.facebook {
                     background-image: url('/assets/icons/facebook.svg');

@@ -30,7 +30,7 @@ body {
 h1, .h1 {
 	font-size: 2.5em;
 	font-weight: 700;
-	margin-bottom: $space;
+	margin-bottom: $space/4;
 }
 
 h2, .h2 {
@@ -54,6 +54,9 @@ p {
 a, a:visited {
 	color: $red;
 	text-decoration: none;
+	&:hover {
+		color: $dark-red;
+	}
 }
 
 // PARAGRAPH

@@ -4,7 +4,7 @@ footer {
 	color: $medium-gray;
 	.copy {
 		@include span-columns(3);
-		line-height: 67px;
+		padding: $space/2 0;
 	}
 	.subscribe {
 		@include span-columns(6);

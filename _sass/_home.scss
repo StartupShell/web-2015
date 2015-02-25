@@ -9,6 +9,7 @@
 	.hero-content {
 		h1 {
 			color: $gray;
+			margin-bottom: $space/4;
 		}
 		p {
 			@include span-columns(6);

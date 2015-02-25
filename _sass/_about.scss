@@ -10,7 +10,6 @@
 	.area {
 		.description {
 			@include span-columns(4);
-			margin: -13px 0 0 0;
 		}
 		.area-image {
 			@include span-columns(7);
