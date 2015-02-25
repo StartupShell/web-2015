@@ -428,7 +428,9 @@ footer {
   color: #222; }
 
 .page-about .hero {
-  background: url(/assets/about-hero.jpg) center no-repeat; }
+  background-image: url(/assets/about-hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat; }
   .page-about .hero h1 {
     color: #FFF; }
 .page-about .area .description {
@@ -436,7 +438,7 @@ footer {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  margin: -15px 0 0 0; }
+  margin: -13px 0 0 0; }
   .page-about .area .description:last-child {
     margin-right: 0; }
 .page-about .area .area-image {
