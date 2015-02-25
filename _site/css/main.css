@@ -237,18 +237,36 @@ p a {
   .menu.gray {
     background: #EEE; }
   .menu .menu-logo {
+    float: left;
+    display: block;
+    margin-right: 3.28774%;
+    width: 13.92688%;
     font-weight: 600;
     text-transform: lowercase; }
+    .menu .menu-logo:last-child {
+      margin-right: 0; }
   .menu .menu-list {
     list-style: none outside none;
+    float: left;
+    display: block;
+    margin-right: 3.28774%;
+    width: 65.57075%;
     text-align: center; }
+    .menu .menu-list:last-child {
+      margin-right: 0; }
     .menu .menu-list .menu-item {
       display: inline-block; }
       .menu .menu-list .menu-item .menu-item-link {
         padding: 2em 1em;
         text-transform: lowercase; }
   .menu .social-list {
+    float: left;
+    display: block;
+    margin-right: 3.28774%;
+    width: 13.92688%;
     text-align: right; }
+    .menu .social-list:last-child {
+      margin-right: 0; }
     .menu .social-list .social-item {
       display: inline-block;
       text-align: right;
@@ -343,7 +361,8 @@ section, .section {
 
 .ratio {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .ratio:after {
     content: '';
     display: block; }
@@ -679,52 +698,59 @@ footer {
     width: 35.97143%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
-.page-about .area .area-image {
-  overflow: hidden; }
-  @media screen and (min-width: 20em) {
-    .page-about .area .area-image {
-      float: left;
-      display: block;
-      margin-right: 10.55743%;
-      width: 100%; }
-      .page-about .area .area-image:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 720px) {
-    .page-about .area .area-image {
-      float: left;
-      display: block;
-      margin-right: 5.01404%;
-      width: 47.49298%;
-      margin-left: 13.12675%; }
-      .page-about .area .area-image:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 60em) {
-    .page-about .area .area-image {
-      float: left;
-      display: block;
-      margin-right: 3.28774%;
-      width: 56.96344%;
-      margin-left: 8.60731%; }
-      .page-about .area .area-image:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 76.5em) {
-    .page-about .area .area-image {
-      float: left;
-      display: block;
-      margin-right: 2.44571%;
-      width: 55.18%;
-      margin-left: 6.40286%; }
-      .page-about .area .area-image:last-child {
-        margin-right: 0; } }
-  .page-about .area .area-image img {
-    vertical-align: middle;
-    width: 100%;
-    height: auto; }
+@media screen and (min-width: 20em) {
+  .page-about .area .area-image {
+    float: left;
+    display: block;
+    margin-right: 10.55743%;
+    width: 100%; }
+    .page-about .area .area-image:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 720px) {
+  .page-about .area .area-image {
+    float: left;
+    display: block;
+    margin-right: 5.01404%;
+    width: 47.49298%;
+    margin-left: 13.12675%; }
+    .page-about .area .area-image:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 60em) {
+  .page-about .area .area-image {
+    float: left;
+    display: block;
+    margin-right: 3.28774%;
+    width: 56.96344%;
+    margin-left: 8.60731%; }
+    .page-about .area .area-image:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 76.5em) {
+  .page-about .area .area-image {
+    float: left;
+    display: block;
+    margin-right: 2.44571%;
+    width: 55.18%;
+    margin-left: 6.40286%; }
+    .page-about .area .area-image:last-child {
+      margin-right: 0; } }
+.page-about .area .area-image img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto; }
 @media screen and (min-width: 720px) {
   .page-about .area:nth-child(odd) .description {
     margin-left: 6.40286%; }
   .page-about .area:nth-child(odd) .area-image {
     margin-left: 0%; } }
+
+.about-resources img {
+  top: -11%; }
+
+.about-events img {
+  top: -11%; }
+
+.about-history img {
+  top: -11%; }
 
 .page-events .event {
   float: left;

@@ -52,6 +52,7 @@ section, .section {
 .ratio {
   display: inline-block;
   position: relative;
+  overflow: hidden;
   &:after {
     content: '';
     display: block;

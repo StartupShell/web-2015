@@ -23,7 +23,6 @@
 			}
 		}
 		.area-image {
-			overflow: hidden;
 			@include media($mobile) {
 				@include span-columns(4);
 			}
@@ -56,5 +55,36 @@
 			}
 
 		}
+	}
+}
+
+
+// IMAGE POSITIONING
+
+.about-space {
+	img {
+	}
+}
+
+.about-community {
+	img {
+	}
+}
+
+.about-resources {
+	img {
+		top: -11%;
+	}
+}
+
+.about-events {
+	img {
+		top: -11%;
+	}
+}
+
+.about-history {
+	img {
+		top: -11%;
 	}
 }
