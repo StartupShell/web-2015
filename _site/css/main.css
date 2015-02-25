@@ -647,28 +647,80 @@ footer {
   background-repeat: no-repeat; }
   .page-about .hero h1 {
     color: #FFF; }
-.page-about .area .description {
-  float: left;
-  display: block;
-  margin-right: 3.28774%;
-  width: 31.1415%; }
-  .page-about .area .description:last-child {
-    margin-right: 0; }
-.page-about .area .area-image {
-  float: left;
-  display: block;
-  margin-right: 3.28774%;
-  width: 56.96344%;
-  margin-left: 8.60731%; }
-  .page-about .area .area-image:last-child {
-    margin-right: 0; }
-  .page-about .area .area-image img {
-    width: 100%;
-    height: 330px; }
-.page-about .area:nth-child(odd) .description {
-  margin-left: 8.60731%; }
-.page-about .area:nth-child(odd) .area-image {
-  margin-left: 0%; }
+@media screen and (min-width: 20em) {
+  .page-about .area .description {
+    float: left;
+    display: block;
+    margin-right: 10.55743%;
+    width: 100%; }
+    .page-about .area .description:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 720px) {
+  .page-about .area .description {
+    float: left;
+    display: block;
+    margin-right: 5.01404%;
+    width: 34.36623%; }
+    .page-about .area .description:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 60em) {
+  .page-about .area .description {
+    float: left;
+    display: block;
+    margin-right: 3.28774%;
+    width: 31.1415%; }
+    .page-about .area .description:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 76.5em) {
+  .page-about .area .description {
+    float: left;
+    display: block;
+    margin-right: 2.44571%;
+    width: 35.97143%; }
+    .page-about .area .description:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 20em) {
+  .page-about .area .area-image {
+    float: left;
+    display: block;
+    margin-right: 10.55743%;
+    width: 100%; }
+    .page-about .area .area-image:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 720px) {
+  .page-about .area .area-image {
+    float: left;
+    display: block;
+    margin-right: 5.01404%;
+    width: 47.49298%;
+    margin-left: 13.12675%; }
+    .page-about .area .area-image:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 60em) {
+  .page-about .area .area-image {
+    float: left;
+    display: block;
+    margin-right: 3.28774%;
+    width: 56.96344%;
+    margin-left: 8.60731%; }
+    .page-about .area .area-image:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 76.5em) {
+  .page-about .area .area-image {
+    float: left;
+    display: block;
+    margin-right: 2.44571%;
+    width: 55.18%;
+    margin-left: 6.40286%; }
+    .page-about .area .area-image:last-child {
+      margin-right: 0; } }
+.page-about .area .area-image img {
+  width: 100%; }
+@media screen and (min-width: 720px) {
+  .page-about .area:nth-child(odd) .description {
+    margin-left: 6.40286%; }
+  .page-about .area:nth-child(odd) .area-image {
+    margin-left: 0%; } }
 
 .page-events .event {
   float: left;

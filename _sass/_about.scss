@@ -9,23 +9,50 @@
 	}
 	.area {
 		.description {
-			@include span-columns(4);
+			@include media($mobile) {
+				@include span-columns(4);
+			}
+			@include media($tablet) {
+				@include span-columns(3);
+			}
+			@include media($desktop) {
+				@include span-columns(4);
+			}
+			@include media($large) {
+				@include span-columns(6);
+			}
 		}
 		.area-image {
-			@include span-columns(7);
-			@include shift(1);
+			@include media($mobile) {
+				@include span-columns(4);
+			}
+			@include media($tablet) {
+				@include span-columns(4);
+				@include shift(1);
+			}
+			@include media($desktop) {
+				@include span-columns(7);
+				@include shift(1);
+			}
+			@include media($large) {
+				@include span-columns(9);
+				@include shift(1);
+			}
 			img {
 				width: 100%;
-				height: 330px; // this needs to be dynamic in the future
+				// height: 330px; // this needs to be dynamic in the future
 			}
 		}
 		&:nth-child(odd) {
-			.description {
-				@include shift(1);
+			@include media($tablet) {
+				.description {
+					@include shift(1);
+				}
+				.area-image {
+					@include shift(0);
+				}
 			}
-			.area-image {
-				@include shift(0);
-			}
+
 		}
 	}
 }
