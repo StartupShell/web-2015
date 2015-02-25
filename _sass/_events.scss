@@ -13,6 +13,9 @@
 			.title {
 				font-weight: 600;
 				margin: 0 0 $space/6 0;
+				a {
+					color: inherit;
+				}
 			}
 			.date {
 				color: $medium-gray;

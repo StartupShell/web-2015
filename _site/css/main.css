@@ -476,6 +476,8 @@ footer {
   .page-events .event .meta .title {
     font-weight: 600;
     margin: 0 0 6.66667px 0; }
+    .page-events .event .meta .title a {
+      color: inherit; }
   .page-events .event .meta .date {
     color: #999; }
   .page-events .event.featured {

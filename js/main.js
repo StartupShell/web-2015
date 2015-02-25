@@ -1,4 +1,57 @@
-// calendar stuff -- multiline
+// FACEBOOK
+
+window.fbAsyncInit = function() {
+    FB.init({
+        appId: '803530653059405',
+        xfbml: true,
+        version: 'v2.2'
+    });
+};
+
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+        return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+// Get facebook cover from google events description
+function getCover(gDesc) {
+    if (gDesc) {
+
+        // Get facebook event ID
+        var matches = [];
+        gDesc.replace(/\[(.*?)\]/g, function(g0, g1) {
+            matches.push(g1);
+        })
+
+        // Get the first tag
+        if (matches[0]) {
+            // Try to get facebook event ID
+            var eventID = '/' + matches[0].split('/')[4];
+
+            // FB.api(
+            //     'StartupShell/events',
+            //     function(response) {
+            //         console.log('res');
+            //         console.log(response);
+            //         if (response && !response.error) {
+            //             console.log('back');
+            //             console.log(response);
+            //         }
+            //     }
+            // );
+
+        }
+
+    }
+}
+
+// EVENTS
 
 // format time
 function timeFormat(dateInput) {
@@ -24,8 +77,11 @@ function assembleStructure(data) {
     var d = new Date(data.start);
     var startString = timeFormat(d);
     return ['<div class="event">',
+        '<div class="image">',
+        '<img src="http://placehold.it/900x500">',
+        '</div>',
         '<div class="meta">',
-        '<a href=', data.link, '><div class="title">', data.title, '</div></a>',
+        '<div class="title"><a href=', data.link, '>', data.title, '</a></div>',
         '<div class="date">',
         startString,
         '</span>',
@@ -46,10 +102,7 @@ request.open('GET', url, true);
 
 request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
-
-        console.log(request);
-
-        var data = JSON.parse(request.responseText); 
+        var data = JSON.parse(request.responseText);
 
         // begin parsing
         data.items
@@ -61,28 +114,26 @@ request.onload = function() {
             }
         })
 
+        // get the ones that havent happend yet
+        .filter(function(i) {
+            return new Date(i.end.dateTime) >= new Date().getTime();
+        })
+
         //reformat
         .map(function(i) {
             return {
                 start: new Date(i.start.dateTime),
                 end: new Date(i.end.dateTime),
                 title: i.summary,
-                desc: i.description || i.summary,
+                cover: getCover(i.description),
                 link: i.htmlLink
             }
-        })
-
-        // get the ones that havent happend yet
-        .filter(function(i) {
-            return i.end.getTime() >= new Date().getTime();
         })
 
         // Sort by date
         .sort(function(a, b) {
             return new Date(a.start) - new Date(b.start);
         })
-
-
 
         // append to DOM
         .forEach(function(i) {
@@ -103,8 +154,3 @@ request.onerror = function() {
 };
 
 request.send();
-
-
-
-
-    
