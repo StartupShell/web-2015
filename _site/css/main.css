@@ -495,6 +495,40 @@ footer {
 .page-about .area:nth-child(odd) .area-image {
   margin-left: 0%; }
 
+.page-events .event {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-bottom: 40px; }
+  .page-events .event:last-child {
+    margin-right: 0; }
+  .page-events .event:nth-child(3n) {
+    margin-right: 0; }
+  .page-events .event:nth-child(3n+1) {
+    clear: left; }
+  .page-events .event .image {
+    margin: 0 0 10px 0; }
+    .page-events .event .image img {
+      max-width: 100%; }
+  .page-events .event .meta .title {
+    font-weight: 600;
+    margin: 0 0 6.66667px 0; }
+  .page-events .event .meta .date {
+    color: #999; }
+  .page-events .event.featured {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-bottom: 80px; }
+    .page-events .event.featured:last-child {
+      margin-right: 0; }
+    .page-events .event.featured .meta {
+      text-align: center; }
+      .page-events .event.featured .meta .title {
+        font-size: 125%; }
+
 .venture-item {
   display: block;
   float: left;

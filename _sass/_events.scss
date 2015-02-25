@@ -1,0 +1,32 @@
+.page-events {
+	.event {
+		@include span-columns(6);
+		@include omega(2n+1);
+		margin-bottom: $space;
+		.image {
+			margin: 0 0 $space/4 0;
+			img {
+				max-width: 100%;
+			}
+		}
+		.meta {
+			.title {
+				font-weight: 600;
+				margin: 0 0 $space/6 0;
+			}
+			.date {
+				color: $medium-gray;
+			}
+		}
+		&.featured {
+			@include span-columns(12);
+			margin-bottom: $space*2;
+			.meta {
+				text-align: center;
+				.title {
+					font-size:125%;
+				}
+			}
+		}
+	}
+}
