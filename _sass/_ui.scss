@@ -26,9 +26,22 @@ section, .section {
   text-align: center;
   .info-text {
     font-size: $h2-size;
-    @include span-columns(8);
-    @include shift(2);
-    @include omega;
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+    @include media($tablet) {
+      @include span-columns(6);
+      @include shift(1);
+    }
+    @include media($desktop) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+    @include media($large) {
+      @include span-columns(12);
+      @include shift(2);
+    }
+
     margin-bottom: $space;
   }
 }

@@ -8,19 +8,19 @@ $sans: $titillium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 // BODY
 
 body {
-  font-family: $sans;
-  font-weight: 400;
-  color: $gray;
-  line-height: 1.25;
-  @include media($mobile) {
-    font-size: 16px;
-  }
-  @include media($tablet) {
-    font-size: 18px;
-  }
-  @include media($large) {
-    font-size: 24px;
-  }
+	font-family: $sans;
+	font-weight: 400;
+	color: $gray;
+	line-height: 1.25;
+	@include media($mobile) {
+		font-size: 16px;
+	}
+	@include media($tablet) {
+		font-size: 18px;
+	}
+	@include media($large) {
+		font-size: 24px;
+	}
 
 }
 

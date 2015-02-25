@@ -1,9 +1,9 @@
 .home {
 
 	.hero {
-	  background: $light-gray;
-	  padding: 2*$space 0 6*$space;
-	  margin-bottom: -3.5*$space;
+		background: $light-gray;
+		padding: 2*$space 0 6*$space;
+		margin-bottom: -3.5*$space;
 	}
 
 	.hero-content {
@@ -73,17 +73,30 @@
 		display: block;
 	}
 }
-	@include media($mobile) {
-		#video-2, #video-3 { display: none; }
-	}
-	@include media($desktop) {
-		#video-2, #video-3 { display: block; }
-	}
+@include media($mobile) {
+	#video-2, #video-3 { display: none; }
+}
+@include media($desktop) {
+	#video-2, #video-3 { display: block; }
+}
 
 
 .contact {
 	.contact-box {
-		@include span-columns(6);
+		@include media($mobile) {
+			@include span-columns(4);
+			margin-bottom: $space;
+		}
+		@include media($tablet) {
+			@include span-columns(4);
+			margin-bottom: 0;
+		}
+		@include media($desktop) {
+			@include span-columns(6);
+		}
+		@include media($large) {
+			@include span-columns(8);
+		}
 		background: $light-gray;
 		@extend .rounded;
 		padding: $space;

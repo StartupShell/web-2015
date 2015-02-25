@@ -1,14 +1,54 @@
 .venture-item {
 	display: block;
-	@include span-columns(1);
 	margin-bottom: $space/2;
-	@include omega(12n);
+	opacity: .8;
+	&:hover {
+		opacity: 1;
+	}
+	@include media($mobile) {
+		@include span-columns(1);
+		@include omega(4n);
+	}
+	@include media($tablet) {
+		@include omega-reset(4n); // figure out this omega-reset situation
+		@include span-columns(1);
+		@include omega(8n);
+	}
+	@include media($desktop) {
+		@include omega-reset(8n);
+		@include span-columns(1);
+		@include omega(12n);
+	}
+	@include media($large) {
+		@include omega-reset(12n);
+		@include span-columns(1);
+		@include omega(16n);
+	}
+
+
 }
 
 .page-ventures {
 	.venture-item {
-		@include span-columns(3);
-		@include omega(4n);
+		@include media($mobile) {
+			@include span-columns(1);
+			@include omega(4n);
+		}
+		@include media($tablet) {
+			@include omega-reset(4n); // figure out this omega-reset situation
+			@include span-columns(1);
+			@include omega(8n);
+		}
+		@include media($desktop) {
+			@include omega-reset(8n);
+			@include span-columns(1);
+			@include omega(12n);
+		}
+		@include media($large) {
+			@include omega-reset(12n);
+			@include span-columns(1);
+			@include omega(16n);
+		}
 	}
 	.hero {
 		// background: url(/assets/ventures-hero.jpg) center no-repeat;
