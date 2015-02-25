@@ -3,7 +3,11 @@
 
 .content, .container, section, .section {
   @include outer-container;
+  @include media($large) {
+    @include outer-container(1280px);
+  }
   @include clearfix;
+  padding: 0 $space;
 }
 
 section, .section {
@@ -21,7 +25,7 @@ section, .section {
 .info {
   text-align: center;
   .info-text {
-    font-size: 24px;
+    font-size: $h2-size;
     @include span-columns(8);
     @include shift(2);
     @include omega;
