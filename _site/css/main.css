@@ -187,6 +187,7 @@ p a {
     display: table; }
 
 .hero-content h1 {
+  color: #FFF;
   margin-bottom: 0; }
   @media screen and (min-width: 20em) {
     .hero-content h1 {
@@ -664,8 +665,6 @@ footer {
   background-image: url(/assets/about-hero.jpg);
   background-position: center center;
   background-repeat: no-repeat; }
-  .page-about .hero h1 {
-    color: #FFF; }
 @media screen and (min-width: 20em) {
   .page-about .area .description {
     float: left;
@@ -752,6 +751,11 @@ footer {
 .about-history img {
   top: -11%; }
 
+.page-apply .hero-content h1 {
+  color: #222; }
+
+.page-events .hero h1 {
+  color: #222; }
 .page-events .event {
   float: left;
   display: block;

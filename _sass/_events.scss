@@ -1,4 +1,11 @@
 .page-events {
+
+	.hero {
+		h1 {
+			color: $gray;
+		}
+	}
+
 	.event {
 		@include span-columns(6);
 		@include omega('2n+1');
@@ -32,4 +39,5 @@
 			}
 		}
 	}
+	
 }
