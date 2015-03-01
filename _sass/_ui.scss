@@ -46,6 +46,24 @@ section, .section {
   }
 }
 
+.zigzag {
+  @include media($tablet) {
+    section:nth-child(2n) {
+      div:nth-child(1) {
+        float: right;
+      }
+      div:nth-child(2) {
+        float: left;
+      }
+    }
+    section:nth-child(2n-1) {
+      div:nth-child(2) {
+        @include shift(1);
+      }
+    }
+  }
+}
+
 
 // RATIO SIZE HACK
 

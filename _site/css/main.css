@@ -360,6 +360,14 @@ section, .section {
         .info .info-text:last-child {
           margin-right: 0; } }
 
+@media screen and (min-width: 720px) {
+  .zigzag section:nth-child(2n) div:nth-child(1) {
+    float: right; }
+  .zigzag section:nth-child(2n) div:nth-child(2) {
+    float: left; }
+  .zigzag section:nth-child(2n-1) div:nth-child(2) {
+    margin-left: 6.40286%; } }
+
 .ratio {
   display: inline-block;
   position: relative;
@@ -666,11 +674,18 @@ footer {
   background-position: center center;
   background-repeat: no-repeat; }
 @media screen and (min-width: 20em) {
+  .page-about .area {
+    margin-bottom: 4em; } }
+@media screen and (min-width: 720px) {
+  .page-about .area {
+    margin-bottom: 6em; } }
+@media screen and (min-width: 20em) {
   .page-about .area .description {
     float: left;
     display: block;
     margin-right: 10.55743%;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 2em; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 720px) {
@@ -678,7 +693,8 @@ footer {
     float: left;
     display: block;
     margin-right: 5.01404%;
-    width: 34.36623%; }
+    width: 34.36623%;
+    margin-bottom: 0; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
@@ -710,8 +726,7 @@ footer {
     float: left;
     display: block;
     margin-right: 5.01404%;
-    width: 47.49298%;
-    margin-left: 13.12675%; }
+    width: 47.49298%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
@@ -719,8 +734,7 @@ footer {
     float: left;
     display: block;
     margin-right: 3.28774%;
-    width: 56.96344%;
-    margin-left: 8.60731%; }
+    width: 56.96344%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 76.5em) {
@@ -728,19 +742,12 @@ footer {
     float: left;
     display: block;
     margin-right: 2.44571%;
-    width: 55.18%;
-    margin-left: 6.40286%; }
+    width: 55.18%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 .page-about .area .area-image img {
-  vertical-align: middle;
   width: 100%;
   height: auto; }
-@media screen and (min-width: 720px) {
-  .page-about .area:nth-child(odd) .description {
-    margin-left: 6.40286%; }
-  .page-about .area:nth-child(odd) .area-image {
-    margin-left: 0%; } }
 
 .about-resources img {
   top: -11%; }
