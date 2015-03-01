@@ -193,7 +193,7 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 14.28571%;
+      margin-right: 10.55743%;
       width: 100%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
@@ -201,7 +201,7 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 6.66667%;
+      margin-right: 5.01404%;
       width: 100%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
@@ -209,18 +209,18 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 82.6087%;
-      margin-left: 8.69565%; }
+      margin-right: 3.28774%;
+      width: 82.78538%;
+      margin-left: 8.60731%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 76.5em) {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 3.22581%;
-      width: 74.19355%;
-      margin-left: 12.90323%; }
+      margin-right: 2.44571%;
+      width: 74.38857%;
+      margin-left: 12.80571%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
 
@@ -240,8 +240,8 @@ p a {
   .menu .menu-logo {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 21.73913%;
+    margin-right: 3.28774%;
+    width: 22.53419%;
     font-weight: 600;
     text-transform: lowercase; }
     .menu .menu-logo:last-child {
@@ -250,8 +250,8 @@ p a {
     list-style: none outside none;
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 47.82609%;
+    margin-right: 3.28774%;
+    width: 48.35613%;
     text-align: center; }
     .menu .menu-list:last-child {
       margin-right: 0; }
@@ -263,8 +263,8 @@ p a {
   .menu .social-list {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 21.73913%;
+    margin-right: 3.28774%;
+    width: 22.53419%;
     text-align: right; }
     .menu .social-list:last-child {
       margin-right: 0; }
@@ -328,7 +328,7 @@ section, .section {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 14.28571%;
+        margin-right: 10.55743%;
         width: 100%; }
         .info .info-text:last-child {
           margin-right: 0; } }
@@ -336,27 +336,27 @@ section, .section {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 6.66667%;
-        width: 73.33333%;
-        margin-left: 13.33333%; }
+        margin-right: 5.01404%;
+        width: 73.74649%;
+        margin-left: 13.12675%; }
         .info .info-text:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 4.34783%;
-        width: 65.21739%;
-        margin-left: 17.3913%; }
+        margin-right: 3.28774%;
+        width: 65.57075%;
+        margin-left: 17.21462%; }
         .info .info-text:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 76.5em) {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 3.22581%;
-        width: 74.19355%;
-        margin-left: 12.90323%; }
+        margin-right: 2.44571%;
+        width: 74.38857%;
+        margin-left: 12.80571%; }
         .info .info-text:last-child {
           margin-right: 0; } }
 
@@ -425,7 +425,7 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 14.28571%;
+        margin-right: 10.55743%;
         width: 100%;
         text-align: center; }
         footer .copy:last-child {
@@ -434,17 +434,17 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 6.66667%;
-        width: 73.33333%;
-        margin-left: 13.33333%; }
+        margin-right: 5.01404%;
+        width: 73.74649%;
+        margin-left: 13.12675%; }
         footer .copy:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 4.34783%;
-        width: 21.73913%;
+        margin-right: 3.28774%;
+        width: 22.53419%;
         margin-left: 0%;
         text-align: left; }
         footer .copy:last-child {
@@ -453,8 +453,8 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 3.22581%;
-        width: 22.58065%; }
+        margin-right: 2.44571%;
+        width: 23.16572%; }
         footer .copy:last-child {
           margin-right: 0; } }
   footer .subscribe {
@@ -463,7 +463,7 @@ footer {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 14.28571%;
+        margin-right: 10.55743%;
         width: 100%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
@@ -471,27 +471,27 @@ footer {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 6.66667%;
-        width: 73.33333%;
-        margin-left: 13.33333%; }
+        margin-right: 5.01404%;
+        width: 73.74649%;
+        margin-left: 13.12675%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 4.34783%;
-        width: 47.82609%;
-        margin-left: 26.08696%; }
+        margin-right: 3.28774%;
+        width: 48.35613%;
+        margin-left: 25.82194%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 76.5em) {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 3.22581%;
-        width: 48.3871%;
-        margin-left: 25.80645%; }
+        margin-right: 2.44571%;
+        width: 48.77715%;
+        margin-left: 25.61143%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     footer .subscribe input[type="email"] {
@@ -515,7 +515,7 @@ footer {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 14.28571%;
+      margin-right: 10.55743%;
       width: 100%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
@@ -523,27 +523,27 @@ footer {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 6.66667%;
-      width: 46.66667%;
-      margin-left: 26.66667%; }
+      margin-right: 5.01404%;
+      width: 47.49298%;
+      margin-left: 26.25351%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 60em) {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 47.82609%;
-      margin-left: 26.08696%; }
+      margin-right: 3.28774%;
+      width: 48.35613%;
+      margin-left: 25.82194%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 76.5em) {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 3.22581%;
-      width: 48.3871%;
-      margin-left: 25.80645%; }
+      margin-right: 2.44571%;
+      width: 48.77715%;
+      margin-left: 25.61143%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
 .home .hero-logo {
@@ -555,9 +555,9 @@ footer {
   .video .video-row {
     float: left;
     display: block;
-    margin-right: 3.22581%;
-    width: 74.19355%;
-    margin-left: 12.90323%; }
+    margin-right: 2.44571%;
+    width: 74.38857%;
+    margin-left: 12.80571%; }
     .video .video-row:last-child {
       margin-right: 0; } }
 .video::after {
@@ -568,7 +568,7 @@ footer {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 14.28571%;
+    margin-right: 10.55743%;
     width: 100%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -576,17 +576,17 @@ footer {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 73.33333%;
-    margin-left: 13.33333%; }
+    margin-right: 5.01404%;
+    width: 73.74649%;
+    margin-left: 13.12675%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 30.43478%;
+    margin-right: 3.28774%;
+    width: 31.1415%;
     margin-left: 0%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -594,8 +594,8 @@ footer {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 30.43478%;
+    margin-right: 3.28774%;
+    width: 31.1415%;
     margin-left: 0%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -615,7 +615,7 @@ footer {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 14.28571%;
+      margin-right: 10.55743%;
       width: 100%;
       margin-bottom: 2em; }
       .contact .contact-box:last-child {
@@ -624,8 +624,8 @@ footer {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 6.66667%;
-      width: 46.66667%;
+      margin-right: 5.01404%;
+      width: 47.49298%;
       margin-bottom: 0; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
@@ -633,16 +633,16 @@ footer {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 47.82609%; }
+      margin-right: 3.28774%;
+      width: 48.35613%; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 76.5em) {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 3.22581%;
-      width: 48.3871%; }
+      margin-right: 2.44571%;
+      width: 48.77715%; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
   .contact .contact-box:before {
@@ -669,7 +669,7 @@ footer {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 14.28571%;
+    margin-right: 10.55743%;
     width: 100%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
@@ -677,31 +677,31 @@ footer {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 33.33333%; }
+    margin-right: 5.01404%;
+    width: 34.36623%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 30.43478%; }
+    margin-right: 3.28774%;
+    width: 31.1415%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 76.5em) {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 3.22581%;
-    width: 35.48387%; }
+    margin-right: 2.44571%;
+    width: 35.97143%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 20em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 14.28571%;
+    margin-right: 10.55743%;
     width: 100%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
@@ -709,27 +709,27 @@ footer {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 46.66667%;
-    margin-left: 13.33333%; }
+    margin-right: 5.01404%;
+    width: 47.49298%;
+    margin-left: 13.12675%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 56.52174%;
-    margin-left: 8.69565%; }
+    margin-right: 3.28774%;
+    width: 56.96344%;
+    margin-left: 8.60731%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 76.5em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 3.22581%;
-    width: 54.83871%;
-    margin-left: 6.45161%; }
+    margin-right: 2.44571%;
+    width: 55.18%;
+    margin-left: 6.40286%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 .page-about .area .area-image img {
@@ -738,7 +738,7 @@ footer {
   height: auto; }
 @media screen and (min-width: 720px) {
   .page-about .area:nth-child(odd) .description {
-    margin-left: 6.45161%; }
+    margin-left: 6.40286%; }
   .page-about .area:nth-child(odd) .area-image {
     margin-left: 0%; } }
 
@@ -759,8 +759,8 @@ footer {
 .page-events .event {
   float: left;
   display: block;
-  margin-right: 4.34783%;
-  width: 47.82609%;
+  margin-right: 3.28774%;
+  width: 48.35613%;
   margin-bottom: 2em; }
   .page-events .event:last-child {
     margin-right: 0; }
@@ -780,7 +780,7 @@ footer {
   .page-events .event.featured {
     float: left;
     display: block;
-    margin-right: 4.34783%;
+    margin-right: 3.28774%;
     width: 100%;
     margin-bottom: 4em; }
     .page-events .event.featured:last-child {
