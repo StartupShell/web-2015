@@ -32,7 +32,6 @@ window.fbAsyncInit = function() {
 
 // Get facebook cover from google events description
 function getCover(gDesc) {
-    gDesc = '[https://www.facebook.com/events/432650743556252]This is a test description!';
     if (gDesc) {
 
         // Get facebook event ID
@@ -53,6 +52,7 @@ function getCover(gDesc) {
                     if (response && !response.error) {
                         var cover = new Image();
                         cover.src = response.data.url;
+                        console.log(cover);
                         return cover;
                     } else {
                         return '';
@@ -100,9 +100,7 @@ function assembleStructure(data, index) {
         featured || '',
         '">',
         '<div class="image">',
-
         data.cover,
-
         '</div>',
         '<div class="meta">',
         '<div class="title"><a href=', data.link, '>', data.title, '</a></div>',
