@@ -760,14 +760,12 @@ footer {
   margin-bottom: 2em; }
   .page-events .event:last-child {
     margin-right: 0; }
-  .page-events .event:nth-child(3n) {
+  .page-events .event:nth-child(2n+1) {
     margin-right: 0; }
-  .page-events .event:nth-child(3n+1) {
-    clear: left; }
   .page-events .event .image {
     margin: 0 0 0.5em 0; }
     .page-events .event .image img {
-      max-width: 100%; }
+      width: 100%; }
   .page-events .event .meta .title {
     font-weight: 600;
     margin: 0 0 0.33333em 0; }
