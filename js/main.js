@@ -1,8 +1,19 @@
-// FACEBOOK
+// HERO PARALLAX
 
+var hero = document.getElementsByClassName("hero")[0];
+
+window.onscroll = function() {
+    var scrolled = window.pageYOffset;
+    hero.style["background-position"] = "50% " + (scrolled / 4) + "px";
+}
+
+// FACEBOOK
+var loaded = false;
 window.fbAsyncInit = function() {
     FB.init({
         appId: '803530653059405',
+        status: true,
+        cookie: true,
         xfbml: true,
         version: 'v2.2'
     });
@@ -34,23 +45,29 @@ function getCover(gDesc) {
             // Try to get facebook event ID
             var eventID = '/' + matches[0].split('/')[4];
 
-            // FB.api(
-            //     'StartupShell/events',
-            //     function(response) {
-            //         console.log('res');
-            //         console.log(response);
-            //         if (response && !response.error) {
-            //             console.log('back');
-            //             console.log(response);
-            //         }
-            //     }
-            // );
+            FB.api(
+                eventID + '/picture',
+                function(response) {
+
+                    if (response && !response.error) {
+                        var cover = new Image();
+                        cover.src = response.data.url;
+                        console.log(cover);
+                        return cover;
+                    } else {
+                        return '';
+                    }
+                }, {
+                    access_token: '803530653059405|GkX1fG84RU3rCKQL_epc_AT7ZaA',
+                    redirect: false,
+                    type: 'large'
+                }
+            );
 
         }
 
     }
 }
-
 // EVENTS
 
 // format time
@@ -73,12 +90,17 @@ function timeFormat(dateInput) {
 }
 
 // this is to template the data for the dom
-function assembleStructure(data) {
+function assembleStructure(data, index) {
     var d = new Date(data.start);
     var startString = timeFormat(d);
-    return ['<div class="event">',
+    if (index == 0) {
+        var featured = ' featured';
+    }
+    return ['<div class="event',
+        featured || '',
+        '">',
         '<div class="image">',
-        '<img src="http://placehold.it/900x500">',
+        data.cover,
         '</div>',
         '<div class="meta">',
         '<div class="title"><a href=', data.link, '>', data.title, '</a></div>',
@@ -136,12 +158,10 @@ request.onload = function() {
         })
 
         // append to DOM
-        .forEach(function(i) {
-            var eventStream = document.getElementById("google-events");
-            eventStream.innerHTML = eventStream.innerHTML + assembleStructure(i);
+        .forEach(function(i, index) {
+            var eventStream = document.getElementById("eventStream");
+            eventStream.innerHTML = eventStream.innerHTML + assembleStructure(i, index);
         });
-
-
 
     } else {
         // We reached our target server, but it returned an error
