@@ -81,6 +81,9 @@
 		// }
 	}
 	.hero {
-		background: url(/assets/ventures-hero.jpg) center no-repeat;
+		h1 {
+			color: $gray;
+		}
+		// background: url(/assets/ventures-hero.jpg) center no-repeat;
 	}
 }

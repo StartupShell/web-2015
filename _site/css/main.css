@@ -822,5 +822,11 @@ footer {
 @media screen and (min-width: 76.5em) {
   .page-ventures .venture-item {
     width: 21%; } }
-.page-ventures .hero {
-  background: url(/assets/ventures-hero.jpg) center no-repeat; }
+.page-ventures .hero h1 {
+  color: #222; }
+
+.home .hero {
+  padding-bottom: 4em;
+  margin-bottom: 4em; }
+.home .video {
+  display: none; }
