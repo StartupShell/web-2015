@@ -1,56 +1,86 @@
 .venture-item {
 	display: block;
-	margin-bottom: $space/2;
-	opacity: .8;
+	// margin-bottom: $space/2;
+	opacity: .9;
 	&:hover {
 		opacity: 1;
 	}
+	margin: 0 2% $space/2;
+	float: left;
+
 	@include media($mobile) {
-		@include span-columns(1);
-		@include omega(4n);
+		width: 21%;
 	}
 	@include media($tablet) {
-		@include omega-reset(4n); // figure out this omega-reset situation
-		@include span-columns(1);
-		@include omega(8n);
+		width: 8.5%;
 	}
 	@include media($desktop) {
-		@include omega-reset(8n);
-		@include span-columns(1);
-		@include omega(12n);
+		width: 8.5%;
 	}
 	@include media($large) {
-		@include omega-reset(12n);
-		@include span-columns(1);
-		@include omega(16n);
+		width: 8.5%;
 	}
+
+	// @include media($mobile) {
+	// 	@include span-columns(1);
+	// 	@include omega(4n);
+	// }
+	// @include media($tablet) {
+	// 	@include omega-reset(4n);
+	// 	@include span-columns(1);
+	// 	@include omega(8n);
+	// }
+	// @include media($desktop) {
+	// 	@include omega-reset(8n);
+	// 	@include span-columns(1);
+	// 	@include omega(12n);
+	// }
+	// @include media($large) {
+	// 	@include omega-reset(12n);
+	// 	@include span-columns(2);
+	// 	@include omega(8n);
+	// }
 
 
 }
 
 .page-ventures {
 	.venture-item {
+
 		@include media($mobile) {
-			@include span-columns(2);
-			@include omega(2n);
+			width: 46%;
 		}
 		@include media($tablet) {
-			@include omega-reset(2n); // figure out this omega-reset situation
-			@include span-columns(2);
-			@include omega(4n);
+			width: 21%;
 		}
 		@include media($desktop) {
-			@include omega-reset(4n);
-			@include span-columns(3);
-			@include omega(4n);
+			width: 21%;
 		}
 		@include media($large) {
-			@include omega-reset(4n);
-			@include span-columns(4);
-			@include omega(4n);
+			width: 21%;
 		}
+
+		// @include media($mobile) {
+		// 	@include span-columns(2);
+		// 	@include omega(2n);
+		// }
+		// @include media($tablet) {
+		// 	@include omega-reset(2n); // figure out this omega-reset situation
+		// 	@include span-columns(2);
+		// 	@include omega(4n);
+		// }
+		// @include media($desktop) {
+		// 	@include omega-reset(4n);
+		// 	@include span-columns(3);
+		// 	@include omega(4n);
+		// }
+		// @include media($large) {
+		// 	@include omega-reset(4n);
+		// 	@include span-columns(4);
+		// 	@include omega(4n);
+		// }
 	}
 	.hero {
-		// background: url(/assets/ventures-hero.jpg) center no-repeat;
+		background: url(/assets/ventures-hero.jpg) center no-repeat;
 	}
 }

@@ -5,13 +5,13 @@
         background: $light-gray;
     }
     .menu-logo {
-        @include span-columns(2);
+        @include span-columns(3);
         font-weight: 600;
         text-transform: lowercase;
     }
     .menu-list {
         list-style: none outside none;
-        @include span-columns(8);
+        @include span-columns(6);
         text-align: center;
         .menu-item {
             display: inline-block;
@@ -22,7 +22,7 @@
         }
     }
     .social-list {
-        @include span-columns(2);
+        @include span-columns(3);
         text-align: right;
         .social-item {
             display: inline-block;

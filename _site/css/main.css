@@ -192,7 +192,7 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 10.55743%;
+      margin-right: 14.28571%;
       width: 100%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
@@ -200,7 +200,7 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 5.01404%;
+      margin-right: 6.66667%;
       width: 100%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
@@ -208,18 +208,18 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 3.28774%;
-      width: 82.78538%;
-      margin-left: 8.60731%; }
+      margin-right: 4.34783%;
+      width: 82.6087%;
+      margin-left: 8.69565%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 76.5em) {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 2.44571%;
-      width: 74.38857%;
-      margin-left: 12.80571%; }
+      margin-right: 3.22581%;
+      width: 74.19355%;
+      margin-left: 12.90323%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
 
@@ -239,8 +239,8 @@ p a {
   .menu .menu-logo {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 13.92688%;
+    margin-right: 4.34783%;
+    width: 21.73913%;
     font-weight: 600;
     text-transform: lowercase; }
     .menu .menu-logo:last-child {
@@ -249,8 +249,8 @@ p a {
     list-style: none outside none;
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 65.57075%;
+    margin-right: 4.34783%;
+    width: 47.82609%;
     text-align: center; }
     .menu .menu-list:last-child {
       margin-right: 0; }
@@ -262,8 +262,8 @@ p a {
   .menu .social-list {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 13.92688%;
+    margin-right: 4.34783%;
+    width: 21.73913%;
     text-align: right; }
     .menu .social-list:last-child {
       margin-right: 0; }
@@ -327,7 +327,7 @@ section, .section {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 10.55743%;
+        margin-right: 14.28571%;
         width: 100%; }
         .info .info-text:last-child {
           margin-right: 0; } }
@@ -335,27 +335,27 @@ section, .section {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 5.01404%;
-        width: 73.74649%;
-        margin-left: 13.12675%; }
+        margin-right: 6.66667%;
+        width: 73.33333%;
+        margin-left: 13.33333%; }
         .info .info-text:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 3.28774%;
-        width: 65.57075%;
-        margin-left: 17.21462%; }
+        margin-right: 4.34783%;
+        width: 65.21739%;
+        margin-left: 17.3913%; }
         .info .info-text:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 76.5em) {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 2.44571%;
-        width: 74.38857%;
-        margin-left: 12.80571%; }
+        margin-right: 3.22581%;
+        width: 74.19355%;
+        margin-left: 12.90323%; }
         .info .info-text:last-child {
           margin-right: 0; } }
 
@@ -424,7 +424,7 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 10.55743%;
+        margin-right: 14.28571%;
         width: 100%;
         text-align: center; }
         footer .copy:last-child {
@@ -433,17 +433,17 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 5.01404%;
-        width: 73.74649%;
-        margin-left: 13.12675%; }
+        margin-right: 6.66667%;
+        width: 73.33333%;
+        margin-left: 13.33333%; }
         footer .copy:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 3.28774%;
-        width: 22.53419%;
+        margin-right: 4.34783%;
+        width: 21.73913%;
         margin-left: 0%;
         text-align: left; }
         footer .copy:last-child {
@@ -452,8 +452,8 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 2.44571%;
-        width: 23.16572%; }
+        margin-right: 3.22581%;
+        width: 22.58065%; }
         footer .copy:last-child {
           margin-right: 0; } }
   footer .subscribe {
@@ -462,7 +462,7 @@ footer {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 10.55743%;
+        margin-right: 14.28571%;
         width: 100%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
@@ -470,27 +470,27 @@ footer {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 5.01404%;
-        width: 73.74649%;
-        margin-left: 13.12675%; }
+        margin-right: 6.66667%;
+        width: 73.33333%;
+        margin-left: 13.33333%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 3.28774%;
-        width: 48.35613%;
-        margin-left: 25.82194%; }
+        margin-right: 4.34783%;
+        width: 47.82609%;
+        margin-left: 26.08696%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 76.5em) {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 2.44571%;
-        width: 48.77715%;
-        margin-left: 25.61143%; }
+        margin-right: 3.22581%;
+        width: 48.3871%;
+        margin-left: 25.80645%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     footer .subscribe input[type="email"] {
@@ -514,7 +514,7 @@ footer {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 10.55743%;
+      margin-right: 14.28571%;
       width: 100%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
@@ -522,27 +522,27 @@ footer {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 5.01404%;
-      width: 47.49298%;
-      margin-left: 26.25351%; }
+      margin-right: 6.66667%;
+      width: 46.66667%;
+      margin-left: 26.66667%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 60em) {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 3.28774%;
-      width: 48.35613%;
-      margin-left: 25.82194%; }
+      margin-right: 4.34783%;
+      width: 47.82609%;
+      margin-left: 26.08696%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 76.5em) {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 2.44571%;
-      width: 48.77715%;
-      margin-left: 25.61143%; }
+      margin-right: 3.22581%;
+      width: 48.3871%;
+      margin-left: 25.80645%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
 .home .hero-logo {
@@ -554,9 +554,9 @@ footer {
   .video .video-row {
     float: left;
     display: block;
-    margin-right: 2.44571%;
-    width: 74.38857%;
-    margin-left: 12.80571%; }
+    margin-right: 3.22581%;
+    width: 74.19355%;
+    margin-left: 12.90323%; }
     .video .video-row:last-child {
       margin-right: 0; } }
 .video::after {
@@ -567,7 +567,7 @@ footer {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 10.55743%;
+    margin-right: 14.28571%;
     width: 100%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -575,17 +575,17 @@ footer {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 5.01404%;
-    width: 73.74649%;
-    margin-left: 13.12675%; }
+    margin-right: 6.66667%;
+    width: 73.33333%;
+    margin-left: 13.33333%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 31.1415%;
+    margin-right: 4.34783%;
+    width: 30.43478%;
     margin-left: 0%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -593,8 +593,8 @@ footer {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 31.1415%;
+    margin-right: 4.34783%;
+    width: 30.43478%;
     margin-left: 0%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -614,7 +614,7 @@ footer {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 10.55743%;
+      margin-right: 14.28571%;
       width: 100%;
       margin-bottom: 2em; }
       .contact .contact-box:last-child {
@@ -623,8 +623,8 @@ footer {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 5.01404%;
-      width: 47.49298%;
+      margin-right: 6.66667%;
+      width: 46.66667%;
       margin-bottom: 0; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
@@ -632,16 +632,16 @@ footer {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 3.28774%;
-      width: 48.35613%; }
+      margin-right: 4.34783%;
+      width: 47.82609%; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 76.5em) {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 2.44571%;
-      width: 48.77715%; }
+      margin-right: 3.22581%;
+      width: 48.3871%; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
   .contact .contact-box:before {
@@ -670,7 +670,7 @@ footer {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 10.55743%;
+    margin-right: 14.28571%;
     width: 100%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
@@ -678,31 +678,31 @@ footer {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 5.01404%;
-    width: 34.36623%; }
+    margin-right: 6.66667%;
+    width: 33.33333%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 31.1415%; }
+    margin-right: 4.34783%;
+    width: 30.43478%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 76.5em) {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 2.44571%;
-    width: 35.97143%; }
+    margin-right: 3.22581%;
+    width: 35.48387%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 20em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 10.55743%;
+    margin-right: 14.28571%;
     width: 100%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
@@ -710,27 +710,27 @@ footer {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 5.01404%;
-    width: 47.49298%;
-    margin-left: 13.12675%; }
+    margin-right: 6.66667%;
+    width: 46.66667%;
+    margin-left: 13.33333%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 56.96344%;
-    margin-left: 8.60731%; }
+    margin-right: 4.34783%;
+    width: 56.52174%;
+    margin-left: 8.69565%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 76.5em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 2.44571%;
-    width: 55.18%;
-    margin-left: 6.40286%; }
+    margin-right: 3.22581%;
+    width: 54.83871%;
+    margin-left: 6.45161%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 .page-about .area .area-image img {
@@ -739,7 +739,7 @@ footer {
   height: auto; }
 @media screen and (min-width: 720px) {
   .page-about .area:nth-child(odd) .description {
-    margin-left: 6.40286%; }
+    margin-left: 6.45161%; }
   .page-about .area:nth-child(odd) .area-image {
     margin-left: 0%; } }
 
@@ -755,8 +755,8 @@ footer {
 .page-events .event {
   float: left;
   display: block;
-  margin-right: 3.28774%;
-  width: 48.35613%;
+  margin-right: 4.34783%;
+  width: 47.82609%;
   margin-bottom: 2em; }
   .page-events .event:last-child {
     margin-right: 0; }
@@ -778,7 +778,7 @@ footer {
   .page-events .event.featured {
     float: left;
     display: block;
-    margin-right: 3.28774%;
+    margin-right: 4.34783%;
     width: 100%;
     margin-bottom: 4em; }
     .page-events .event.featured:last-child {
@@ -790,128 +790,35 @@ footer {
 
 .venture-item {
   display: block;
-  margin-bottom: 1em;
-  opacity: .8; }
+  opacity: .9;
+  margin: 0 2% 1em;
+  float: left; }
   .venture-item:hover {
     opacity: 1; }
   @media screen and (min-width: 20em) {
     .venture-item {
-      float: left;
-      display: block;
-      margin-right: 10.55743%;
-      width: 17.08193%; }
-      .venture-item:last-child {
-        margin-right: 0; }
-      .venture-item:nth-child(4n) {
-        margin-right: 0; }
-      .venture-item:nth-child(4n+1) {
-        clear: left; } }
+      width: 21%; } }
   @media screen and (min-width: 720px) {
     .venture-item {
-      float: left;
-      display: block;
-      margin-right: 5.01404%;
-      width: 8.11272%; }
-      .venture-item:nth-child(4n) {
-        margin-right: 3.28774%; }
-      .venture-item:nth-child(4n+1) {
-        clear: none; }
-      .venture-item:last-child {
-        margin-right: 0; }
-      .venture-item:nth-child(8n) {
-        margin-right: 0; }
-      .venture-item:nth-child(8n+1) {
-        clear: left; } }
+      width: 8.5%; } }
   @media screen and (min-width: 60em) {
     .venture-item {
-      float: left;
-      display: block;
-      margin-right: 3.28774%;
-      width: 5.31957%; }
-      .venture-item:nth-child(8n) {
-        margin-right: 3.28774%; }
-      .venture-item:nth-child(8n+1) {
-        clear: none; }
-      .venture-item:last-child {
-        margin-right: 0; }
-      .venture-item:nth-child(12n) {
-        margin-right: 0; }
-      .venture-item:nth-child(12n+1) {
-        clear: left; } }
+      width: 8.5%; } }
   @media screen and (min-width: 76.5em) {
     .venture-item {
-      float: left;
-      display: block;
-      margin-right: 2.44571%;
-      width: 3.95715%; }
-      .venture-item:nth-child(12n) {
-        margin-right: 3.28774%; }
-      .venture-item:nth-child(12n+1) {
-        clear: none; }
-      .venture-item:last-child {
-        margin-right: 0; }
-      .venture-item:nth-child(16n) {
-        margin-right: 0; }
-      .venture-item:nth-child(16n+1) {
-        clear: left; } }
+      width: 8.5%; } }
 
 @media screen and (min-width: 20em) {
   .page-ventures .venture-item {
-    float: left;
-    display: block;
-    margin-right: 10.55743%;
-    width: 44.72128%; }
-    .page-ventures .venture-item:last-child {
-      margin-right: 0; }
-    .page-ventures .venture-item:nth-child(2n) {
-      margin-right: 0; }
-    .page-ventures .venture-item:nth-child(2n+1) {
-      clear: left; } }
+    width: 46%; } }
 @media screen and (min-width: 720px) {
   .page-ventures .venture-item {
-    float: left;
-    display: block;
-    margin-right: 5.01404%;
-    width: 21.23947%; }
-    .page-ventures .venture-item:nth-child(2n) {
-      margin-right: 3.28774%; }
-    .page-ventures .venture-item:nth-child(2n+1) {
-      clear: none; }
-    .page-ventures .venture-item:last-child {
-      margin-right: 0; }
-    .page-ventures .venture-item:nth-child(4n) {
-      margin-right: 0; }
-    .page-ventures .venture-item:nth-child(4n+1) {
-      clear: left; } }
+    width: 21%; } }
 @media screen and (min-width: 60em) {
   .page-ventures .venture-item {
-    float: left;
-    display: block;
-    margin-right: 3.28774%;
-    width: 22.53419%; }
-    .page-ventures .venture-item:nth-child(4n) {
-      margin-right: 3.28774%; }
-    .page-ventures .venture-item:nth-child(4n+1) {
-      clear: none; }
-    .page-ventures .venture-item:last-child {
-      margin-right: 0; }
-    .page-ventures .venture-item:nth-child(4n) {
-      margin-right: 0; }
-    .page-ventures .venture-item:nth-child(4n+1) {
-      clear: left; } }
+    width: 21%; } }
 @media screen and (min-width: 76.5em) {
   .page-ventures .venture-item {
-    float: left;
-    display: block;
-    margin-right: 2.44571%;
-    width: 23.16572%; }
-    .page-ventures .venture-item:nth-child(4n) {
-      margin-right: 3.28774%; }
-    .page-ventures .venture-item:nth-child(4n+1) {
-      clear: none; }
-    .page-ventures .venture-item:last-child {
-      margin-right: 0; }
-    .page-ventures .venture-item:nth-child(4n) {
-      margin-right: 0; }
-    .page-ventures .venture-item:nth-child(4n+1) {
-      clear: left; } }
+    width: 21%; } }
+.page-ventures .hero {
+  background: url(/assets/ventures-hero.jpg) center no-repeat; }
