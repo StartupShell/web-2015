@@ -134,7 +134,7 @@ function assembleStructure(data, index, callback) {
             '</div></a>'
         ].join('');
 
-        callback(ret, position);
+        callback(ret, fbData.position);
     })
 
 }
