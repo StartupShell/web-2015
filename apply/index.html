@@ -4,21 +4,25 @@ layout: default
 
 <div class="page-apply">
 
-    <section class="full hero">
+<!--     <section class="full hero">
         <div class="container">
             <div class="hero-content">
                 <h1>Join the community.</h1>
             </div>
         </div>
     </section>
-    <!-- /.hero -->
+ -->    <!-- /.hero -->
 
     <section class="form">
+
+        <!-- on form submit, redirect to /apply/thanks -->
 
         <script type="text/javascript">var submitted=false;</script>
         <iframe name="hidden_iframe" id="hidden_iframe"
         style="display:none;" onload="if(submitted)
         {window.location='/apply/thanks';}"></iframe>
+
+        <!-- form starts -->
 
         <form action="https://docs.google.com/forms/d/1QCW-PKo3-eAKidLxCPDWpj69dZPsehvqoJTw_7iyEHo/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
             <ol role="list" class="ss-question-list" style="padding-left: 0">

@@ -6,4 +6,16 @@
 		}
 	}
 
+	#ss-form {
+		@include span-columns(12);
+		@include shift(2);
+	}
+
+	// CLEAN
+
+	.ss-required-asterisk, .required-message {
+		display: none;
+	}
+
+
 }
