@@ -124,28 +124,3 @@ section, .section {
     cursor: pointer;
   }
 }
-
-
-// FORM
-
-input {
-  border: 0;
-  outline: 0;
-  &:hover, &:focus {
-    border: 0;
-    outline: 0;
-  }
-}
-
-input[type="email"], input[type="text"] {
-  padding: $space/2 $space;
-  font-family: $sans;
-  color: $gray;
-  background: $white;
-  @extend .rounded;
-  border: 0;
-}
-
-input[type="submit"] {
-
-}
