@@ -513,8 +513,8 @@ input[type="email"], input[type="text"] {
 .home .hero {
   padding: 4em 0 12em;
   margin-bottom: -7em;
-  background-image: -webkit-radial-gradient(50% bottom, #FFF, #EEE, #EEE);
-  background-image: radial-gradient(  at 50% bottom, #FFF, #EEE, #EEE); }
+  background-image: -webkit-radial-gradient(50% bottom, #FFF, #FFF, #EEE, #EEE);
+  background-image: radial-gradient(  at 50% bottom, #FFF, #FFF, #EEE, #EEE); }
 .home .hero-content h1 {
   color: #222;
   margin-bottom: 0.5em; }
