@@ -161,6 +161,7 @@ request.onload = function() {
 
         // The assemble the structure
         .forEach(function(i, index) {
+            // Make a blank element
             var eventStream = document.getElementById("eventStream");
             eventStream.innerHTML = eventStream.innerHTML + '<div class="event"></div>';
 
