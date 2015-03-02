@@ -39,6 +39,18 @@ function getCover(data, callback) {
     gDesc = data.description;
     if (gDesc) {
 
+        // Check for cover override
+        var override = [];
+        gDesc.replace(/\{(.*?)\}/g, function(g0, g1) {
+            override.push(g1);
+        })
+
+        if (override[0]) {
+            console.log('over');
+            data.cover = override[0];
+            console.log(data.cover);
+        }
+
         // Get facebook event ID
         var matches = [];
         gDesc.replace(/\[(.*?)\]/g, function(g0, g1) {
@@ -47,24 +59,35 @@ function getCover(data, callback) {
 
         // Get the first tag
         if (matches[0]) {
-            // Try to get facebook event ID
-            var eventID = '/' + matches[0].split('/')[4];
-            fbEnsureInit(function() {
-                FB.api(
-                    eventID + '?fields=cover',
-                    function(response) {
-                        if (response && !response.error) {
-                            data.cover = response.cover.source;
-                            data.link = 'https://www.facebook.com/events/' + response.id;
-                            callback(data);
+
+            // If link is from facebook
+            if (matches[0].split('/')[2].indexOf('facebook') > -1) {
+
+                // Try to get facebook event ID
+                var eventID = '/' + matches[0].split('/')[4];
+                fbEnsureInit(function() {
+                    FB.api(
+                        eventID + '?fields=cover',
+                        function(response) {
+                            if (response && !response.error) {
+                                if (!data.cover) {
+                                    data.cover = response.cover.source;
+                                }
+                                data.link = 'https://www.facebook.com/events/' + response.id;
+                                callback(data);
+                            }
+                        }, {
+                            access_token: '803530653059405|GkX1fG84RU3rCKQL_epc_AT7ZaA',
+                            redirect: false,
+                            type: 'normal'
                         }
-                    }, {
-                        access_token: '803530653059405|GkX1fG84RU3rCKQL_epc_AT7ZaA',
-                        redirect: false,
-                        type: 'normal'
-                    }
-                );
-            })
+                    );
+                })
+
+            } else {
+                data.link = matches[0];
+                callback(data);
+            }
 
 
         } else {
