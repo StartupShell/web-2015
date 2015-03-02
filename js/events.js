@@ -46,9 +46,7 @@ function getCover(data, callback) {
         })
 
         if (override[0]) {
-            console.log('over');
             data.cover = override[0];
-            console.log(data.cover);
         }
 
         // Get facebook event ID
