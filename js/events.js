@@ -1,5 +1,15 @@
 // FACEBOOK
-var loaded = false;
+function fbEnsureInit(callback) {
+    if (!window.fbApiInit) {
+        setTimeout(function() {
+            fbEnsureInit(callback);
+        }, 50);
+    } else {
+        if (callback) {
+            callback();
+        }
+    }
+}
 window.fbAsyncInit = function() {
     FB.init({
         appId: '803530653059405',
@@ -8,6 +18,8 @@ window.fbAsyncInit = function() {
         xfbml: true,
         version: 'v2.2'
     });
+
+    fbApiInit = true;
 };
 
 (function(d, s, id) {
@@ -37,21 +49,23 @@ function getCover(data, callback) {
         if (matches[0]) {
             // Try to get facebook event ID
             var eventID = '/' + matches[0].split('/')[4];
-
-            FB.api(
-                eventID + '?fields=cover',
-                function(response) {
-                    if (response && !response.error) {
-                        data.cover = response.cover.source;
-                        data.link = 'https://www.facebook.com/events/' + response.id;
-                        callback(data);
+            fbEnsureInit(function() {
+                FB.api(
+                    eventID + '?fields=cover',
+                    function(response) {
+                        if (response && !response.error) {
+                            data.cover = response.cover.source;
+                            data.link = 'https://www.facebook.com/events/' + response.id;
+                            callback(data);
+                        }
+                    }, {
+                        access_token: '803530653059405|GkX1fG84RU3rCKQL_epc_AT7ZaA',
+                        redirect: false,
+                        type: 'normal'
                     }
-                }, {
-                    access_token: '803530653059405|GkX1fG84RU3rCKQL_epc_AT7ZaA',
-                    redirect: false,
-                    type: 'normal'
-                }
-            );
+                );
+            })
+
 
         } else {
             callback(data);
@@ -143,7 +157,7 @@ request.onload = function() {
         data.items
 
         // Get rid of reoccuring
-        .filter(function(i) {
+            .filter(function(i) {
             if (i.hasOwnProperty('start')) {
                 return true;
             }
@@ -172,9 +186,9 @@ request.onload = function() {
                 eventStream.getElementsByClassName('event')[position].innerHTML = assembled;
 
                 // Feature first
-                if(position == 0) {
-                   var first = eventStream.getElementsByClassName('event')[position];
-                   first.className = first.className + ' featured';
+                if (position == 0) {
+                    var first = eventStream.getElementsByClassName('event')[position];
+                    first.className = first.className + ' featured';
                 }
 
             })
