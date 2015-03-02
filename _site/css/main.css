@@ -790,6 +790,8 @@ input[type="email"], input[type="text"] {
     float: left;
     width: 100%;
     height: auto; }
+    .page-events .event .details .image img {
+      margin: auto; }
     .page-events .event .details .image.no-fb {
       background-color: #EEE; }
   .page-events .event .details .meta .title {

@@ -10,6 +10,9 @@
                 float: left;
                 width: 100%;
                 height: auto;
+                img {
+                    margin: auto;
+                }
                 &.no-fb {
                     background-color: $light-gray;
                 }
