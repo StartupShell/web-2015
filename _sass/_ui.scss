@@ -83,6 +83,7 @@ section, .section {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
 }
 
 .square:after {
@@ -91,6 +92,10 @@ section, .section {
 
 .fivebythree:after {
   margin-top: 60%;
+}
+
+.twentyonebynine:after {
+  margin-top: 42.85%;
 }
 
 

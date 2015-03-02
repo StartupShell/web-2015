@@ -29,6 +29,8 @@
 			}
 		}
 		.area-image {
+			@extend .ratio;
+			@extend .fivebythree;
 			@include media($mobile) {
 				@include span-columns(4);
 			}
