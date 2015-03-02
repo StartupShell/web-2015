@@ -763,46 +763,47 @@ footer {
 
 .page-events .hero h1 {
   color: #222; }
-.page-events .event {
+.page-events a {
   float: left;
   display: block;
   margin-right: 3.28774%;
-  width: 48.35613%;
-  margin-bottom: 2em; }
-  .page-events .event:last-child {
+  width: 48.35613%; }
+  .page-events a:last-child {
     margin-right: 0; }
-  .page-events .event:nth-child(2n+1) {
+  .page-events a:nth-child(2n+1) {
     margin-right: 0; }
-  .page-events .event .image {
-    margin: 0 0 0.5em 0;
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 16em;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    .page-events .event .image.no-fb {
-      background-size: 50%;
-      background-color: #EEE; }
-  .page-events .event .meta .title {
-    font-weight: 600;
-    margin: 0 0 0.33333em 0; }
-    .page-events .event .meta .title a {
-      color: inherit; }
-  .page-events .event .meta .date {
-    color: #999; }
-  .page-events .event.featured {
+  .page-events a .event {
+    margin-bottom: 2em; }
+    .page-events a .event .image {
+      margin: 0 0 0.5em 0;
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 16em;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .page-events a .event .image.no-fb {
+        background-size: 50%;
+        background-color: #EEE; }
+    .page-events a .event .meta .title {
+      font-weight: 600;
+      margin: 0 0 0.33333em 0; }
+      .page-events a .event .meta .title a {
+        color: inherit; }
+    .page-events a .event .meta .date {
+      color: #999; }
+  .page-events a.featured {
     float: left;
     display: block;
     margin-right: 3.28774%;
     width: 100%;
     margin-bottom: 4em; }
-    .page-events .event.featured:last-child {
+    .page-events a.featured:last-child {
       margin-right: 0; }
-    .page-events .event.featured .meta {
+    .page-events a.featured .event .meta {
       text-align: center; }
-      .page-events .event.featured .meta .title {
+      .page-events a.featured .event .meta .title {
         font-size: 125%; }
 
 .venture-item {

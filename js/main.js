@@ -90,7 +90,7 @@ function timeFormat(dateInput) {
 // This is to template the data for the dom
 function assembleStructure(data, index, callback) {
     if (index == 0) {
-        var featured = ' featured';
+        var featured = 'featured';
     }
 
     // Reformat the data to a more friendly format
@@ -113,9 +113,9 @@ function assembleStructure(data, index, callback) {
         }
 
         // Return this structure
-        var ret = ['<a href=', fbData.link, '><div class="event',
+        var ret = ['<a href="', fbData.link, '" class="',
             featured || '',
-            '">',
+            '"><div class="event">',
             cover,
             '<div class="meta">',
             '<div class="title">', fbData.title, '</div>',
