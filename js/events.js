@@ -116,7 +116,7 @@ function timeFormat(dateInput) {
     }
 
     // Return the formatted string
-    return date.join(" ") + " at " + time.join(":") + " " + suffix;
+    return date.join(" ") + ", " + time.join(":") + " " + suffix;
 }
 
 // This is to template the data for the dom
@@ -148,9 +148,7 @@ function assembleStructure(data, index, callback) {
             cover,
             '<div class="meta">',
             '<h2 class="title">', fbData.title, '</h2>',
-            '<div class="date">',
-            startString,
-            '</div>',
+            '<p class="date">', startString, '</p>',
             '</div>',
             '</div></a>'
         ].join('');

@@ -65,7 +65,11 @@ section, .section {
 }
 
 
-// RATIO SIZE HACK
+// IMAGE STYLES
+
+.rounded {
+  @include border-radius($radius);
+}
 
 .ratio {
   display: inline-block;

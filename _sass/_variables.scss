@@ -16,10 +16,6 @@ $dark-red:		darken($red,10%);
 $space:		2em;
 $radius:	4px;
 
-.rounded {
-	@include border-radius($radius);
-}
-
 
 // BREAKPOINTS
 
