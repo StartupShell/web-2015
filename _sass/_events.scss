@@ -1,8 +1,26 @@
 .page-events {
     .event {
-        @include span-columns(6);
-        @include omega('2n+1');
-        margin-bottom: 2*$space;
+        @include media($mobile) {
+            @include span-columns(4);
+            margin-bottom: $space;
+            text-align: center;
+        }
+        @include media($tablet) {
+            @include span-columns(4);
+            @include omega('2n+1');
+            margin-bottom: 2*$space;
+            text-align: left;
+        }
+        @include media($desktop) {
+            @include span-columns(6);
+        }
+        @include media($large) {
+            @include span-columns(8);
+        }
+        &:hover .details .meta .date {
+            color: $gray;
+        }
+
         .details {
             .image {
                 @extend .rounded;
@@ -19,7 +37,6 @@
             }
             .meta {
                 .title {
-                    @extend .h3;
                     margin: 0 0 $space/6 0;
                     a {
                         color: inherit;
@@ -31,13 +48,22 @@
             }
         }
         &.featured {
-            @include span-columns(12);
+            @include media($mobile) {
+                @include span-columns(4);
+            }
+            @include media($tablet) {
+                @include span-columns(8);
+            }
+            @include media($desktop) {
+                @include span-columns(12);
+            }
+            @include media($large) {
+                @include span-columns(16);
+            }
             .details {
-                .meta {
-                    text-align: center;
-                    .title {
-                        @extend .h2;
-                    }
+                text-align: center;
+                .title {
+                    @extend .h2;
                 }
             }
         }
@@ -50,5 +76,15 @@
 }
 
 .featured .image {
+    @extend .ratio;
     @extend .twentyonebynine;
+    &:after {
+        @include media($mobile) {
+            margin-top: 60%;
+        }
+        @include media($tablet) {
+            margin-top: 42.85%;
+        }
+    }
 }
+
