@@ -493,7 +493,8 @@ footer {
         footer .subscribe:last-child {
           margin-right: 0; } }
     footer .subscribe input[type="email"] {
-      padding-right: 0; }
+      padding-right: 0;
+      border: 0; }
     footer .subscribe .button {
       float: right;
       background: #999; }
