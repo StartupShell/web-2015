@@ -368,15 +368,15 @@ section, .section {
   .zigzag section:nth-child(2n-1) div:nth-child(2) {
     margin-left: 6.40286%; } }
 
-.ratio, .event .image {
+.ratio, .page-about .area .area-image, .event .image {
   display: inline-block;
   position: relative;
   overflow: hidden; }
-  .ratio:after, .event .image:after {
+  .ratio:after, .page-about .area .area-image:after, .event .image:after {
     content: '';
     display: block; }
 
-.ratio > *, .event .image > * {
+.ratio > *, .page-about .area .area-image > *, .event .image > * {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -387,7 +387,7 @@ section, .section {
 .square:after {
   margin-top: 100%; }
 
-.fivebythree:after, .event .image:after {
+.fivebythree:after, .page-about .area .area-image:after, .event .image:after {
   margin-top: 60%; }
 
 .twentyonebynine:after, .featured .image:after {
