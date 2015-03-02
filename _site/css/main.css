@@ -773,18 +773,18 @@ input[type="email"], input[type="text"] {
 
 .page-events .hero h1 {
   color: #222; }
-.page-events a {
+.page-events .event {
   float: left;
   display: block;
   margin-right: 3.28774%;
   width: 48.35613%; }
-  .page-events a:last-child {
+  .page-events .event:last-child {
     margin-right: 0; }
-  .page-events a:nth-child(2n+1) {
+  .page-events .event:nth-child(2n+1) {
     margin-right: 0; }
-  .page-events a .event {
+  .page-events .event .details {
     margin-bottom: 2em; }
-    .page-events a .event .image {
+    .page-events .event .details .image {
       margin: 0 0 0.5em 0;
       position: relative;
       float: left;
@@ -793,27 +793,27 @@ input[type="email"], input[type="text"] {
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover; }
-      .page-events a .event .image.no-fb {
+      .page-events .event .details .image.no-fb {
         background-size: 50%;
         background-color: #EEE; }
-    .page-events a .event .meta .title {
+    .page-events .event .details .meta .title {
       font-weight: 600;
       margin: 0 0 0.33333em 0; }
-      .page-events a .event .meta .title a {
+      .page-events .event .details .meta .title a {
         color: inherit; }
-    .page-events a .event .meta .date {
+    .page-events .event .details .meta .date {
       color: #999; }
-  .page-events a.featured {
+  .page-events .event.featured {
     float: left;
     display: block;
     margin-right: 3.28774%;
     width: 100%;
     margin-bottom: 4em; }
-    .page-events a.featured:last-child {
+    .page-events .event.featured:last-child {
       margin-right: 0; }
-    .page-events a.featured .event .meta {
+    .page-events .event.featured .details .meta {
       text-align: center; }
-      .page-events a.featured .event .meta .title {
+      .page-events .event.featured .details .meta .title {
         font-size: 125%; }
 
 .venture-item {

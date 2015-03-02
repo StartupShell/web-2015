@@ -4,10 +4,10 @@
             color: $gray;
         }
     }
-    a {
+    .event {
         @include span-columns(6);
         @include omega('2n+1');
-        .event {
+        .details {
             margin-bottom: $space;
             .image {
                 margin: 0 0 $space/4 0;
@@ -39,7 +39,7 @@
         &.featured {
             @include span-columns(12);
             margin-bottom: $space*2;
-            .event {
+            .details {
                 .meta {
                     text-align: center;
                     .title {

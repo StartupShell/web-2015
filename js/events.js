@@ -60,7 +60,7 @@ function getCover(data, callback) {
     } else {
         callback(data);
     }
-    
+
 }
 
 // EVENTS
@@ -86,9 +86,6 @@ function timeFormat(dateInput) {
 
 // This is to template the data for the dom
 function assembleStructure(data, index, callback) {
-    if (index == 0) {
-        var featured = 'featured';
-    }
 
     // Reformat the data to a more friendly format
     var newData = {}
@@ -105,16 +102,14 @@ function assembleStructure(data, index, callback) {
         var startString = timeFormat(new Date(fbData.start));
 
         // If there's no cover image, use the default one
-        if(!fbData.cover) {
+        if (!fbData.cover) {
             var cover = '<div class="image no-fb" style="background-image:url(\'../assets/shell-logo-wire.svg\')"></div>';
         } else {
             var cover = '<div class="image" style="background-image:url(\'' + fbData.cover + '\')"></div>';
         }
 
         // Return this structure
-        var ret = ['<a href="', fbData.link, '" class="',
-            featured || '',
-            '"><div class="event">',
+        var ret = ['<a href="', fbData.link, '"><div class="details">',
             cover,
             '<div class="meta">',
             '<div class="title">', fbData.title, '</div>',
@@ -148,7 +143,7 @@ request.onload = function() {
         data.items
 
         // Get rid of reoccuring
-            .filter(function(i) {
+        .filter(function(i) {
             if (i.hasOwnProperty('start')) {
                 return true;
             }
@@ -164,11 +159,23 @@ request.onload = function() {
             return new Date(a.start.dateTime) - new Date(b.start.dateTime);
         })
 
-        // Aseemble the strucutre of each object, then add it to the dom
+        // The assemble the structure
         .forEach(function(i, index) {
+            var eventStream = document.getElementById("eventStream");
+            eventStream.innerHTML = eventStream.innerHTML + '<div class="event"></div>';
+
             assembleStructure(i, index, function(assembled, position) {
+                // And add it to the blank element in [position] position.
+                // This solves the async issue of our requests coming back at different times
                 var eventStream = document.getElementById("eventStream");
-                eventStream.innerHTML = eventStream.innerHTML + assembled;
+                eventStream.getElementsByClassName('event')[position].innerHTML = assembled;
+
+                // Feature first
+                if(position == 0) {
+                   var first = eventStream.getElementsByClassName('event')[position];
+                   first.className = first.className + ' featured';
+                }
+
             })
 
         });
