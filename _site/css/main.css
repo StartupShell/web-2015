@@ -193,7 +193,7 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 10.55743%;
+      margin-right: 14.28571%;
       width: 100%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
@@ -201,7 +201,7 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 5.01404%;
+      margin-right: 6.66667%;
       width: 100%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
@@ -209,18 +209,18 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 3.28774%;
-      width: 82.78538%;
-      margin-left: 8.60731%; }
+      margin-right: 4.34783%;
+      width: 82.6087%;
+      margin-left: 8.69565%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 76.5em) {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 2.44571%;
-      width: 74.38857%;
-      margin-left: 12.80571%; }
+      margin-right: 3.22581%;
+      width: 74.19355%;
+      margin-left: 12.90323%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
 
@@ -240,8 +240,8 @@ p a {
   .menu .menu-logo {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 22.53419%;
+    margin-right: 4.34783%;
+    width: 21.73913%;
     font-weight: 600;
     text-transform: lowercase; }
     .menu .menu-logo:last-child {
@@ -250,8 +250,8 @@ p a {
     list-style: none outside none;
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 48.35613%;
+    margin-right: 4.34783%;
+    width: 47.82609%;
     text-align: center; }
     .menu .menu-list:last-child {
       margin-right: 0; }
@@ -263,8 +263,8 @@ p a {
   .menu .social-list {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 22.53419%;
+    margin-right: 4.34783%;
+    width: 21.73913%;
     text-align: right; }
     .menu .social-list:last-child {
       margin-right: 0; }
@@ -328,7 +328,7 @@ section, .section {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 10.55743%;
+        margin-right: 14.28571%;
         width: 100%; }
         .info .info-text:last-child {
           margin-right: 0; } }
@@ -336,27 +336,27 @@ section, .section {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 5.01404%;
-        width: 73.74649%;
-        margin-left: 13.12675%; }
+        margin-right: 6.66667%;
+        width: 73.33333%;
+        margin-left: 13.33333%; }
         .info .info-text:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 3.28774%;
-        width: 65.57075%;
-        margin-left: 17.21462%; }
+        margin-right: 4.34783%;
+        width: 65.21739%;
+        margin-left: 17.3913%; }
         .info .info-text:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 76.5em) {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 2.44571%;
-        width: 74.38857%;
-        margin-left: 12.80571%; }
+        margin-right: 3.22581%;
+        width: 74.19355%;
+        margin-left: 12.90323%; }
         .info .info-text:last-child {
           margin-right: 0; } }
 
@@ -366,7 +366,7 @@ section, .section {
   .zigzag section:nth-child(2n) div:nth-child(2) {
     float: left; }
   .zigzag section:nth-child(2n-1) div:nth-child(2) {
-    margin-left: 6.40286%; } }
+    margin-left: 6.45161%; } }
 
 .ratio, .video .video-thumb, .page-about .area .area-image, .event .image {
   display: inline-block;
@@ -423,7 +423,7 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 10.55743%;
+        margin-right: 14.28571%;
         width: 100%;
         text-align: center; }
         footer .copy:last-child {
@@ -432,17 +432,17 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 5.01404%;
-        width: 73.74649%;
-        margin-left: 13.12675%; }
+        margin-right: 6.66667%;
+        width: 73.33333%;
+        margin-left: 13.33333%; }
         footer .copy:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 3.28774%;
-        width: 22.53419%;
+        margin-right: 4.34783%;
+        width: 21.73913%;
         margin-left: 0%;
         text-align: left; }
         footer .copy:last-child {
@@ -451,8 +451,8 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 2.44571%;
-        width: 23.16572%; }
+        margin-right: 3.22581%;
+        width: 22.58065%; }
         footer .copy:last-child {
           margin-right: 0; } }
   footer .subscribe {
@@ -461,7 +461,7 @@ footer {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 10.55743%;
+        margin-right: 14.28571%;
         width: 100%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
@@ -469,27 +469,27 @@ footer {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 5.01404%;
-        width: 73.74649%;
-        margin-left: 13.12675%; }
+        margin-right: 6.66667%;
+        width: 73.33333%;
+        margin-left: 13.33333%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 3.28774%;
-        width: 48.35613%;
-        margin-left: 25.82194%; }
+        margin-right: 4.34783%;
+        width: 47.82609%;
+        margin-left: 26.08696%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 76.5em) {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 2.44571%;
-        width: 48.77715%;
-        margin-left: 25.61143%; }
+        margin-right: 3.22581%;
+        width: 48.3871%;
+        margin-left: 25.80645%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     footer .subscribe input[type="email"] {
@@ -527,7 +527,7 @@ input[type="email"], input[type="text"] {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 10.55743%;
+      margin-right: 14.28571%;
       width: 100%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
@@ -535,27 +535,27 @@ input[type="email"], input[type="text"] {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 5.01404%;
-      width: 47.49298%;
-      margin-left: 26.25351%; }
+      margin-right: 6.66667%;
+      width: 46.66667%;
+      margin-left: 26.66667%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 60em) {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 3.28774%;
-      width: 48.35613%;
-      margin-left: 25.82194%; }
+      margin-right: 4.34783%;
+      width: 47.82609%;
+      margin-left: 26.08696%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 76.5em) {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 2.44571%;
-      width: 48.77715%;
-      margin-left: 25.61143%; }
+      margin-right: 3.22581%;
+      width: 48.3871%;
+      margin-left: 25.80645%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
 .home .hero-logo {
@@ -567,9 +567,9 @@ input[type="email"], input[type="text"] {
   .video .video-row {
     float: left;
     display: block;
-    margin-right: 2.44571%;
-    width: 74.38857%;
-    margin-left: 12.80571%; }
+    margin-right: 3.22581%;
+    width: 74.19355%;
+    margin-left: 12.90323%; }
     .video .video-row:last-child {
       margin-right: 0; } }
 .video::after {
@@ -580,7 +580,7 @@ input[type="email"], input[type="text"] {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 10.55743%;
+    margin-right: 14.28571%;
     width: 100%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -588,17 +588,17 @@ input[type="email"], input[type="text"] {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 5.01404%;
-    width: 73.74649%;
-    margin-left: 13.12675%; }
+    margin-right: 6.66667%;
+    width: 73.33333%;
+    margin-left: 13.33333%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 31.1415%;
+    margin-right: 4.34783%;
+    width: 30.43478%;
     margin-left: 0%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -606,8 +606,8 @@ input[type="email"], input[type="text"] {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 31.1415%;
+    margin-right: 4.34783%;
+    width: 30.43478%;
     margin-left: 0%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -627,7 +627,7 @@ input[type="email"], input[type="text"] {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 10.55743%;
+      margin-right: 14.28571%;
       width: 100%;
       margin-bottom: 2em; }
       .contact .contact-box:last-child {
@@ -636,8 +636,8 @@ input[type="email"], input[type="text"] {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 5.01404%;
-      width: 47.49298%;
+      margin-right: 6.66667%;
+      width: 46.66667%;
       margin-bottom: 0; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
@@ -645,16 +645,16 @@ input[type="email"], input[type="text"] {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 3.28774%;
-      width: 48.35613%; }
+      margin-right: 4.34783%;
+      width: 47.82609%; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 76.5em) {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 2.44571%;
-      width: 48.77715%; }
+      margin-right: 3.22581%;
+      width: 48.3871%; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
   .contact .contact-box:before {
@@ -687,7 +687,7 @@ input[type="email"], input[type="text"] {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 10.55743%;
+    margin-right: 14.28571%;
     width: 100%;
     margin-bottom: 2em; }
     .page-about .area .description:last-child {
@@ -696,8 +696,8 @@ input[type="email"], input[type="text"] {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 5.01404%;
-    width: 34.36623%;
+    margin-right: 6.66667%;
+    width: 33.33333%;
     margin-bottom: 0; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
@@ -705,23 +705,23 @@ input[type="email"], input[type="text"] {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 31.1415%; }
+    margin-right: 4.34783%;
+    width: 30.43478%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 76.5em) {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 2.44571%;
-    width: 35.97143%; }
+    margin-right: 3.22581%;
+    width: 35.48387%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 20em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 10.55743%;
+    margin-right: 14.28571%;
     width: 100%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
@@ -729,24 +729,24 @@ input[type="email"], input[type="text"] {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 5.01404%;
-    width: 47.49298%; }
+    margin-right: 6.66667%;
+    width: 46.66667%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 3.28774%;
-    width: 56.96344%; }
+    margin-right: 4.34783%;
+    width: 56.52174%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 76.5em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 2.44571%;
-    width: 55.18%; }
+    margin-right: 3.22581%;
+    width: 54.83871%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 .page-about .area .area-image img {
@@ -767,9 +767,9 @@ input[type="email"], input[type="text"] {
 .page-apply #ss-form {
   float: left;
   display: block;
-  margin-right: 3.28774%;
+  margin-right: 4.34783%;
   width: 100%;
-  margin-left: 17.21462%; }
+  margin-left: 17.3913%; }
   .page-apply #ss-form:last-child {
     margin-right: 0; }
 .page-apply .ss-required-asterisk, .page-apply .required-message {
@@ -778,8 +778,8 @@ input[type="email"], input[type="text"] {
 .page-events .event {
   float: left;
   display: block;
-  margin-right: 3.28774%;
-  width: 48.35613%;
+  margin-right: 4.34783%;
+  width: 47.82609%;
   margin-bottom: 4em; }
   .page-events .event:last-child {
     margin-right: 0; }
@@ -803,7 +803,7 @@ input[type="email"], input[type="text"] {
   .page-events .event.featured {
     float: left;
     display: block;
-    margin-right: 3.28774%;
+    margin-right: 4.34783%;
     width: 100%; }
     .page-events .event.featured:last-child {
       margin-right: 0; }
