@@ -151,11 +151,11 @@ h1, .h1 {
   font-weight: 700;
   margin-bottom: 0.5em; }
 
-h2, .h2 {
+h2, .h2, .page-events .event.featured .details .meta .title {
   font-size: 1.25em;
   font-weight: 600; }
 
-h3, .h3, .button, a.button, a.button:visited {
+h3, .h3, .button, a.button, a.button:visited, .page-events .event .details .meta .title {
   font-size: 1em;
   font-weight: 600; }
 
@@ -779,39 +779,34 @@ input[type="email"], input[type="text"] {
   float: left;
   display: block;
   margin-right: 3.28774%;
-  width: 48.35613%; }
+  width: 48.35613%;
+  margin-bottom: 4em; }
   .page-events .event:last-child {
     margin-right: 0; }
   .page-events .event:nth-child(2n+1) {
     margin-right: 0; }
-  .page-events .event .details {
-    margin-bottom: 2em; }
-    .page-events .event .details .image {
-      margin-bottom: 0.5em;
-      float: left;
-      width: 100%;
-      height: auto; }
-      .page-events .event .details .image.no-fb {
-        background-color: #EEE; }
-    .page-events .event .details .meta .title {
-      font-weight: 600;
-      margin: 0 0 0.33333em 0; }
-      .page-events .event .details .meta .title a {
-        color: inherit; }
-    .page-events .event .details .meta .date {
-      color: #999; }
+  .page-events .event .details .image {
+    margin-bottom: 1em;
+    float: left;
+    width: 100%;
+    height: auto; }
+    .page-events .event .details .image.no-fb {
+      background-color: #EEE; }
+  .page-events .event .details .meta .title {
+    margin: 0 0 0.33333em 0; }
+    .page-events .event .details .meta .title a {
+      color: inherit; }
+  .page-events .event .details .meta .date {
+    color: #999; }
   .page-events .event.featured {
     float: left;
     display: block;
     margin-right: 3.28774%;
-    width: 100%;
-    margin-bottom: 4em; }
+    width: 100%; }
     .page-events .event.featured:last-child {
       margin-right: 0; }
     .page-events .event.featured .details .meta {
       text-align: center; }
-      .page-events .event.featured .details .meta .title {
-        font-size: 125%; }
 
 .venture-item {
   display: block;

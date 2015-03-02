@@ -2,10 +2,10 @@
     .event {
         @include span-columns(6);
         @include omega('2n+1');
+        margin-bottom: 2*$space;
         .details {
-            margin-bottom: $space;
             .image {
-                margin-bottom: $space/4;
+                margin-bottom: $space/2;
                 float: left;
                 width: 100%;
                 height: auto;
@@ -15,7 +15,7 @@
             }
             .meta {
                 .title {
-                    font-weight: 600;
+                    @extend .h3;
                     margin: 0 0 $space/6 0;
                     a {
                         color: inherit;
@@ -28,12 +28,11 @@
         }
         &.featured {
             @include span-columns(12);
-            margin-bottom: $space*2;
             .details {
                 .meta {
                     text-align: center;
                     .title {
-                        font-size: 125%;
+                        @extend .h2;
                     }
                 }
             }

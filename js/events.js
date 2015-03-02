@@ -126,7 +126,7 @@ function assembleStructure(data, index, callback) {
         var ret = ['<a href="', fbData.link, '"><div class="details">',
             cover,
             '<div class="meta">',
-            '<div class="title">', fbData.title, '</div>',
+            '<h2 class="title">', fbData.title, '</h2>',
             '<div class="date">',
             startString,
             '</div>',
