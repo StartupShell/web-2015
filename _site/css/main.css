@@ -368,26 +368,30 @@ section, .section {
   .zigzag section:nth-child(2n-1) div:nth-child(2) {
     margin-left: 6.40286%; } }
 
-.ratio, .page-events .event .details .image {
+.ratio, .event .image {
   display: inline-block;
   position: relative;
   overflow: hidden; }
-  .ratio:after, .page-events .event .details .image:after {
+  .ratio:after, .event .image:after {
     content: '';
     display: block; }
 
-.ratio > *, .page-events .event .details .image > * {
+.ratio > *, .event .image > * {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  width: 100%; }
 
 .square:after {
   margin-top: 100%; }
 
-.fivebythree:after, .page-events .event .details .image:after {
+.fivebythree:after, .event .image:after {
   margin-top: 60%; }
+
+.twentyonebynine:after, .featured .image:after {
+  margin-top: 42.85%; }
 
 ::selection {
   background: #D74035;
@@ -785,11 +789,10 @@ input[type="email"], input[type="text"] {
   .page-events .event .details {
     margin-bottom: 2em; }
     .page-events .event .details .image {
-      margin: 0 0 0.5em 0;
-      position: relative;
+      margin-bottom: 0.5em;
       float: left;
       width: 100%;
-      height: 16em; }
+      height: auto; }
       .page-events .event .details .image.no-fb {
         background-color: #EEE; }
     .page-events .event .details .meta .title {

@@ -10,13 +10,10 @@
         .details {
             margin-bottom: $space;
             .image {
-                margin: 0 0 $space/4 0;
-                position: relative;
+                margin-bottom: $space/4;
                 float: left;
                 width: 100%;
-                height: $space*8;
-                @extend .ratio;
-                @extend .fivebythree;
+                height: auto;
                 &.no-fb {
                     background-color: $light-gray;
                 }
@@ -47,4 +44,13 @@
             }
         }
     }
+}
+
+.event .image {
+    @extend .ratio;
+    @extend .fivebythree;
+}
+
+.featured .image {
+    @extend .twentyonebynine;
 }
