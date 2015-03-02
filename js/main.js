@@ -32,6 +32,7 @@ window.fbAsyncInit = function() {
 
 // Reformat data & get facebook cover from google events description
 function getCover(data, callback) {
+
     gDesc = data.description;
     if (gDesc) {
 
@@ -52,6 +53,7 @@ function getCover(data, callback) {
                     if (response && !response.error) {
                         data.cover = response.cover.source;
                         data.link = 'https://www.facebook.com/events/' + response.id;
+                        callback(data);
                     }
                 }, {
                     access_token: '803530653059405|GkX1fG84RU3rCKQL_epc_AT7ZaA',
@@ -60,10 +62,14 @@ function getCover(data, callback) {
                 }
             );
 
+        } else {
+            callback(data);
         }
 
+    } else {
+        callback(data);
     }
-    callback(data);
+    
 }
 
 // EVENTS
@@ -100,9 +106,11 @@ function assembleStructure(data, index, callback) {
     newData.description = data.description;
     newData.title = data.summary;
     newData.link = data.htmlLink;
+    newData.position = index;
 
     // Get the FB data for the event
     getCover(newData, function(fbData) {
+        console.log(fbData);
         var startString = timeFormat(new Date(fbData.start));
 
         // If there's no cover image, use the default one
@@ -125,10 +133,8 @@ function assembleStructure(data, index, callback) {
             '</div>',
             '</div></a>'
         ].join('');
-        
-        console.log(ret);
 
-        callback(ret);
+        callback(ret, fbData.position);
     })
 
 }
@@ -169,7 +175,7 @@ request.onload = function() {
 
         // Aseemble the strucutre of each object, then add it to the dom
         .forEach(function(i, index) {
-            assembleStructure(i, index, function(assembled) {
+            assembleStructure(i, index, function(assembled, position) {
                 var eventStream = document.getElementById("eventStream");
                 eventStream.innerHTML = eventStream.innerHTML + assembled;
             })
