@@ -1,9 +1,9 @@
 .home {
 
 	.hero {
-		background: $light-gray;
 		padding: 2*$space 0 6*$space;
 		margin-bottom: -3.5*$space;
+		@include radial-gradient(at 50% bottom,$white,$light-gray,$light-gray);
 	}
 
 	.hero-content {
