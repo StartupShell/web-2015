@@ -176,6 +176,9 @@ p a {
     content: "";
     display: table; }
 
+.hero-tight {
+  padding: 6em 0 2em; }
+
 .hero-content h1 {
   color: #FFF;
   margin-bottom: 0; }
@@ -266,14 +269,6 @@ p a {
         width: 1.5em;
         height: 1.5em;
         background-repeat: no-repeat; }
-        .menu .social-list .social-item .icon.facebook {
-          background-image: url("/assets/icons/facebook.svg"); }
-        .menu .social-list .social-item .icon.twitter {
-          background-image: url("/assets/icons/twitter.svg"); }
-        .menu .social-list .social-item .icon.instagram {
-          background-image: url("/assets/icons/instagram.svg"); }
-        .menu .social-list .social-item .icon.medium {
-          background-image: url("/assets/icons/medium.svg"); }
     .menu .social-list:last-child {
       margin-right: 0; }
 
@@ -910,9 +905,3 @@ input[type="email"], input[type="text"] {
     width: 21%; } }
 .page-ventures .hero h1 {
   color: #222; }
-
-.home .hero {
-  padding-bottom: 4em;
-  margin-bottom: 4em; }
-.home .video {
-  display: none; }

@@ -1,16 +1,20 @@
 <nav class="menu{% if page.url == '/index.html' %} gray{% endif %}">
-<div class="menu-logo"><a href="{{ site.baseurl }}/">Startup Shell</a></div>
+  <div class="menu-logo"><a href="{{ site.baseurl }}/">Startup Shell</a></div>
 
-    <ul class="menu-list">
+  <ul class="menu-list">
     {% for link in site.data.menu %}
-      <li class="menu-item"><a href="{{ link.url }}" class="menu-item-link">{{ link.name }}</a></li>
+    <li class="menu-item"><a href="{{ link.url }}" class="menu-item-link">{{ link.name }}</a></li>
     {% endfor %}
-    </ul>
+  </ul>
 
-    <ul class="social-list">
-      {% for link in site.data.links %}
-        <li class="social-item"><a href="{{ link.url }}" target="_blank"><div class="icon {{ link.name }}"></div></a></li>
-      {% endfor %}
-    </ul>
+  <ul class="social-list">
+    {% for link in site.data.links %}
+    <li class="social-item">
+      <a href="{{ link.url }}" target="_blank">
+      <img class="icon" src="/assets/icons/{{ link.name }}.svg"></div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
 
 </nav> <!-- /.menu -->

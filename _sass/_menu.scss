@@ -32,18 +32,6 @@
                 width: 1.5em;
                 height: 1.5em;
                 background-repeat: no-repeat;
-                &.facebook {
-                    background-image: url('/assets/icons/facebook.svg');
-                }
-                &.twitter {
-                    background-image: url('/assets/icons/twitter.svg');
-                }
-                &.instagram {
-                    background-image: url('/assets/icons/instagram.svg');
-                }
-                &.medium {
-                    background-image: url('/assets/icons/medium.svg');
-                }
             }
         }
         &:last-child {
