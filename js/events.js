@@ -121,7 +121,6 @@ function timeFormat(dateInput) {
 
 // This is to template the data for the dom
 function assembleStructure(data, index, callback) {
-
     // Reformat the data to a more friendly format
     var newData = {}
     newData.start = new Date(data.start.dateTime);
@@ -129,11 +128,11 @@ function assembleStructure(data, index, callback) {
     newData.description = data.description;
     newData.title = data.summary;
     newData.link = data.htmlLink;
+    newData.location = data.location;
     newData.position = index;
 
     // Get the FB data for the event
     getCover(newData, function(fbData) {
-        console.log(fbData);
         var startString = timeFormat(new Date(fbData.start));
 
         // If there's no cover image, use the default one
@@ -153,12 +152,18 @@ function assembleStructure(data, index, callback) {
             description = description.replace(/\{(.*?)\}/g, "");
         }
 
+        // Display gCal location if it has one
+        var location;
+        if(fbData.location) {
+            location = ' @ ' + fbData.location;
+        }
+
         // Return this structure
         var ret = ['<a target="_blank" href="', fbData.link, '"><div class="details">',
             cover,
             '<div class="meta">',
             '<h2 class="title">', fbData.title, '</h2>',
-            '<p class="date">', startString, '</p>',
+            '<p class="date">', startString, location, '</p>',
             '<p class="description">', description, '</p>',
             '</div>',
             '</div></a>'
