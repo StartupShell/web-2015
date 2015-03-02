@@ -789,10 +789,7 @@ input[type="email"], input[type="text"] {
       position: relative;
       float: left;
       width: 100%;
-      height: 16em;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover; }
+      height: 16em; }
       .page-events .event .details .image.no-fb {
         background-size: 50%;
         background-color: #EEE; }
