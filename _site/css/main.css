@@ -774,9 +774,17 @@ footer {
   .page-events .event:nth-child(2n+1) {
     margin-right: 0; }
   .page-events .event .image {
-    margin: 0 0 0.5em 0; }
-    .page-events .event .image img {
-      width: 100%; }
+    margin: 0 0 0.5em 0;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 16em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .page-events .event .image.no-fb {
+      background-size: 50%;
+      background-color: #EEE; }
   .page-events .event .meta .title {
     font-weight: 600;
     margin: 0 0 0.33333em 0; }

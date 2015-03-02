@@ -30,8 +30,9 @@ window.fbAsyncInit = function() {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-// Get facebook cover from google events description
-function getCover(gDesc) {
+// Reformat data & get facebook cover from google events description
+function getCover(data, callback) {
+    gDesc = data.description;
     if (gDesc) {
 
         // Get facebook event ID
@@ -46,31 +47,28 @@ function getCover(gDesc) {
             var eventID = '/' + matches[0].split('/')[4];
 
             FB.api(
-                eventID + '/picture',
+                eventID + '?fields=cover',
                 function(response) {
-
                     if (response && !response.error) {
-                        var cover = new Image();
-                        cover.src = response.data.url;
-                        console.log(cover);
-                        return cover;
-                    } else {
-                        return '';
+                        data.cover = response.cover.source;
+                        data.link = 'https://www.facebook.com/events/' + response.id;
                     }
                 }, {
                     access_token: '803530653059405|GkX1fG84RU3rCKQL_epc_AT7ZaA',
                     redirect: false,
-                    type: 'large'
+                    type: 'normal'
                 }
             );
 
         }
 
     }
+    callback(data);
 }
+
 // EVENTS
 
-// format time
+// Format time
 function timeFormat(dateInput) {
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -89,30 +87,53 @@ function timeFormat(dateInput) {
     return date.join(" ") + " at " + time.join(":") + " " + suffix;
 }
 
-// this is to template the data for the dom
-function assembleStructure(data, index) {
-    var d = new Date(data.start);
-    var startString = timeFormat(d);
+// This is to template the data for the dom
+function assembleStructure(data, index, callback) {
     if (index == 0) {
         var featured = ' featured';
     }
-    return ['<div class="event',
-        featured || '',
-        '">',
-        '<div class="image">',
-        data.cover,
-        '</div>',
-        '<div class="meta">',
-        '<div class="title"><a href=', data.link, '>', data.title, '</a></div>',
-        '<div class="date">',
-        startString,
-        '</span>',
-        '</div>',
-        '</div>'
-    ].join('');
+
+    // Reformat the data to a more friendly format
+    var newData = {}
+    newData.start = new Date(data.start.dateTime);
+    newData.end = new Date(data.end.dateTime);
+    newData.description = data.description;
+    newData.title = data.summary;
+    newData.link = data.htmlLink;
+
+    // Get the FB data for the event
+    getCover(newData, function(fbData) {
+        var startString = timeFormat(new Date(fbData.start));
+
+        // If there's no cover image, use the default one
+        if(!fbData.cover) {
+            var cover = '<div class="image no-fb" style="background-image:url(\'../assets/shell-logo-wire.svg\')"></div>';
+        } else {
+            var cover = '<div class="image" style="background-image:url(\'' + fbData.cover + '\')"></div>';
+        }
+
+        // Return this structure
+        var ret = ['<a href=', fbData.link, '><div class="event',
+            featured || '',
+            '">',
+            cover,
+            '<div class="meta">',
+            '<div class="title">', fbData.title, '</div>',
+            '<div class="date">',
+            startString,
+            '</div>',
+            '</div>',
+            '</div></a>'
+        ].join('');
+        
+        console.log(ret);
+
+        callback(ret);
+    })
+
 }
 
-// this is where to get the data from
+// This is where to get the data from
 var url = ['https://www.googleapis.com/calendar/v3/calendars',
     '/7qvrobfs0js5799ebugodgc5go@group.calendar.google',
     '.com/events?key=AIzaSyDd9bnLFkG8tyRgmjttiFRTT0MTtYpkZb8'
@@ -126,51 +147,46 @@ request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
         var data = JSON.parse(request.responseText);
 
-        // begin parsing
+        // Begin parsing
         data.items
 
-        // get rid of reoccuring
+        // Get rid of reoccuring
             .filter(function(i) {
             if (i.hasOwnProperty('start')) {
                 return true;
             }
         })
 
-        // get the ones that havent happend yet
+        // Get the ones that havent happend yet
         .filter(function(i) {
             return new Date(i.end.dateTime) >= new Date().getTime();
         })
 
-        //reformat
-        .map(function(i) {
-            return {
-                start: new Date(i.start.dateTime),
-                end: new Date(i.end.dateTime),
-                title: i.summary,
-                cover: getCover(i.description),
-                link: i.htmlLink
-            }
-        })
-
         // Sort by date
         .sort(function(a, b) {
-            return new Date(a.start) - new Date(b.start);
+            return new Date(a.start.dateTime) - new Date(b.start.dateTime);
         })
 
-        // append to DOM
+        // Aseemble the strucutre of each object, then add it to the dom
         .forEach(function(i, index) {
-            var eventStream = document.getElementById("eventStream");
-            eventStream.innerHTML = eventStream.innerHTML + assembleStructure(i, index);
+            assembleStructure(i, index, function(assembled) {
+                var eventStream = document.getElementById("eventStream");
+                eventStream.innerHTML = eventStream.innerHTML + assembled;
+            })
+
         });
 
     } else {
         // We reached our target server, but it returned an error
-
+        var eventStream = document.getElementById("eventStream");
+        eventStream.innerHTML = eventStream.innerHTML + "An error has occurred. Sorry!";
     }
 };
 
 request.onerror = function() {
     // There was a connection error of some sort
+    var eventStream = document.getElementById("eventStream");
+    eventStream.innerHTML = eventStream.innerHTML + "Cannot connect to Google Calendar. Sorry!";
 };
 
 request.send();

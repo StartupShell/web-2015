@@ -1,43 +1,48 @@
 .page-events {
-
-	.hero {
-		h1 {
-			color: $gray;
-		}
-	}
-
-	.event {
-		@include span-columns(6);
-		@include omega('2n+1');
-		margin-bottom: $space;
-		.image {
-			margin: 0 0 $space/4 0;
-			img {
-				width: 100%;
-			}
-		}
-		.meta {
-			.title {
-				font-weight: 600;
-				margin: 0 0 $space/6 0;
-				a {
-					color: inherit;
-				}
-			}
-			.date {
-				color: $medium-gray;
-			}
-		}
-		&.featured {
-			@include span-columns(12);
-			margin-bottom: $space*2;
-			.meta {
-				text-align: center;
-				.title {
-					font-size:125%;
-				}
-			}
-		}
-	}
-	
+    .hero {
+        h1 {
+            color: $gray;
+        }
+    }
+    .event {
+        @include span-columns(6);
+        @include omega('2n+1');
+        margin-bottom: $space;
+        .image {
+            margin: 0 0 $space/4 0;
+            position: relative;
+            float: left;
+            width: 100%;
+            height: $space*8;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &.no-fb {
+            	background-size: 50%;
+            	background-color: $light-gray;
+            }
+        }
+        .meta {
+            .title {
+                font-weight: 600;
+                margin: 0 0 $space/6 0;
+                a {
+                    color: inherit;
+                }
+            }
+            .date {
+                color: $medium-gray;
+            }
+        }
+        &.featured {
+            @include span-columns(12);
+            margin-bottom: $space*2;
+            .meta {
+                text-align: center;
+                .title {
+                    font-size: 125%;
+                }
+            }
+        }
+    }
 }
