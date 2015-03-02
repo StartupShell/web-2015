@@ -368,15 +368,15 @@ section, .section {
   .zigzag section:nth-child(2n-1) div:nth-child(2) {
     margin-left: 6.40286%; } }
 
-.ratio, .page-about .area .area-image, .event .image {
+.ratio, .video .video-thumb, .page-about .area .area-image, .event .image {
   display: inline-block;
   position: relative;
   overflow: hidden; }
-  .ratio:after, .page-about .area .area-image:after, .event .image:after {
+  .ratio:after, .video .video-thumb:after, .page-about .area .area-image:after, .event .image:after {
     content: '';
     display: block; }
 
-.ratio > *, .page-about .area .area-image > *, .event .image > * {
+.ratio > *, .video .video-thumb > *, .page-about .area .area-image > *, .event .image > * {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -384,7 +384,7 @@ section, .section {
   right: 0;
   width: 100%; }
 
-.square:after {
+.square:after, .video .video-thumb:after {
   margin-top: 100%; }
 
 .fivebythree:after, .page-about .area .area-image:after, .event .image:after {
