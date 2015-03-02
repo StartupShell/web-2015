@@ -23,7 +23,7 @@
         @include media($large) {
             @include span-columns(8);
         }
-        &:hover .details .meta .date {
+        &:hover .details .meta p {
             color: $gray;
         }
 
@@ -45,7 +45,7 @@
                     font-weight: 700;
                     margin-bottom: $space/8;
                 }
-                .date {
+                p {
                     color: $medium-gray;
                 }
             }

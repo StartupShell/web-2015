@@ -143,12 +143,23 @@ function assembleStructure(data, index, callback) {
             var cover = '<div class="image"><img src="' + fbData.cover + '"></div>';
         }
 
+        // Display gCal description for featured event
+        var description;
+        if(fbData.position == 0 && fbData.description) {
+            description = fbData.description;
+
+            // Strip the [] and {} tags.
+            description = description.replace(/\[(.*?)\]/g, "");
+            description = description.replace(/\{(.*?)\}/g, "");
+        }
+
         // Return this structure
         var ret = ['<a target="_blank" href="', fbData.link, '"><div class="details">',
             cover,
             '<div class="meta">',
             '<h2 class="title">', fbData.title, '</h2>',
             '<p class="date">', startString, '</p>',
+            '<p class="description">', description, '</p>',
             '</div>',
             '</div></a>'
         ].join('');

@@ -814,7 +814,7 @@ input[type="email"], input[type="text"] {
     width: 48.3871%; }
     .page-events .event:last-child {
       margin-right: 0; } }
-.page-events .event:hover .details .meta .date {
+.page-events .event:hover .details .meta p {
   color: #222; }
 .page-events .event .details .image {
   margin-bottom: 1em;
@@ -827,7 +827,7 @@ input[type="email"], input[type="text"] {
 .page-events .event .details .meta .title {
   font-weight: 700;
   margin-bottom: 0.25em; }
-.page-events .event .details .meta .date {
+.page-events .event .details .meta p {
   color: #888; }
 @media screen and (min-width: 20em) {
   .page-events .event.featured {
