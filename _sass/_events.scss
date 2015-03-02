@@ -15,8 +15,9 @@
                 float: left;
                 width: 100%;
                 height: $space*8;
+                @extend .ratio;
+                @extend .fivebythree;
                 &.no-fb {
-                    background-size: 50%;
                     background-color: $light-gray;
                 }
             }

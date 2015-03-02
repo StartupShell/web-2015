@@ -117,9 +117,9 @@ function assembleStructure(data, index, callback) {
 
         // If there's no cover image, use the default one
         if (!fbData.cover) {
-            var cover = '<div class="image no-fb" style="background-image:url(\'../assets/shell-logo-wire.svg\')"></div>';
+            var cover = '<div class="image no-fb"><img src="../assets/shell-logo-wire.svg"></div>';
         } else {
-            var cover = '<div class="image" style="background-image:url(\'' + fbData.cover + '\')"></div>';
+            var cover = '<div class="image"><img src="' + fbData.cover + '"></div>';
         }
 
         // Return this structure
