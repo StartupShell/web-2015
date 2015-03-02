@@ -161,7 +161,7 @@ a, a:visited {
 
 p.sub {
   font-size: 80%;
-  color: #999; }
+  color: #888; }
 
 p a {
   font-weight: 600;
@@ -411,7 +411,7 @@ section, .section {
 footer {
   background: #EEE;
   padding: 2em;
-  color: #999; }
+  color: #888; }
   footer .copy {
     padding: 1em 0; }
     @media screen and (min-width: 20em) {
@@ -492,7 +492,7 @@ footer {
       border: 0; }
     footer .subscribe .button {
       float: right;
-      background: #999; }
+      background: #888; }
       footer .subscribe .button:hover {
         background: #222; }
 
@@ -828,7 +828,7 @@ input[type="email"], input[type="text"] {
   font-weight: 700;
   margin-bottom: 0.25em; }
 .page-events .event .details .meta .date {
-  color: #999; }
+  color: #888; }
 @media screen and (min-width: 20em) {
   .page-events .event.featured {
     float: left;
