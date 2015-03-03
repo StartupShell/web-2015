@@ -223,6 +223,38 @@ p a {
     width: 4em; }
 
 .menu {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-align: start;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
   padding: 2em 4em; }
   .menu::after {
     clear: both;
@@ -231,36 +263,31 @@ p a {
   .menu.gray {
     background: #EEE; }
   .menu .menu-logo {
-    float: left;
-    display: block;
-    margin-right: 4.34783%;
-    width: 21.73913%;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     font-weight: 600;
     text-transform: lowercase; }
-    .menu .menu-logo:last-child {
-      margin-right: 0; }
   .menu .menu-list {
-    list-style: none outside none;
-    float: left;
-    display: block;
-    margin-right: 4.34783%;
-    width: 47.82609%;
-    text-align: center; }
-    .menu .menu-list:last-child {
-      margin-right: 0; }
+    list-style: none outside none; }
     .menu .menu-list .menu-item {
       display: inline-block; }
       .menu .menu-list .menu-item .menu-item-link {
         padding: 2em 1em;
         text-transform: lowercase; }
   .menu .social-list {
-    float: left;
-    display: block;
-    margin-right: 4.34783%;
-    width: 21.73913%;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     text-align: right; }
-    .menu .social-list:last-child {
-      margin-right: 0; }
     .menu .social-list .social-item {
       display: inline-block;
       text-align: right;
