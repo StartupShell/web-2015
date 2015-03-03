@@ -101,29 +101,43 @@ function getCover(data, callback) {
 // EVENTS
 
 // Format time
-function timeFormat(dateInput) {
+function timeFormat(dateInput, noTime) {
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-    var date = [months[dateInput.getMonth()], dateInput.getDate()];
-    var time = [dateInput.getHours(), dateInput.getMinutes()];
-    var suffix = (time[0] < 12) ? "AM" : "PM";
-    time[0] = (time[0] < 12) ? time[0] : time[0] - 12;
-    time[0] = time[0] || 12;
-    for (var i = 1; i < 3; i++) {
-        if (time[i] < 10) {
-            time[i] = "0" + time[i];
+    // Return the formatted string
+    if (noTime) {
+        // Address timezone offset
+        var timezoneOffset = dateInput.getTime() + (dateInput.getTimezoneOffset() * 60000);
+        var date = new Date(timezoneOffset);
+        date = [months[date.getMonth()], date.getDate()]
+        return date.join(" ");
+    } else {
+        var date = [months[dateInput.getMonth()], dateInput.getDate()];
+        var time = [dateInput.getHours(), dateInput.getMinutes()];
+        var suffix = (time[0] < 12) ? "AM" : "PM";
+        time[0] = (time[0] < 12) ? time[0] : time[0] - 12;
+        time[0] = time[0] || 12;
+        for (var i = 1; i < 3; i++) {
+            if (time[i] < 10) {
+                time[i] = "0" + time[i];
+            }
         }
+        return date.join(" ") + ", " + time.join(":") + " " + suffix;
     }
 
-    // Return the formatted string
-    return date.join(" ") + ", " + time.join(":") + " " + suffix;
 }
 
 // This is to template the data for the dom
 function assembleStructure(data, index, callback) {
     // Reformat the data to a more friendly format
+
     var newData = {}
-    newData.start = new Date(data.start.dateTime);
+    if (!data.start.dateTime) {
+        // All-day event
+        newData.start = timeFormat(new Date(data.start.date), true);
+    } else {
+        newData.start = timeFormat(new Date(data.start.dateTime));
+    }
     newData.end = new Date(data.end.dateTime);
     newData.description = data.description;
     newData.title = data.summary;
@@ -131,10 +145,10 @@ function assembleStructure(data, index, callback) {
     newData.location = data.location;
     newData.position = index;
 
+    console.log(newData.title + ' ' + newData.start);
+
     // Get the FB data for the event
     getCover(newData, function(fbData) {
-        var startString = timeFormat(new Date(fbData.start));
-
         // If there's no cover image, use the default one
         if (!fbData.cover) {
             var cover = '<div class="image no-fb"><img src="../assets/shell-logo-wire.svg"></div>';
@@ -144,7 +158,7 @@ function assembleStructure(data, index, callback) {
 
         // Display gCal description for featured event
         var description;
-        if(fbData.position == 0 && fbData.description) {
+        if (fbData.position == 0 && fbData.description) {
             description = fbData.description;
 
             // Strip the [] and {} tags.
@@ -154,7 +168,7 @@ function assembleStructure(data, index, callback) {
 
         // Display gCal location if it has one
         var location;
-        if(fbData.location) {
+        if (fbData.location) {
             location = ' @ ' + fbData.location;
         }
 
@@ -163,7 +177,7 @@ function assembleStructure(data, index, callback) {
             cover,
             '<div class="meta">',
             '<h2 class="title">', fbData.title, '</h2>',
-            '<p class="date">', startString, location, '</p>',
+            '<p class="date">', newData.start, location, '</p>',
             '<p class="description">', description, '</p>',
             '</div>',
             '</div></a>'
@@ -187,26 +201,35 @@ request.open('GET', url, true);
 request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
         var data = JSON.parse(request.responseText);
-
         // Begin parsing
         data.items
 
         // Get rid of reoccuring
             .filter(function(i) {
-            if (i.hasOwnProperty('start')) {
+            if (i.hasOwnProperty('start') && i.hasOwnProperty('end')) {
                 return true;
             }
         })
 
         // Get the ones that havent happend yet
         .filter(function(i) {
-            return new Date(i.end.dateTime) >= new Date().getTime();
+            if (i.end.dateTime) {
+                return new Date(i.end.dateTime) >= new Date().getTime();
+            } else {
+                // The event is all-day, so use the start time
+                // We add 86400000 (24 hours) so that the event still displays throughout the entire day
+                return new Date(i.end.date) >= new Date().getTime();
+            }
         })
+
 
         // Sort by date
         .sort(function(a, b) {
-            return new Date(a.start.dateTime) - new Date(b.start.dateTime);
+            var first = a.start.dateTime || a.start.date;
+            var second = b.start.dateTime || b.start.date;
+            return new Date(first) - new Date(second);
         })
+
 
         // The assemble the structure
         .forEach(function(i, index) {
