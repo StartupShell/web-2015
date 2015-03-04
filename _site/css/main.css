@@ -186,7 +186,7 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 14.28571%;
+      margin-right: 10.55743%;
       width: 100%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
@@ -194,7 +194,7 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 6.66667%;
+      margin-right: 5.01404%;
       width: 100%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
@@ -202,18 +202,18 @@ p a {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 82.6087%;
-      margin-left: 8.69565%; }
+      margin-right: 3.28774%;
+      width: 82.78538%;
+      margin-left: 8.60731%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 76.5em) {
     .hero-content h1 {
       float: left;
       display: block;
-      margin-right: 3.22581%;
-      width: 74.19355%;
-      margin-left: 12.90323%; }
+      margin-right: 3.28774%;
+      width: 65.57075%;
+      margin-left: 17.21462%; }
       .hero-content h1:last-child {
         margin-right: 0; } }
 
@@ -223,7 +223,7 @@ p a {
     width: 4em; }
 
 .menu {
-  padding: 2em 2em; }
+  padding: 4em 2em; }
   @media screen and (min-width: 60em) {
     .menu {
       padding: 2em 4em; } }
@@ -329,7 +329,7 @@ section, .section {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 14.28571%;
+        margin-right: 10.55743%;
         width: 100%; }
         .info .info-text:last-child {
           margin-right: 0; } }
@@ -337,27 +337,18 @@ section, .section {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 6.66667%;
-        width: 73.33333%;
-        margin-left: 13.33333%; }
+        margin-right: 5.01404%;
+        width: 73.74649%;
+        margin-left: 13.12675%; }
         .info .info-text:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       .info .info-text {
         float: left;
         display: block;
-        margin-right: 4.34783%;
-        width: 65.21739%;
-        margin-left: 17.3913%; }
-        .info .info-text:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 76.5em) {
-      .info .info-text {
-        float: left;
-        display: block;
-        margin-right: 3.22581%;
-        width: 74.19355%;
-        margin-left: 12.90323%; }
+        margin-right: 3.28774%;
+        width: 65.57075%;
+        margin-left: 17.21462%; }
         .info .info-text:last-child {
           margin-right: 0; } }
 
@@ -367,7 +358,7 @@ section, .section {
   .zigzag section:nth-child(2n) div:nth-child(2) {
     float: left; }
   .zigzag section:nth-child(2n-1) div:nth-child(2) {
-    margin-left: 6.45161%; } }
+    margin-left: 8.60731%; } }
 
 .rounded, .button, a.button, a.button:visited, footer .subscribe, input[type="email"], input[type="text"], .video .video-item, .contact .contact-box, .event .details .image {
   border-top-left-radius: 4px;
@@ -434,7 +425,7 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 14.28571%;
+        margin-right: 10.55743%;
         width: 100%;
         text-align: center; }
         footer .copy:last-child {
@@ -443,27 +434,19 @@ footer {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 6.66667%;
-        width: 73.33333%;
-        margin-left: 13.33333%; }
+        margin-right: 5.01404%;
+        width: 73.74649%;
+        margin-left: 13.12675%; }
         footer .copy:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       footer .copy {
         float: left;
         display: block;
-        margin-right: 4.34783%;
-        width: 21.73913%;
+        margin-right: 3.28774%;
+        width: 22.53419%;
         margin-left: 0%;
         text-align: left; }
-        footer .copy:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 76.5em) {
-      footer .copy {
-        float: left;
-        display: block;
-        margin-right: 3.22581%;
-        width: 22.58065%; }
         footer .copy:last-child {
           margin-right: 0; } }
   footer .subscribe {
@@ -472,7 +455,7 @@ footer {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 14.28571%;
+        margin-right: 10.55743%;
         width: 100%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
@@ -480,27 +463,18 @@ footer {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 6.66667%;
-        width: 73.33333%;
-        margin-left: 13.33333%; }
+        margin-right: 5.01404%;
+        width: 73.74649%;
+        margin-left: 13.12675%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 60em) {
       footer .subscribe {
         float: left;
         display: block;
-        margin-right: 4.34783%;
-        width: 47.82609%;
-        margin-left: 26.08696%; }
-        footer .subscribe:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 76.5em) {
-      footer .subscribe {
-        float: left;
-        display: block;
-        margin-right: 3.22581%;
-        width: 48.3871%;
-        margin-left: 25.80645%; }
+        margin-right: 3.28774%;
+        width: 48.35613%;
+        margin-left: 25.82194%; }
         footer .subscribe:last-child {
           margin-right: 0; } }
     footer .subscribe input[type="email"] {
@@ -540,7 +514,7 @@ input[type="email"], input[type="text"] {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 14.28571%;
+      margin-right: 10.55743%;
       width: 100%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
@@ -548,50 +522,31 @@ input[type="email"], input[type="text"] {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 6.66667%;
-      width: 46.66667%;
-      margin-left: 26.66667%; }
+      margin-right: 5.01404%;
+      width: 47.49298%;
+      margin-left: 26.25351%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 60em) {
     .home .hero-content p {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 47.82609%;
-      margin-left: 26.08696%; }
-      .home .hero-content p:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 76.5em) {
-    .home .hero-content p {
-      float: left;
-      display: block;
-      margin-right: 3.22581%;
-      width: 48.3871%;
-      margin-left: 25.80645%; }
+      margin-right: 3.28774%;
+      width: 48.35613%;
+      margin-left: 25.82194%; }
       .home .hero-content p:last-child {
         margin-right: 0; } }
 .home .hero-logo {
   margin-bottom: 2em; }
   .home .hero-logo img {
     width: 4em; }
-@media screen and (min-width: 76.5em) {
-  .home .events {
-    float: left;
-    display: block;
-    margin-right: 3.22581%;
-    width: 74.19355%;
-    margin-left: 12.90323%; }
-    .home .events:last-child {
-      margin-right: 0; } }
 .home .events .event {
-  margin-bottom: 0;
-  margin-bottom: 2em; }
+  margin-bottom: 0; }
   @media screen and (min-width: 20em) {
     .home .events .event {
       float: left;
       display: block;
-      margin-right: 14.28571%;
+      margin-right: 10.55743%;
       width: 100%; }
       .home .events .event:last-child {
         margin-right: 0; } }
@@ -599,8 +554,8 @@ input[type="email"], input[type="text"] {
     .home .events .event {
       float: left;
       display: block;
-      margin-right: 6.66667%;
-      width: 46.66667%; }
+      margin-right: 5.01404%;
+      width: 47.49298%; }
       .home .events .event:last-child {
         margin-right: 0; }
       .home .events .event:nth-child(2n) {
@@ -609,68 +564,26 @@ input[type="email"], input[type="text"] {
     .home .events .event {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 30.43478%; }
+      margin-right: 3.28774%;
+      width: 31.1415%; }
       .home .events .event:nth-child(2n) {
-        margin-right: 4.34783%; }
+        margin-right: 3.28774%; }
       .home .events .event:nth-child(2n+1) {
         clear: none; }
       .home .events .event:last-child {
         margin-right: 0; }
       .home .events .event:nth-child(3n) {
         margin-right: 0; } }
-  @media screen and (min-width: 76.5em) {
-    .home .events .event {
-      float: left;
-      display: block;
-      margin-right: 3.22581%;
-      width: 22.58065%; }
-      .home .events .event:last-child {
-        margin-right: 0; } }
   .home .events .event:nth-of-type(1n+4) {
     display: none; }
-  @media screen and (min-width: 20em) {
-    .home .events .event.featured {
-      float: left;
-      display: block;
-      margin-right: 14.28571%;
-      width: 100%; }
-      .home .events .event.featured:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 720px) {
-    .home .events .event.featured {
-      float: left;
-      display: block;
-      margin-right: 6.66667%;
-      width: 46.66667%; }
-      .home .events .event.featured:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 60em) {
-    .home .events .event.featured {
-      float: left;
-      display: block;
-      margin-right: 4.34783%;
-      width: 30.43478%; }
-      .home .events .event.featured:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 76.5em) {
-    .home .events .event.featured {
-      float: left;
-      display: block;
-      margin-right: 3.22581%;
-      width: 22.58065%; }
-      .home .events .event.featured:last-child {
-        margin-right: 0; } }
-
-@media screen and (min-width: 76.5em) {
-  .video .video-row {
+  .home .events .event.featured {
     float: left;
     display: block;
-    margin-right: 3.22581%;
-    width: 74.19355%;
-    margin-left: 12.90323%; }
-    .video .video-row:last-child {
-      margin-right: 0; } }
+    margin-right: 3.28774%;
+    width: 31.1415%; }
+    .home .events .event.featured:last-child {
+      margin-right: 0; }
+
 .video::after {
   clear: both;
   content: "";
@@ -679,7 +592,7 @@ input[type="email"], input[type="text"] {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 14.28571%;
+    margin-right: 10.55743%;
     width: 100%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -687,26 +600,17 @@ input[type="email"], input[type="text"] {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 73.33333%;
-    margin-left: 13.33333%; }
+    margin-right: 5.01404%;
+    width: 73.74649%;
+    margin-left: 13.12675%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
   .video .video-thumb {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 30.43478%;
-    margin-left: 0%; }
-    .video .video-thumb:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 76.5em) {
-  .video .video-thumb {
-    float: left;
-    display: block;
-    margin-right: 4.34783%;
-    width: 30.43478%;
+    margin-right: 3.28774%;
+    width: 31.1415%;
     margin-left: 0%; }
     .video .video-thumb:last-child {
       margin-right: 0; } }
@@ -726,7 +630,7 @@ input[type="email"], input[type="text"] {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 14.28571%;
+      margin-right: 10.55743%;
       width: 100%;
       margin-bottom: 2em; }
       .contact .contact-box:last-child {
@@ -735,8 +639,8 @@ input[type="email"], input[type="text"] {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 6.66667%;
-      width: 46.66667%;
+      margin-right: 5.01404%;
+      width: 47.49298%;
       margin-bottom: 0; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
@@ -744,16 +648,8 @@ input[type="email"], input[type="text"] {
     .contact .contact-box {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 47.82609%; }
-      .contact .contact-box:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 76.5em) {
-    .contact .contact-box {
-      float: left;
-      display: block;
-      margin-right: 3.22581%;
-      width: 48.3871%; }
+      margin-right: 3.28774%;
+      width: 48.35613%; }
       .contact .contact-box:last-child {
         margin-right: 0; } }
   .contact .contact-box:before {
@@ -786,7 +682,7 @@ input[type="email"], input[type="text"] {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 14.28571%;
+    margin-right: 10.55743%;
     width: 100%;
     margin-bottom: 2em; }
     .page-about .area .description:last-child {
@@ -795,8 +691,8 @@ input[type="email"], input[type="text"] {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 33.33333%;
+    margin-right: 5.01404%;
+    width: 34.36623%;
     margin-bottom: 0; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
@@ -804,23 +700,15 @@ input[type="email"], input[type="text"] {
   .page-about .area .description {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 30.43478%; }
-    .page-about .area .description:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 76.5em) {
-  .page-about .area .description {
-    float: left;
-    display: block;
-    margin-right: 3.22581%;
-    width: 35.48387%; }
+    margin-right: 3.28774%;
+    width: 31.1415%; }
     .page-about .area .description:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 20em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 14.28571%;
+    margin-right: 10.55743%;
     width: 100%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
@@ -828,47 +716,30 @@ input[type="email"], input[type="text"] {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 46.66667%; }
+    margin-right: 5.01404%;
+    width: 47.49298%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 60em) {
   .page-about .area .area-image {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 56.52174%; }
-    .page-about .area .area-image:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 76.5em) {
-  .page-about .area .area-image {
-    float: left;
-    display: block;
-    margin-right: 3.22581%;
-    width: 54.83871%; }
+    margin-right: 3.28774%;
+    width: 56.96344%; }
     .page-about .area .area-image:last-child {
       margin-right: 0; } }
 .page-about .area .area-image img {
   width: 100%;
   height: auto; }
 
-.about-resources img {
-  top: -11%; }
-
-.about-events img {
-  top: -11%; }
-
-.about-history img {
-  top: -11%; }
-
 .page-apply .hero-content h1 {
   color: #222; }
 .page-apply #ss-form {
   float: left;
   display: block;
-  margin-right: 4.34783%;
+  margin-right: 3.28774%;
   width: 100%;
-  margin-left: 17.3913%; }
+  margin-left: 17.21462%; }
   .page-apply #ss-form:last-child {
     margin-right: 0; }
 .page-apply .ss-required-asterisk, .page-apply .required-message {
@@ -878,7 +749,7 @@ input[type="email"], input[type="text"] {
   .event {
     float: left;
     display: block;
-    margin-right: 14.28571%;
+    margin-right: 10.55743%;
     width: 100%;
     margin-bottom: 2em;
     text-align: center; }
@@ -890,8 +761,8 @@ input[type="email"], input[type="text"] {
   .event {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 46.66667%;
+    margin-right: 5.01404%;
+    width: 47.49298%;
     margin-bottom: 4em;
     text-align: left; }
     .event:last-child {
@@ -904,16 +775,8 @@ input[type="email"], input[type="text"] {
   .event {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 47.82609%; }
-    .event:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 76.5em) {
-  .event {
-    float: left;
-    display: block;
-    margin-right: 3.22581%;
-    width: 48.3871%; }
+    margin-right: 3.28774%;
+    width: 48.35613%; }
     .event:last-child {
       margin-right: 0; } }
 .event:hover .details .meta p {
@@ -935,7 +798,7 @@ input[type="email"], input[type="text"] {
   .event.featured {
     float: left;
     display: block;
-    margin-right: 14.28571%;
+    margin-right: 10.55743%;
     width: 100%; }
     .event.featured:last-child {
       margin-right: 0; } }
@@ -943,7 +806,7 @@ input[type="email"], input[type="text"] {
   .event.featured {
     float: left;
     display: block;
-    margin-right: 6.66667%;
+    margin-right: 5.01404%;
     width: 100%; }
     .event.featured:last-child {
       margin-right: 0; } }
@@ -951,15 +814,7 @@ input[type="email"], input[type="text"] {
   .event.featured {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 100%; }
-    .event.featured:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 76.5em) {
-  .event.featured {
-    float: left;
-    display: block;
-    margin-right: 3.22581%;
+    margin-right: 3.28774%;
     width: 100%; }
     .event.featured:last-child {
       margin-right: 0; } }

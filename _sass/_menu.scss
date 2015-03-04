@@ -1,5 +1,5 @@
 .menu {
-    padding: $space $space;
+    padding: 2*$space $space;
     @include media($desktop) {
         padding: $space $space*2;
     }

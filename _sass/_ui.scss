@@ -38,8 +38,6 @@ section, .section {
       @include shift(2);
     }
     @include media($large) {
-      @include span-columns(12);
-      @include shift(2);
     }
 
     margin-bottom: $space;

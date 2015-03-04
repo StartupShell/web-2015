@@ -25,7 +25,7 @@
 			@include shift(1);
 		}
 		@include media($large) {
-			@include span-columns(12);
+			@include span-columns(8);
 			@include shift(2);
 		}
 	}
