@@ -1,3 +1,5 @@
+@import 'events';
+
 .home {
 
 	.hero {
@@ -38,7 +40,49 @@
 		}
 	}
 
-	.hero-cta {
+	.events {
+		@include media($large) {
+			@include span-columns(12);
+			@include shift(2);
+		}
+		.event {
+			@include media($mobile) {
+	            @include span-columns(4);
+	        }
+	        @include media($tablet) {
+	            @include span-columns(4);
+	            @include omega('2n');
+	        }
+	        @include media($desktop) {
+	        	@include omega-reset('2n');
+	            @include span-columns(4);
+	            @include omega('3n');
+	        }
+	        @include media($large) {
+	            @include span-columns(4);
+	        }
+	        margin-bottom: $space;
+	        &:nth-of-type(1n+4) {
+	        	display: none;
+	        }
+			&.featured {
+				@include media($mobile) {
+		            @include span-columns(4);
+		        }
+		        @include media($tablet) {
+		            @include span-columns(4);
+		        }
+		        @include media($desktop) {
+		            @include span-columns(4);
+		        }
+		        @include media($large) {
+		            @include span-columns(4);
+		        }
+		        .image {
+		        	@extend .fivebythree;
+		        }
+			}
+		}
 	}
 
 }
@@ -126,3 +170,5 @@
 		color: $gray;
 	}
 }
+
+
