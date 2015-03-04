@@ -47,7 +47,9 @@
         }
     }
     .slide-button {
-        display: none;
+        @include media($tablet) {
+            display: none;
+        }
         @include transition(all 0.3s);
         position: absolute;
         right: $space*2;
