@@ -9,27 +9,10 @@ $(document).ready(function() {
 
 // COLLAPSE MENU
 
-function mobileMenu() {
-    var width = $(window).width();
-
-    if (width < 720) {
-        $('.slide-button').show();
-        $('.slide-button').click(function() {
-            $('.menu').toggleClass('open');
-        })
-    } else {
-        $('.slide-button').hide();
-    }
-
-
-}
-
 $(document).ready(function() {
-    mobileMenu();
-});
-
-$(window).resize(function() {
-    mobileMenu();
+    $('.slide-button').click(function() {
+        $('.menu').toggleClass('open');
+    })
 });
 
 // MAILCHIMP
