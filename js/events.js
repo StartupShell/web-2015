@@ -145,8 +145,6 @@ function assembleStructure(data, index, callback) {
     newData.location = data.location;
     newData.position = index;
 
-    console.log(newData.title + ' ' + newData.start);
-
     // Get the FB data for the event
     getCover(newData, function(fbData) {
         // If there's no cover image, use the default one
@@ -231,19 +229,16 @@ $.ajax({
         // The assemble the structure
         .forEach(function(i, index) {
             // Make a blank element
-            var eventStream = document.getElementById("eventStream");
-            eventStream.innerHTML = eventStream.innerHTML + '<div class="event"></div>';
+            $('.events').append('<div class="event"></div>');
 
             assembleStructure(i, index, function(assembled, position) {
                 // And add it to the blank element in [position] position.
                 // This solves the async issue of our requests coming back at different times
-                var eventStream = document.getElementById("eventStream");
-                eventStream.getElementsByClassName('event')[position].innerHTML = assembled;
+                $('.events .event').eq(position).html(assembled);
 
                 // Feature first
                 if (position == 0) {
-                    var first = eventStream.getElementsByClassName('event')[position];
-                    first.className = first.className + ' featured';
+                    $('.events .event:first-child').addClass('featured');
                 }
 
             })
