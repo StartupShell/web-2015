@@ -12,26 +12,13 @@ $(document).ready(function() {
 function mobileMenu() {
     var width = $(window).width();
 
-    if (width < 960) {
-        // Wrap the nav & social in the .nav element
-        $('.menu ul').wrapAll("<div class='links' />");
-
-        // Hide the new element & show the hamburglar
-        // $('nav .links').hide();
-        $('nav .hamburglar').show();
-
-        $('nav .hamburglar').click(function() {
+    if (width < 720) {
+        $('.slide-button').show();
+        $('.slide-button').click(function() {
             $('.menu').toggleClass('open');
-            $('body').toggleClass('open');
         })
-
     } else {
-        // Unwrap if wrapped
-        if ($('.menu ul').parent().is('.links')) {
-            $('.menu ul').unwrap();
-        }
-
-        $('nav .hamburglar').hide();
+        $('.slide-button').hide();
     }
 
 
