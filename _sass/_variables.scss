@@ -40,3 +40,9 @@ $base-size: 1em;
 $h1-size: 	2.5em;
 $h2-size: 	1.25em;
 $h3-size: 	$base-size;
+
+// OMEGA RESET
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}

@@ -1,83 +1,78 @@
-.page-events {
-    .event {
+.event {
+    @include media($mobile) {
+        @include span-columns(4);
+        margin-bottom: $space;
+        text-align: center;
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+    }
+    @include media($tablet) {
+        @include span-columns(4);
+        @include omega('2n+1');
+        margin-bottom: 2*$space;
+        text-align: left;
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+    }
+    @include media($desktop) {
+        @include span-columns(6);
+    }
+    @include media($large) {
+        @include span-columns(8);
+    }
+    &:hover .details .meta p {
+        color: $gray;
+    }
+    .details {
+        .image {
+            @extend .rounded;
+            margin-bottom: $space/2;
+            width: 100%;
+            height: auto;
+            img {
+                margin: auto;
+            }
+            &.no-fb {
+                background-color: $light-gray;
+            }
+        }
+        .meta {
+            .title {
+                font-weight: 700;
+                margin-bottom: $space/8;
+            }
+            p {
+                color: $medium-gray;
+            }
+        }
+    }
+    &.featured {
         @include media($mobile) {
             @include span-columns(4);
-            margin-bottom: $space;
-            text-align: center;
-            &:nth-last-child(1) {
-                margin-bottom: 0;
-            }
         }
         @include media($tablet) {
-            @include span-columns(4);
-            @include omega('2n+1');
-            margin-bottom: 2*$space;
-            text-align: left;
-            &:nth-last-child(-n+2) {
-                margin-bottom: 0;
-            }
-        }
-        @include media($desktop) {
-            @include span-columns(6);
-        }
-        @include media($large) {
             @include span-columns(8);
         }
-        &:hover .details .meta p {
-            color: $gray;
+        @include media($desktop) {
+            @include span-columns(12);
         }
-
+        @include media($large) {
+            @include span-columns(16);
+        }
         .details {
-            .image {
-                @extend .rounded;
-                margin-bottom: $space/2;
-                width: 100%;
-                height: auto;
-                img {
-                    margin: auto;
-                }
-                &.no-fb {
-                    background-color: $light-gray;
-                }
-            }
-            .meta {
-                .title {
-                    font-weight: 700;
-                    margin-bottom: $space/8;
-                }
-                p {
-                    color: $medium-gray;
-                }
-            }
-        }
-        &.featured {
-            @include media($mobile) {
-                @include span-columns(4);
-            }
-            @include media($tablet) {
-                @include span-columns(8);
-            }
-            @include media($desktop) {
-                @include span-columns(12);
-            }
-            @include media($large) {
-                @include span-columns(16);
-            }
-            .details {
-                text-align: center;
-                .title {
-                    @extend .h2;
-                }
+            text-align: center;
+            .title {
+                @extend .h2;
             }
         }
     }
 }
-
 .event .image {
     @extend .ratio;
     @extend .fivebythree;
 }
-
 .featured .image {
     @extend .ratio;
     @extend .twentyonebynine;
@@ -90,4 +85,3 @@
         }
     }
 }
-
