@@ -195,12 +195,9 @@ var url = ['https://www.googleapis.com/calendar/v3/calendars',
 ].join('');
 
 
-var request = new XMLHttpRequest();
-request.open('GET', url, true);
-
-request.onload = function() {
-    if (request.status >= 200 && request.status < 400) {
-        var data = JSON.parse(request.responseText);
+$.ajax({
+    url: url
+}).done(function(data) {
         // Begin parsing
         data.items
 
@@ -253,17 +250,4 @@ request.onload = function() {
 
         });
 
-    } else {
-        // We reached our target server, but it returned an error
-        var eventStream = document.getElementById("eventStream");
-        eventStream.innerHTML = eventStream.innerHTML + "An error has occurred. Sorry!";
-    }
-};
-
-request.onerror = function() {
-    // There was a connection error of some sort
-    var eventStream = document.getElementById("eventStream");
-    eventStream.innerHTML = eventStream.innerHTML + "Cannot connect to Google Calendar. Sorry!";
-};
-
-request.send();
+});
