@@ -1,6 +1,8 @@
 <nav class="menu{% if page.url == '/index.html' %} gray{% endif %}">
   <div class="menu-logo"><a href="{{ site.baseurl }}/">Startup Shell</a></div>
 
+  <a href="javascript:void(0)" class="hamburglar"></a>
+
   <ul class="menu-list">
     {% for link in site.data.menu %}
     <li class="menu-item"><a href="{{ link.url }}" class="menu-item-link">{{ link.name }}</a></li>

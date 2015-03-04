@@ -145,8 +145,6 @@ function assembleStructure(data, index, callback) {
     newData.location = data.location;
     newData.position = index;
 
-    console.log(newData.title + ' ' + newData.start);
-
     // Get the FB data for the event
     getCover(newData, function(fbData) {
         // If there's no cover image, use the default one
@@ -195,12 +193,9 @@ var url = ['https://www.googleapis.com/calendar/v3/calendars',
 ].join('');
 
 
-var request = new XMLHttpRequest();
-request.open('GET', url, true);
-
-request.onload = function() {
-    if (request.status >= 200 && request.status < 400) {
-        var data = JSON.parse(request.responseText);
+$.ajax({
+    url: url
+}).done(function(data) {
         // Begin parsing
         data.items
 
@@ -234,36 +229,20 @@ request.onload = function() {
         // The assemble the structure
         .forEach(function(i, index) {
             // Make a blank element
-            var eventStream = document.getElementById("eventStream");
-            eventStream.innerHTML = eventStream.innerHTML + '<div class="event"></div>';
+            $('.events').append('<div class="event"></div>');
 
             assembleStructure(i, index, function(assembled, position) {
                 // And add it to the blank element in [position] position.
                 // This solves the async issue of our requests coming back at different times
-                var eventStream = document.getElementById("eventStream");
-                eventStream.getElementsByClassName('event')[position].innerHTML = assembled;
+                $('.events .event').eq(position).html(assembled);
 
                 // Feature first
                 if (position == 0) {
-                    var first = eventStream.getElementsByClassName('event')[position];
-                    first.className = first.className + ' featured';
+                    $('.events .event:first-child').addClass('featured');
                 }
 
             })
 
         });
 
-    } else {
-        // We reached our target server, but it returned an error
-        var eventStream = document.getElementById("eventStream");
-        eventStream.innerHTML = eventStream.innerHTML + "An error has occurred. Sorry!";
-    }
-};
-
-request.onerror = function() {
-    // There was a connection error of some sort
-    var eventStream = document.getElementById("eventStream");
-    eventStream.innerHTML = eventStream.innerHTML + "Cannot connect to Google Calendar. Sorry!";
-};
-
-request.send();
+});

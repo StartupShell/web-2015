@@ -4,13 +4,16 @@
     @include display(flex);
     @include flex-direction(row);
     @include justify-content(space-between);
-    padding: $space 2*$space;
+    padding: $space $space;
+    @include media($desktop) {
+        padding: $space $space*2;
+    }
     &.gray {
         background: $light-gray;
     }
     .menu-logo {
         @include flex(1);
-        font-weight: 600;   
+        font-weight: 600;
         text-transform: lowercase;
     }
     .menu-list {
@@ -25,11 +28,17 @@
     }
     .social-list {
         @include flex(1);
-        text-align: right;
+        text-align: center;
+        @include media($desktop) {
+            text-align: right;
+        }
         .social-item {
             display: inline-block;
             text-align: right;
-            margin-left: $space/2;
+            margin-left: 0;
+            @include media($desktop) {
+                margin-left: $space/2;
+            }
             .icon {
                 width: 1.5em;
                 height: 1.5em;
@@ -38,6 +47,54 @@
         }
         &:last-child {
             margin-right: 0;
+        }
+    }
+    .hamburglar {
+        display: none;
+        @include transition(all 0.3s);
+        position: absolute;
+        right: $space*2;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: $space;
+            height: 0.15em;
+            background: $red;
+            box-shadow: 0 0.4em 0 0 $red, 0 0.8em 0 0 $red;
+        }
+    }
+    // This appears and wraps both ul elements when a device is mobile
+    .links {
+        position: fixed;
+        right: $space*-4;
+        top: 0;
+        width: $space*4;
+        text-align: center;
+        height: 100%;
+        padding: $space $space/1;
+        background: $white;
+        @include transition(all 0.3s);
+        z-index: 9999;
+        .menu-list {
+            .menu-item {
+                display: block;
+                margin-bottom: $space;
+                .menu-item-link {
+                    padding: $space 0;
+                }
+            }
+        }
+    }
+    &.open {
+        .hamburglar {
+            right: $space*6;
+        }
+        .links {
+            right: 0;
+        }
+        .social-list {
         }
     }
 }
