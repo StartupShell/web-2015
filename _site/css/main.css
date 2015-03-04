@@ -932,3 +932,9 @@ input[type="email"], input[type="text"] {
     width: 21%; } }
 .page-ventures .hero h1 {
   color: #222; }
+
+.home .hero {
+  padding-bottom: 4em;
+  margin-bottom: 4em; }
+.home .video {
+  display: none; }
