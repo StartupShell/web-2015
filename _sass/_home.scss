@@ -46,6 +46,7 @@
 			@include shift(2);
 		}
 		.event {
+			margin-bottom: 0;
 			@include media($mobile) {
 	            @include span-columns(4);
 	        }

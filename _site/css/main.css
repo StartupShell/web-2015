@@ -742,6 +742,7 @@ input[type="email"], input[type="text"] {
     .home .events:last-child {
       margin-right: 0; } }
 .home .events .event {
+  margin-bottom: 0;
   margin-bottom: 2em; }
   @media screen and (min-width: 20em) {
     .home .events .event {
