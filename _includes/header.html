@@ -3,7 +3,7 @@
 <nav class="menu{% if page.url == '/index.html' %} gray{% endif %}">
   <div class="menu-logo"><a href="{{ site.baseurl }}/">Startup Shell</a></div>
 
-  <a href="javascript:void(0)" class="hamburglar"></a>
+  <a href="javascript:void(0)" class="slide-button"></a>
 
   <ul class="menu-list">
     {% for link in site.data.menu %}
@@ -11,7 +11,7 @@
     {% endfor %}
   </ul>
 
-  <ul class="social-list">
+<!--   <ul class="social-list">
     {% for link in site.data.links %}
     <li class="social-item">
       <a href="{{ link.url }}" target="_blank">
@@ -19,6 +19,6 @@
       </a>
     </li>
     {% endfor %}
-  </ul>
+  </ul> -->
 
 </nav> <!-- /.menu -->
