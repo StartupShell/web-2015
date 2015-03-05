@@ -37,11 +37,14 @@ footer {
 			border: 0;
 		}
 		.button {
+			display: none;
 			float: right;
 			background: $medium-gray;
-
 			&:hover {
 				background: $gray;
+			}
+			@include media($tablet) {
+				display: inherit
 			}
 		}
 	}

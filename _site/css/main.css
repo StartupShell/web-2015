@@ -551,10 +551,14 @@ footer {
       padding-right: 0;
       border: 0; }
     footer .subscribe .button {
+      display: none;
       float: right;
       background: #888; }
       footer .subscribe .button:hover {
         background: #222; }
+      @media screen and (min-width: 720px) {
+        footer .subscribe .button {
+          display: inherit; } }
 
 input {
   border: 0;
