@@ -1,107 +1,121 @@
 .menu {
+  @include media($desktop) {
+    @include align-items(center);
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(space-between);
+  }
+  padding: $space $space;
+  @include media($desktop) {
+    padding: $space $space*2;
+  }
+
+  &.gray {
+    background: $light-gray;
+  }
+
+  .menu-logo {
     @include media($desktop) {
-        @include align-items(center);
-        @include display(flex);
-        @include flex-direction(row);
-        @include justify-content(space-between);
+      @include flex(1);
     }
-    padding: $space $space;
+    float: left;
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+
+  .menu-list {
+    position: fixed;
+    z-index: 20;
+    @include transition(all 0.3s);
+    top: 0;
+    right: $space*-5;
+    width: $space*5;
+    height: 100%;
+    list-style: none outside none;
+    background: $white;
+    padding-top: $space;
+    overflow: hidden;
     @include media($desktop) {
-        padding: $space $space*2;
+      position: initial;
+      overflow: inherit;
+      float: right;
+      width: inherit;
+      height: inherit;
+      background: inherit;
+      padding-top: 0;
     }
-    &.gray {
-        background: $light-gray;
-    }
-    .menu-logo {
-        @include media($desktop) {
-            @include flex(1);
-        }
-        float: left;
-        font-weight: 600;
+
+    .menu-item {
+      display: block;
+      text-align: center;
+      margin-bottom: $space;
+      @include media($desktop) {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+
+      .menu-item-link {
+        padding: $space $space/2;
         text-transform: lowercase;
+      }
     }
+  }
+
+  .social-list {
+    display: none;
+    text-align: right;
+    @include media($desktop) {
+      @include flex(1);
+      display: inline-block;
+    }
+
+    .social-item {
+      display: inline-block;
+      text-align: right;
+      margin-left: $space/3;
+
+      .icon {
+        width: 1.5em;
+        height: 1.5em;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .slide-button {
+    @include media($desktop) {
+      display: none;
+    }
+    @include transition(all 0.3s);
+    position: absolute;
+    right: $space;
+    width: $space;
+    height: $space;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: $space;
+      height: 0.15em;
+      background: $red;
+      box-shadow: 0 0.4em 0 0 $red, 0 0.8em 0 0 $red;
+    }
+  }
+
+  &.open {
+
     .menu-list {
-        position: fixed;
-        z-index: 20;
-        @include transition(all 0.3s);
-        top: 0;
-        right: $space*-5;
-        width: $space*5;
-        height: 100%;
-        list-style: none outside none;
-        background: $white;
-        padding-top: $space;
-        overflow: hidden;
-        @include media($desktop) {
-            position: initial;
-            overflow: inherit;
-            float: right;
-            width: inherit;
-            height: inherit;
-            background: inherit;
-            padding-top: 0;
-        }
-        .menu-item {
-            display: block;
-            text-align: center;
-            margin-bottom: $space;
-            @include media($desktop) {
-                display: inline-block;
-                margin-bottom: 0;
-            }
-            .menu-item-link {
-                padding: $space $space/2;
-                text-transform: lowercase;
-            }
-        }
+      right: 0;
     }
-    .social-list {
-        display: none;
-        text-align: right;
-        @include media($desktop) {
-            @include flex(1);
-            display: inline-block;
-        }
-        .social-item {
-            display: inline-block;
-            text-align: right;
-            margin-left: $space/3;
-            .icon {
-                width: 1.5em;
-                height: 1.5em;
-                background-repeat: no-repeat;
-            }
-        }
-        &:last-child {
-            margin-right: 0;
-        }
-    }
+
     .slide-button {
-        @include media($desktop) {
-            display: none;
-        }
-        @include transition(all 0.3s);
-        position: absolute;
-        right: $space;
-        width: $space;
-        height: $space;
-        &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 2px;
-            width: $space;
-            height: 0.15em;
-            background: $red;
-            box-shadow: 0 0.4em 0 0 $red, 0 0.8em 0 0 $red;
-        }
+      right: $space*6;
     }
-    &.open {
-        .menu-list {
-            right: 0;
-        }
-        .slide-button {
-            right: $space*6;
-        }
-    }
+  }
 }
