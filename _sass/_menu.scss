@@ -1,4 +1,10 @@
 .menu {
+    @include media($desktop) {
+        @include align-items(flex-start);
+        @include display(flex);
+        @include flex-direction(row);
+        @include justify-content(space-between);
+    }
     padding: $space $space;
     @include media($desktop) {
         padding: $space $space*2;
@@ -7,6 +13,9 @@
         background: $light-gray;
     }
     .menu-logo {
+        @include media($desktop) {
+            @include flex(1);
+        }
         float: left;
         font-weight: 600;
         text-transform: lowercase;
@@ -14,7 +23,6 @@
     .menu-list {
         position: fixed;
         z-index: 20;
-        overflow: hidden;
         @include transition(all 0.3s);
         top: 0;
         right: $space*-5;
@@ -23,9 +31,10 @@
         list-style: none outside none;
         background: $white;
         padding-top: $space;
-        @include media($tablet) {
+        overflow: hidden;
+        @include media($desktop) {
             position: initial;
-            overflow: auto;
+            overflow: inherit;
             float: right;
             width: inherit;
             height: inherit;
@@ -36,7 +45,7 @@
             display: block;
             text-align: center;
             margin-bottom: $space;
-            @include media($tablet) {
+            @include media($desktop) {
                 display: inline-block;
                 margin-bottom: 0;
             }
@@ -46,13 +55,36 @@
             }
         }
     }
+    .social-list {
+        display: none;
+        text-align: right;
+        @include media($desktop) {
+            @include flex(1);
+            display: inline-block;
+        }
+        .social-item {
+            display: inline-block;
+            text-align: right;
+            margin-left: $space/3;
+            .icon {
+                width: 1.5em;
+                height: 1.5em;
+                background-repeat: no-repeat;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
     .slide-button {
-        @include media($tablet) {
+        @include media($desktop) {
             display: none;
         }
         @include transition(all 0.3s);
         position: absolute;
-        right: $space*2;
+        right: $space/2;
+        width: $space;
+        height: $space;
         &:before {
             content: "";
             position: absolute;
@@ -69,30 +101,7 @@
             right: 0;
         }
         .slide-button {
-            right: $space*7;
+            right: ($space*5)+($space/2);
         }
     }
-    // .social-list {
-    //     @include flex(1);
-    //     text-align: center;
-    //     @include media($desktop) {
-    //         text-align: right;
-    //     }
-    //     .social-item {
-    //         display: inline-block;
-    //         text-align: right;
-    //         margin-left: 0;
-    //         @include media($desktop) {
-    //             margin-left: $space/2;
-    //         }
-    //         .icon {
-    //             width: 1.5em;
-    //             height: 1.5em;
-    //             background-repeat: no-repeat;
-    //         }
-    //     }
-    //     &:last-child {
-    //         margin-right: 0;
-    //     }
-    // }
 }
