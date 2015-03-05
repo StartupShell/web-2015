@@ -36,21 +36,28 @@
 
 	.events {
 		.event {
-			margin-bottom: 0;
+			margin-bottom: $space;
+			&:nth-of-type(1n+3) {
+	        	display: none;
+	        }
 			@include media($mobile) {
 	            @include span-columns(4);
 	        }
 	        @include media($tablet) {
 	            @include span-columns(4);
 	            @include omega('2n');
+	            margin-bottom: 0;
 	        }
 	        @include media($desktop) {
 	        	@include omega-reset('2n');
 	            @include span-columns(4);
 	            @include omega('3n');
-	        }
-	        &:nth-of-type(1n+4) {
-	        	display: none;
+	            &:nth-of-type(1n+3) {
+	        		display: inherit;
+	        	}
+	            &:nth-of-type(1n+4) {
+	        		display: none;
+	        	}
 	        }
 	        h2 {
 	        	@extend .h3;

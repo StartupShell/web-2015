@@ -611,7 +611,9 @@ input[type="email"], input[type="text"] {
   .home .hero-logo img {
     width: 4em; }
 .home .events .event {
-  margin-bottom: 0; }
+  margin-bottom: 2em; }
+  .home .events .event:nth-of-type(1n+3) {
+    display: none; }
   @media screen and (min-width: 20em) {
     .home .events .event {
       float: left;
@@ -625,7 +627,8 @@ input[type="email"], input[type="text"] {
       float: left;
       display: block;
       margin-right: 5.01404%;
-      width: 47.49298%; }
+      width: 47.49298%;
+      margin-bottom: 0; }
       .home .events .event:last-child {
         margin-right: 0; }
       .home .events .event:nth-child(2n) {
@@ -643,9 +646,11 @@ input[type="email"], input[type="text"] {
       .home .events .event:last-child {
         margin-right: 0; }
       .home .events .event:nth-child(3n) {
-        margin-right: 0; } }
-  .home .events .event:nth-of-type(1n+4) {
-    display: none; }
+        margin-right: 0; }
+      .home .events .event:nth-of-type(1n+3) {
+        display: inherit; }
+      .home .events .event:nth-of-type(1n+4) {
+        display: none; } }
 
 .video::after {
   clear: both;
