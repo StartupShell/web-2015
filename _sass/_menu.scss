@@ -82,7 +82,7 @@
         }
         @include transition(all 0.3s);
         position: absolute;
-        right: $space/2;
+        right: $space;
         width: $space;
         height: $space;
         &:before {
@@ -101,7 +101,7 @@
             right: 0;
         }
         .slide-button {
-            right: ($space*5)+($space/2);
+            right: $space*6;
         }
     }
 }

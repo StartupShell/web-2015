@@ -338,7 +338,7 @@ p a {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     position: absolute;
-    right: 1em;
+    right: 2em;
     width: 2em;
     height: 2em; }
     @media screen and (min-width: 60em) {
@@ -356,7 +356,7 @@ p a {
   .menu.open .menu-list {
     right: 0; }
   .menu.open .slide-button {
-    right: 11em; }
+    right: 12em; }
 
 .content, .container, section, .section {
   max-width: 960px;
