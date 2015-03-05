@@ -1,46 +1,49 @@
 .page-about {
-	
-	.hero {
-		background-image: url(/assets/about-hero.jpg);
-		background-position: center 60%;
-		background-repeat: no-repeat;
-	}
-	.area {
-		@include media($mobile) {
-			margin-bottom: 2*$space;
-		}
-		@include media($tablet) {
-			margin-bottom: 3*$space;
-		}
-		.description {
-			@include media($mobile) {
-				@include span-columns(4);
-				margin-bottom: $space;
-			}
-			@include media($tablet) {
-				@include span-columns(3);
-				margin-bottom: 0;
-			}
-			@include media($desktop) {
-				@include span-columns(4);
-			}
-		}
-		.area-image {
-			@extend .ratio;
-			@extend .fivebythree;
-			@include media($mobile) {
-				@include span-columns(4);
-			}
-			@include media($tablet) {
-				@include span-columns(4);
-			}
-			@include media($desktop) {
-				@include span-columns(7);
-			}
-			img {
-				width: 100%;
-				height: auto; // this needs to be dynamic in the future
-			}
-		}
-	}
+
+  .hero {
+    background-image: url(/assets/about-hero.jpg);
+    background-position: center 60%;
+    background-repeat: no-repeat;
+  }
+
+  .area {
+    @include media($mobile) {
+      margin-bottom: 2*$space;
+    }
+    @include media($tablet) {
+      margin-bottom: 3*$space;
+    }
+
+    .description {
+      @include media($mobile) {
+        @include span-columns(4);
+        margin-bottom: $space;
+      }
+      @include media($tablet) {
+        @include span-columns(3);
+        margin-bottom: 0;
+      }
+      @include media($desktop) {
+        @include span-columns(4);
+      }
+    }
+
+    .area-image {
+      @extend .ratio;
+      @extend .fivebythree;
+      @include media($mobile) {
+        @include span-columns(4);
+      }
+      @include media($tablet) {
+        @include span-columns(4);
+      }
+      @include media($desktop) {
+        @include span-columns(7);
+      }
+      img {
+        width: 100%;
+        height: auto; // this needs to be dynamic in the future
+      }
+    }
+  }
 }

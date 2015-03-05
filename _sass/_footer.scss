@@ -1,51 +1,56 @@
 footer {
-	background: $light-gray;
-	padding: $space;
-	color: $medium-gray;
-	.copy {
-		@include media($mobile) {
-			@include span-columns(4);
-			text-align: center;
-		}
-		@include media($tablet) {
-			@include span-columns(6);
-			@include shift(1);
-		}
-		@include media($desktop) {
-			@include span-columns(3);
-			@include shift(0);
-			text-align: left;
-		}
-		padding: $space/2 0;
-	}
-	.subscribe {
-		@include media($mobile) {
-			@include span-columns(4);
-		}
-		@include media($tablet) {
-			@include span-columns(6);
-			@include shift(1);
-		}
-		@include media($desktop) {
-			@include span-columns(6);
-			@include shift(3);
-		}
-		@extend .rounded;
-		background: $white;
-		input[type="email"] {
-			padding-right: 0;
-			border: 0;
-		}
-		.button {
-			display: none;
-			float: right;
-			background: $medium-gray;
-			&:hover {
-				background: $gray;
-			}
-			@include media($tablet) {
-				display: inherit
-			}
-		}
-	}
+  background: $light-gray;
+  padding: $space;
+  color: $medium-gray;
+
+  .copy {
+    @include media($mobile) {
+      @include span-columns(4);
+      text-align: center;
+    }
+    @include media($tablet) {
+      @include span-columns(6);
+      @include shift(1);
+    }
+    @include media($desktop) {
+      @include span-columns(3);
+      @include shift(0);
+      text-align: left;
+    }
+    padding: $space/2 0;
+  }
+
+  .subscribe {
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+    @include media($tablet) {
+      @include span-columns(6);
+      @include shift(1);
+    }
+    @include media($desktop) {
+      @include span-columns(6);
+      @include shift(3);
+    }
+    @extend .rounded;
+    background: $white;
+    input[type="email"] {
+      padding-right: 0;
+      border: 0;
+    }
+
+    .button {
+      display: none;
+      float: right;
+      background: $medium-gray;
+
+      @include media($tablet) {
+        display: inherit
+      }
+
+      &:hover {
+        background: $gray;
+      }
+    }
+  }
 }

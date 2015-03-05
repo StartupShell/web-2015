@@ -1,89 +1,49 @@
 .venture-item {
-	display: block;
-	// margin-bottom: $space/2;
-	opacity: .9;
-	&:hover {
-		opacity: 1;
-	}
-	margin: 0 2% $space/2;
-	float: left;
+  display: block;
+  margin: 0 2% $space/2;
+  float: left;
+  opacity: .9;
 
-	@include media($mobile) {
-		width: 21%;
-	}
-	@include media($tablet) {
-		width: 8.5%;
-	}
-	@include media($desktop) {
-		width: 8.5%;
-	}
-	@include media($large) {
-		width: 8.5%;
-	}
+  &:hover {
+    opacity: 1;
+  }
 
-	// @include media($mobile) {
-	// 	@include span-columns(1);
-	// 	@include omega(4n);
-	// }
-	// @include media($tablet) {
-	// 	@include omega-reset(4n);
-	// 	@include span-columns(1);
-	// 	@include omega(8n);
-	// }
-	// @include media($desktop) {
-	// 	@include omega-reset(8n);
-	// 	@include span-columns(1);
-	// 	@include omega(12n);
-	// }
-	// @include media($large) {
-	// 	@include omega-reset(12n);
-	// 	@include span-columns(2);
-	// 	@include omega(8n);
-	// }
-
-
+  @include media($mobile) {
+    width: 21%;
+  }
+  @include media($tablet) {
+    width: 8.5%;
+  }
+  @include media($desktop) {
+    width: 8.5%;
+  }
+  @include media($large) {
+    width: 8.5%;
+  }
 }
 
 .page-ventures {
-	.venture-item {
 
-		@include media($mobile) {
-			width: 46%;
-		}
-		@include media($tablet) {
-			width: 21%;
-		}
-		@include media($desktop) {
-			width: 21%;
-		}
-		@include media($large) {
-			width: 21%;
-		}
+  .venture-item {
 
-		// @include media($mobile) {
-		// 	@include span-columns(2);
-		// 	@include omega(2n);
-		// }
-		// @include media($tablet) {
-		// 	@include omega-reset(2n); // figure out this omega-reset situation
-		// 	@include span-columns(2);
-		// 	@include omega(4n);
-		// }
-		// @include media($desktop) {
-		// 	@include omega-reset(4n);
-		// 	@include span-columns(3);
-		// 	@include omega(4n);
-		// }
-		// @include media($large) {
-		// 	@include omega-reset(4n);
-		// 	@include span-columns(4);
-		// 	@include omega(4n);
-		// }
-	}
-	.hero {
-		h1 {
-			color: $gray;
-		}
-		// background: url(/assets/ventures-hero.jpg) center no-repeat;
-	}
+    @include media($mobile) {
+      width: 46%;
+    }
+    @include media($tablet) {
+      width: 21%;
+    }
+    @include media($desktop) {
+      width: 21%;
+    }
+    @include media($large) {
+      width: 21%;
+    }
+  }
+
+  .hero {
+
+    h1 {
+      color: $gray;
+    }
+  }
 }

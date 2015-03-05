@@ -1,139 +1,154 @@
 .home {
 
-	.hero {
-		padding: 2*$space 0 6*$space;
-		margin-bottom: -3.5*$space;
-		@include radial-gradient(at 50% bottom,$white,$white,$light-gray,$light-gray);
-	}
+  .hero {
+    padding: 2*$space 0 6*$space;
+    margin-bottom: -3.5*$space;
+    @include radial-gradient(at 50% bottom,$white,$white,$light-gray,$light-gray);
+  }
 
-	.hero-content {
-		h1 {
-			color: $gray;
-			margin-bottom: $space/4;
-		}
-		p {
-			@include media($mobile) {
-				@include span-columns(4);
-			}
-			@include media($tablet) {
-				@include span-columns(4);
-				@include shift(2);
-			}
-			@include media($desktop) {
-				@include span-columns(6);
-				@include shift(3);
-			}
-			margin-bottom: $space;
-		}
-	}
+  .hero-content {
 
-	.hero-logo {
-		margin-bottom: $space;
-		img {
-			width: 2*$space;
-		}
-	}
+    h1 {
+      color: $gray;
+      margin-bottom: $space/4;
+    }
 
-	.events {
-		.event {
-			margin-bottom: $space;
-			&:nth-of-type(1n+3) {
-	        	display: none;
-	        }
-			@include media($mobile) {
-	            @include span-columns(4);
-	        }
-	        @include media($tablet) {
-	            @include span-columns(4);
-	            @include omega('2n');
-	            margin-bottom: 0;
-	        }
-	        @include media($desktop) {
-	        	@include omega-reset('2n');
-	            @include span-columns(4);
-	            @include omega('3n');
-	            &:nth-of-type(1n+3) {
-	        		display: inherit;
-	        	}
-	            &:nth-of-type(1n+4) {
-	        		display: none;
-	        	}
-	        }
-	        h2 {
-	        	@extend .h3;
-	        }
-		}
-	}
+    p {
+      @include media($mobile) {
+        @include span-columns(4);
+      }
+      @include media($tablet) {
+        @include span-columns(4);
+        @include shift(2);
+      }
+      @include media($desktop) {
+        @include span-columns(6);
+        @include shift(3);
+      }
+      margin-bottom: $space;
+    }
+  }
+
+  .hero-logo {
+    margin-bottom: $space;
+
+    img {
+      width: 2*$space;
+    }
+  }
+
+  .events {
+
+    .event {
+      margin-bottom: $space;
+
+      &:nth-of-type(1n+3) {
+        display: none;
+      }
+      @include media($mobile) {
+        @include span-columns(4);
+      }
+      @include media($tablet) {
+        @include span-columns(4);
+        @include omega('2n');
+        margin-bottom: 0;
+      }
+      @include media($desktop) {
+        @include omega-reset('2n');
+        @include span-columns(4);
+        @include omega('3n');
+        &:nth-of-type(1n+3) {
+          display: inherit;
+        }
+        &:nth-of-type(1n+4) {
+          display: none;
+        }
+      }
+      h2 {
+        @extend .h3;
+      }
+    }
+  }
 
 }
 
 .video {
-	@include clearfix;
-	.video-thumb {
-		@extend .ratio;
-		@extend .square;
-		@include media($mobile) {
-			@include span-columns(4);
-		}
-		@include media($tablet) {
-			@include span-columns(6);
-			@include shift(1);
-		}
-		@include media($desktop) {
-			@include span-columns(4);
-			@include shift(0);
-		}
-	}
-	.video-item {
-		background: $red;
-		@extend .rounded;
-	}
+  @include clearfix;
+
+  .video-thumb {
+    @extend .ratio;
+    @extend .square;
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+    @include media($tablet) {
+      @include span-columns(6);
+      @include shift(1);
+    }
+    @include media($desktop) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+  }
+
+  .video-item {
+    background: $red;
+    @extend .rounded;
+  }
 }
+
 @include media($mobile) {
-	#video-2, #video-3 { display: none; }
+  #video-2, #video-3 { display: none; }
 }
 @include media($desktop) {
-	#video-2, #video-3 { display: block; }
+  #video-2, #video-3 { display: block; }
 }
 
-
 .contact {
-	.contact-box {
-		@include media($mobile) {
-			@include span-columns(4);
-			margin-bottom: $space;
-		}
-		@include media($tablet) {
-			@include span-columns(4);
-			margin-bottom: 0;
-		}
-		@include media($desktop) {
-			@include span-columns(6);
-		}
-		background: $light-gray;
-		@extend .rounded;
-		padding: $space;
-		&:before {
-			content: "";
-			display: block;
-			width: $space;
-			height: $space;
-			float: left;
-			margin: 0 $space 0 0;
-		}
-		&.address:before {
-			background:url('/assets/icons/pin.svg') no-repeat;
-		}
-		&.email:before {
-			background:url('/assets/icons/email.svg') no-repeat;
-		}
-		p {
-			margin: -7px 0;
-		}
-		&:hover {
-		}
-	}
-	a, a:visited {
-		color: $gray;
-	}
+
+  .contact-box {
+    @include media($mobile) {
+      @include span-columns(4);
+      margin-bottom: $space;
+    }
+    @include media($tablet) {
+      @include span-columns(4);
+      margin-bottom: 0;
+    }
+    @include media($desktop) {
+      @include span-columns(6);
+    }
+    background: $light-gray;
+    @extend .rounded;
+    padding: $space;
+
+    &:before {
+      content: "";
+      display: block;
+      width: $space;
+      height: $space;
+      float: left;
+      margin: 0 $space 0 0;
+    }
+
+    &.address:before {
+      background:url('/assets/icons/pin.svg') no-repeat;
+    }
+
+    &.email:before {
+      background:url('/assets/icons/email.svg') no-repeat;
+    }
+
+    p {
+      margin: -7px 0;
+    }
+
+    &:hover {
+    }
+  }
+
+  a,
+  a:visited {
+    color: $gray;
+  }
 }
