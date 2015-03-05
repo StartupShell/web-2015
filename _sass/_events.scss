@@ -19,9 +19,6 @@
     @include media($desktop) {
         @include span-columns(6);
     }
-    @include media($large) {
-        @include span-columns(8);
-    }
     &:hover .details .meta p {
         color: $gray;
     }
@@ -57,9 +54,6 @@
         }
         @include media($desktop) {
             @include span-columns(12);
-        }
-        @include media($large) {
-            @include span-columns(16);
         }
         .details {
             text-align: center;

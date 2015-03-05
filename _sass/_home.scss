@@ -23,10 +23,6 @@
 				@include span-columns(6);
 				@include shift(3);
 			}
-			@include media($large) {
-				@include span-columns(8);
-				@include shift(4);
-			}
 			margin-bottom: $space;
 		}
 	}
@@ -39,10 +35,6 @@
 	}
 
 	.events {
-		@include media($large) {
-			@include span-columns(12);
-			@include shift(2);
-		}
 		.event {
 			margin-bottom: 0;
 			@include media($mobile) {
@@ -57,26 +49,11 @@
 	            @include span-columns(4);
 	            @include omega('3n');
 	        }
-	        @include media($large) {
-	            @include span-columns(4);
-	        }
-	        margin-bottom: $space;
 	        &:nth-of-type(1n+4) {
 	        	display: none;
 	        }
 			&.featured {
-				@include media($mobile) {
-		            @include span-columns(4);
-		        }
-		        @include media($tablet) {
-		            @include span-columns(4);
-		        }
-		        @include media($desktop) {
-		            @include span-columns(4);
-		        }
-		        @include media($large) {
-		            @include span-columns(4);
-		        }
+	            @include span-columns(4);
 		        .image {
 		        	@extend .fivebythree;
 		        }
@@ -87,12 +64,6 @@
 }
 
 .video {
-	.video-row {
-		@include media($large) {
-			@include span-columns(12);
-			@include shift(2);
-		}
-	}
 	@include clearfix;
 	.video-thumb {
 		@extend .ratio;
@@ -106,10 +77,6 @@
 		}
 		@include media($desktop) {
 			@include span-columns(4);
-			@include shift(0);
-		}
-		@include media($large) {
-			@include span-columns(4 of 12);
 			@include shift(0);
 		}
 	}
@@ -139,9 +106,6 @@
 		@include media($desktop) {
 			@include span-columns(6);
 		}
-		@include media($large) {
-			@include span-columns(8);
-		}
 		background: $light-gray;
 		@extend .rounded;
 		padding: $space;
@@ -169,5 +133,3 @@
 		color: $gray;
 	}
 }
-
-
