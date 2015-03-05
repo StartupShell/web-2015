@@ -1,3 +1,42 @@
+
+.page-events {
+    @include media($mobile) {
+        margin-bottom: -$space;
+    }
+    @include media($tablet) {
+        margin-bottom: -2*$space;
+    }
+    .featured {
+        @include media($mobile) {
+            @include span-columns(4);
+        }
+        @include media($tablet) {
+            @include span-columns(8);
+        }
+        @include media($desktop) {
+            @include span-columns(12);
+        }
+        .image {
+            @extend .ratio;
+            @extend .twentyonebynine;
+            &:after {
+                @include media($mobile) {
+                    margin-top: 60%;
+                }
+                @include media($tablet) {
+                    margin-top: 42.85%;
+                }
+            }
+        }
+        .details {
+            text-align: center;
+            .title {
+                @extend .h2;
+            }
+        }
+    }
+}
+
 .event {
     @include media($mobile) {
         @include span-columns(4);
@@ -12,9 +51,6 @@
         @include omega('2n+1');
         margin-bottom: 2*$space;
         text-align: left;
-        &:nth-last-child(-n+2) {
-            margin-bottom: 0;
-        }
     }
     @include media($desktop) {
         @include span-columns(6);
@@ -45,37 +81,10 @@
             }
         }
     }
-    &.featured {
-        @include media($mobile) {
-            @include span-columns(4);
-        }
-        @include media($tablet) {
-            @include span-columns(8);
-        }
-        @include media($desktop) {
-            @include span-columns(12);
-        }
-        .details {
-            text-align: center;
-            .title {
-                @extend .h2;
-            }
-        }
-    }
 }
+
 .event .image {
     @extend .ratio;
     @extend .fivebythree;
 }
-.featured .image {
-    @extend .ratio;
-    @extend .twentyonebynine;
-    &:after {
-        @include media($mobile) {
-            margin-top: 60%;
-        }
-        @include media($tablet) {
-            margin-top: 42.85%;
-        }
-    }
-}
+

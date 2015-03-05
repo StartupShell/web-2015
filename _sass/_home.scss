@@ -52,12 +52,9 @@
 	        &:nth-of-type(1n+4) {
 	        	display: none;
 	        }
-			&.featured {
-	            @include span-columns(4);
-		        .image {
-		        	@extend .fivebythree;
-		        }
-			}
+	        h2 {
+	        	@extend .h3;
+	        }
 		}
 	}
 
