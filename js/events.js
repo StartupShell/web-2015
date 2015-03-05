@@ -192,6 +192,7 @@ var url = ['https://www.googleapis.com/calendar/v3/calendars',
 '.com/events?key=AIzaSyDd9bnLFkG8tyRgmjttiFRTT0MTtYpkZb8'
 ].join('');
 
+var eventsCounter = 0;
 
 $.ajax({
   url: url
@@ -223,6 +224,15 @@ $.ajax({
           var first = a.start.dateTime || a.start.date;
           var second = b.start.dateTime || b.start.date;
           return new Date(first) - new Date(second);
+        })
+
+        .filter(function(i) {
+          if($('.events').hasClass('limit-3') && eventsCounter < 3) {
+            eventsCounter++;
+            return true;
+          } else if(!$('.events').hasClass('limit-3')) {
+            return true;
+          }
         })
 
 
