@@ -1,6 +1,6 @@
 .menu {
     @include media($desktop) {
-        @include align-items(flex-start);
+        @include align-items(center);
         @include display(flex);
         @include flex-direction(row);
         @include justify-content(space-between);

@@ -226,15 +226,15 @@ p a {
   padding: 2em 2em; }
   @media screen and (min-width: 60em) {
     .menu {
-      -webkit-box-align: start;
-      -moz-box-align: start;
-      box-align: start;
-      -webkit-align-items: flex-start;
-      -moz-align-items: flex-start;
-      -ms-align-items: flex-start;
-      -o-align-items: flex-start;
-      align-items: flex-start;
-      -ms-flex-align: start;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
       display: -webkit-box;
       display: -moz-box;
       display: box;
