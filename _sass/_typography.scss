@@ -8,63 +8,67 @@ $sans: $titillium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 // BODY
 
 body {
-	font-family: $sans;
-	font-weight: 400;
-	color: $gray;
-	line-height: 1.25;
-	@include media($mobile) {
-		font-size: 16px;
-	}
-	@include media($tablet) {
-		font-size: 18px;
-	}
-	@include media($large) {
-		font-size: 21px;
-	}
+  font-family: $sans;
+  font-weight: 400;
+  color: $gray;
+  line-height: 1.25;
+  @include media($mobile) {
+    font-size: 16px;
+  }
+  @include media($tablet) {
+    font-size: 18px;
+  }
+  @include media($large) {
+    font-size: 21px;
+  }
 }
 
 
 // HEADINGS
 
-h1, .h1 {
-	font-size: 2.5em;
-	font-weight: 700;
-	margin-bottom: $space/4;
+h1,
+.h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: $space/4;
 }
 
-h2, .h2 {
-	font-size: 1.25em;
-	font-weight: 600;
+h2,
+.h2 {
+  font-size: 1.25em;
+  font-weight: 600;
 }
 
-h3, .h3 {
-	font-size: 1em;
-	font-weight: 600;
+h3,
+.h3 {
+  font-size: 1em;
+  font-weight: 600;
 }
 
 p {
-	line-height: 1.5;
-	margin: 0 0 $space/4 0;
+  line-height: 1.5;
+  margin: 0 0 $space/4 0;
 }
 
 
 // LINKS
 
-a, a:visited {
-	color: $red;
-	text-decoration: none;
-	&:hover {
-		color: $dark-red;
-	}
+a,
+a:visited {
+  color: $red;
+  text-decoration: none;
+  &:hover {
+    color: $dark-red;
+  }
 }
 
 // PARAGRAPH
 
 p.sub {
-	font-size: 80%;
-	color: $medium-gray;
+  font-size: 80%;
+  color: $medium-gray;
 }
 p a {
-	font-weight: 600;
-	color: $red;
+  font-weight: 600;
+  color: $red;
 }

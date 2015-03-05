@@ -1,21 +1,17 @@
 .page-apply {
-	
-	.hero-content {
-		h1 {
-			color: $gray;
-		}
-	}
 
-	#ss-form {
-		@include span-columns(12);
-		@include shift(2);
-	}
+  .hero-content {
+    h1 {
+      color: $gray;
+    }
+  }
 
-	// CLEAN
+  #ss-form {
+    @include span-columns(12);
+    @include shift(2);
+  }
 
-	.ss-required-asterisk, .required-message {
-		display: none;
-	}
-
-
+  .ss-required-asterisk, .required-message {
+    display: none;
+  }
 }

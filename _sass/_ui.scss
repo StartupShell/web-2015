@@ -1,7 +1,7 @@
-
-// LAYOUT
-
-.content, .container, section, .section {
+.content,
+.container,
+section,
+.section {
   @include outer-container;
   @include media($large) {
     @include outer-container(1280px);
@@ -10,7 +10,8 @@
   padding: 0 $space;
 }
 
-section, .section {
+section,
+.section {
   margin-bottom: 3*$space;
 }
 
@@ -24,7 +25,9 @@ section, .section {
 
 .info {
   text-align: center;
+
   .info-text {
+    margin-bottom: $space;
     font-size: $h2-size;
     @include media($mobile) {
       @include span-columns(4);
@@ -39,22 +42,25 @@ section, .section {
     }
     @include media($large) {
     }
-
-    margin-bottom: $space;
   }
 }
 
 .zigzag {
   @include media($tablet) {
+
     section:nth-child(2n) {
+
       div:nth-child(1) {
         float: right;
       }
+
       div:nth-child(2) {
         float: left;
       }
     }
+
     section:nth-child(2n-1) {
+
       div:nth-child(2) {
         @include shift(1);
       }
@@ -73,7 +79,8 @@ section, .section {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  &:after {
+
+  &::after {
     content: '';
     display: block;
   }
@@ -88,15 +95,15 @@ section, .section {
   width: 100%;
 }
 
-.square:after {
+.square::after {
   margin-top: 100%;
 }
 
-.fivebythree:after {
+.fivebythree::after {
   margin-top: 60%;
 }
 
-.twentyonebynine:after {
+.twentyonebynine::after {
   margin-top: 42.85%;
 }
 
@@ -115,7 +122,9 @@ section, .section {
 
 // BUTTON
 
-.button, a.button, a.button:visited {
+.button,
+a.button,
+a.button:visited {
   display: inline-block;
   background: $red;
   padding: $space/2 $space;
@@ -125,6 +134,7 @@ section, .section {
   text-align: center;
   text-transform: uppercase;
   color: $white;
+
   &:hover {
   	background: $dark-red;
     cursor: pointer;

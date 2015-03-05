@@ -1,44 +1,41 @@
 .hero {
-	@include clearfix;
-	text-align: center;
-	background-size: cover;
-	padding: 4*$space 0;
+  @include clearfix;
+  text-align: center;
+  background-size: cover;
+  padding: 4*$space 0;
 }
 
 .hero-tight {
-	padding: 3*$space 0 $space;
+  padding: 3*$space 0 $space;
 }
 
 .hero-content {
-	h1 {
-		color: $white;
-		margin-bottom: 0;
-		@include media($mobile) {
-			@include span-columns(4);
-		}
-		@include media($tablet) {
-			@include span-columns(8);
-			// @include shift(1);
-		}
-		@include media($desktop) {
-			@include span-columns(10);
-			@include shift(1);
-		}
-		@include media($large) {
-			@include span-columns(8);
-			@include shift(2);
-		}
-	}
+
+  h1 {
+    color: $white;
+    margin-bottom: 0;
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+    @include media($tablet) {
+      @include span-columns(8);
+      // @include shift(1);
+    }
+    @include media($desktop) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+    @include media($large) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
 }
 
 .hero-logo {
-	margin-bottom: $space;
-	img {
-		width: 2*$space;
-	}
-}
+  margin-bottom: $space;
 
-.hero-cta {
-	// @include span-columns(4);
-	// @include shift(4);
+  img {
+    width: 2*$space;
+  }
 }
