@@ -5,9 +5,9 @@
     @include flex-direction(row);
     @include justify-content(space-between);
   }
-  padding: $space $space;
+  padding: $space $space $space*1.5;
   @include media($desktop) {
-    padding: $space $space*2;
+    padding: $space $space*2 $space;
   }
 
   &.gray {
