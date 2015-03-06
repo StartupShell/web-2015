@@ -1,28 +1,24 @@
-.venture-grid {
-  display: table;
-  width: 100%;
-  .venture-item {
-    display: table-cell;
-    margin: 0 2% $space/2;
-    float: left;
-    opacity: .9;
+.venture-item {
+  display: block;
+  margin: 0 2% $space/2;
+  float: left;
+  opacity: .9;
 
-    &:hover {
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
+  }
 
-    @include media($mobile) {
-      width: 21%;
-    }
-    @include media($tablet) {
-      width: 8.5%;
-    }
-    @include media($desktop) {
-      width: 8.5%;
-    }
-    @include media($large) {
-      width: 8.5%;
-    }
+  @include media($mobile) {
+    width: 21%;
+  }
+  @include media($tablet) {
+    width: 8.5%;
+  }
+  @include media($desktop) {
+    width: 8.5%;
+  }
+  @include media($large) {
+    width: 8.5%;
   }
 }
 
