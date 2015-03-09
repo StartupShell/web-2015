@@ -3,7 +3,7 @@
 $(document).ready(function() {
   $(window).scroll(function() {
     var scrolled = window.pageYOffset;
-    $('.hero').css("background-position", "50% " + (50 + (scrolled / 25)) + "%");
+    $('.hero').css("background-position", "50% " + (60 + (scrolled / 25)) + "%");
   })
 });
 
