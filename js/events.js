@@ -60,11 +60,12 @@ function getCover(data, callback) {
 
             // If link is from facebook
             if (matches[0].split('/')[2].indexOf('facebook') > -1) {
+                console.log('isFB');
 
                 // Try to get facebook event ID
                 var eventID = '/' + matches[0].split('/')[4];
                 fbEnsureInit(function() {
-
+                    console.log('ensured');
                     FB.api(
                         eventID + '?fields=cover',
                         function(response) {
@@ -86,7 +87,6 @@ function getCover(data, callback) {
                 })
 
             } else {
-
                 data.link = matches[0];
                 callback(data);
             }
