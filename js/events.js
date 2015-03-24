@@ -60,10 +60,12 @@ function getCover(data, callback) {
 
             // If link is from facebook
             if (matches[0].split('/')[2].indexOf('facebook') > -1) {
+              console.log('isFB');
 
                 // Try to get facebook event ID
                 var eventID = '/' + matches[0].split('/')[4];
                 fbEnsureInit(function() {
+                  console.log('ensured');
                   FB.api(
                     eventID + '?fields=cover',
                     function(response) {
@@ -72,6 +74,8 @@ function getCover(data, callback) {
                           data.cover = response.cover.source;
                         }
                         data.link = 'https://www.facebook.com/events/' + response.id;
+                        callback(data);
+                      } else {
                         callback(data);
                       }
                     }, {
@@ -83,6 +87,7 @@ function getCover(data, callback) {
                 })
 
               } else {
+                console.log(data);
                 data.link = matches[0];
                 callback(data);
               }
@@ -147,6 +152,7 @@ function assembleStructure(data, index, callback) {
 
     // Get the FB data for the event
     getCover(newData, function(fbData) {
+      
         // If there's no cover image, use the default one
         if (!fbData.cover) {
           var cover = '<div class="image no-fb"><img src="../assets/shell-logo-wire.svg"></div>';
