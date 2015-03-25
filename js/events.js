@@ -59,13 +59,10 @@ function getCover(data, callback) {
         if (matches[0]) {
 
             // If link is from facebook
-            if (matches[0].split('/')[2].indexOf('facebook') > -1) {
-                console.log('isFB');
-
+            if (matches[0].split('/').length > 1 && matches[0].split('/')[2].indexOf('facebook') > -1) {
                 // Try to get facebook event ID
                 var eventID = '/' + matches[0].split('/')[4];
                 fbEnsureInit(function() {
-                    console.log('ensured');
                     FB.api(
                         eventID + '?fields=cover',
                         function(response) {
@@ -87,7 +84,12 @@ function getCover(data, callback) {
                 })
 
             } else {
-                data.link = matches[0];
+
+                // If it's a link, just not from facebook
+                if (matches[0].split('/')[0].indexOf('http') > -1) {
+                    data.link = matches[0];
+                }
+
                 callback(data);
             }
 
@@ -212,6 +214,8 @@ $.ajax({
         }
     })
 
+    
+
     // Get the ones that havent happend yet
     .filter(function(i) {
         if (i.end.dateTime) {
@@ -231,7 +235,9 @@ $.ajax({
         return new Date(first) - new Date(second);
     })
 
+    // Check for limit class
     .filter(function(i) {
+        
         if ($('.events').hasClass('limit-3') && eventsCounter < 3) {
             eventsCounter++;
             return true;
