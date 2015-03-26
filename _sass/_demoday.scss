@@ -1,0 +1,161 @@
+.page-demoday {
+    .hero {
+        background-image: url(/assets/demoday-hero.jpg);
+        background-position: center 20%;
+        background-repeat: no-repeat;
+    }
+    .area {
+        @include media($mobile) {
+            margin-bottom: 2*$space;
+        }
+        @include media($tablet) {
+            margin-bottom: 3*$space;
+        }
+        .description {
+            @include media($mobile) {
+                @include span-columns(4);
+                margin-bottom: $space;
+            }
+            @include media($tablet) {
+                @include span-columns(3);
+                margin-bottom: 0;
+            }
+            @include media($desktop) {
+                @include span-columns(4);
+            }
+        }
+        .area-image {
+            @extend .ratio;
+            @extend .fivebythree;
+            @include media($mobile) {
+                @include span-columns(4);
+            }
+            @include media($tablet) {
+                @include span-columns(4);
+            }
+            @include media($desktop) {
+                @include span-columns(7);
+            }
+            img {
+                width: 100%;
+                height: auto; // this needs to be dynamic in the future
+            }
+        }
+    }
+}
+/* Add To Calendar Button */
+
+.addtocalendar var {
+    display: none;
+}
+
+.addtocalendar {
+    position: relative;
+    display: inline-block;
+    background: transparent!important;
+}
+
+.atcb-link {
+    display: block;
+    outline: none!important;
+    cursor: pointer;
+}
+
+.atcb-link:focus~ul,
+.atcb-link:active~ul,
+.atcb-list:hover {
+    visibility: visible;
+}
+
+.atcb-list {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: $space*5;
+    z-index: 900;
+}
+
+.atcb-list,
+.atcb-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.atcb-item {
+    float: none;
+    text-align: left;
+    &.hover, &:hover {
+        position: relative;
+        z-index: 900;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+.atcb-item-link {
+    text-decoration: none;
+    outline: none;
+    display: block;
+}
+/* Blue */
+
+.atc-style-blue .atcb-link,
+.atc-style-blue .atcb-link:hover,
+.atc-style-blue .atcb-link:active,
+.atc-style-blue .atcb-link:focus {
+    margin: $space/2 0 0 0;
+    padding: 7px 35px;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+    background: $red;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .13) inset;
+    border-radius: 4px;
+    zoom: 1;
+}
+
+.atc-style-blue .atcb-list {
+    width: $space*5;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 2px;
+    box-shadow: 0 0 5px #AAA;
+}
+
+.atc-style-blue .atcb-list,
+.atc-style-blue .atcb-item {
+    background: #fff;
+    color: #000;
+}
+
+.atc-style-blue .atcb-item,
+.atc-style-blue .atcb-item-link {
+    line-height: 1.3em;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+.atc-style-blue .atcb-item-link,
+.atc-style-blue .atcb-item-link:hover,
+.atc-style-blue .atcb-item-link:active,
+.atc-style-blue .atcb-item-link:focus {
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    padding: 5px 15px;
+}
+
+.atc-style-blue .atcb-item-link:hover,
+.atc-style-blue .atcb-item-link:active,
+.atc-style-blue .atcb-item-link:focus {
+    color: #fff;
+}
+
+.atc-style-blue .atcb-item.hover,
+.atc-style-blue .atcb-item:hover {
+    background: $red;
+}
