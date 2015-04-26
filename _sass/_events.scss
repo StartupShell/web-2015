@@ -20,15 +20,6 @@
     .image {
       @extend .ratio;
       @extend .twentyonebynine;
-
-      &:after {
-        @include media($mobile) {
-          margin-top: 60%;
-        }
-        @include media($tablet) {
-          margin-top: 42.85%;
-        }
-      }
     }
 
     .details {
@@ -54,7 +45,7 @@
   @include media($tablet) {
     @include span-columns(4);
     @include omega('2n+1');
-    margin-bottom: 2*$space;
+    margin-bottom: 1.5*$space;
     text-align: left;
   }
   @include media($desktop) {
