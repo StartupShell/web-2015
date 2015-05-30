@@ -1,0 +1,75 @@
+.member-item {
+  display: block;
+  /*margin: 0 2% $space/2;*/
+  margin: 0;
+  float: left;
+  opacity: .9;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @include media($mobile) {
+    width: 50%;
+  }
+  @include media($tablet) {
+    width: 25%;
+  }
+  @include media($desktop) {
+    width: 25%;
+  }
+  @include media($large) {
+    width: 25%;
+  }
+}
+
+.page-members {
+
+  .member-grid {
+    line-height: 0;
+  }
+
+  .member-item {
+    position: relative;
+    margin: 0 0 8px 0;
+    
+    a {
+      display: block;
+
+      &:hover {
+        .name {
+          opacity: 1;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .name {
+      background-color: rgba(black, 0.4);
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+
+  .hero {
+
+    h1 {
+      color: $gray;
+    }
+  }
+
+  .credit {
+    text-align: center;
+  }
+}

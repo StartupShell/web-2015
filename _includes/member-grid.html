@@ -1,0 +1,12 @@
+<section class="member-grid">
+  <ul>
+  {% for member in site.data.members %}
+    <li class="member-item">
+      <a href="{{ member.url }}" target="_blank">
+        <img src="/assets/members/{{ member.image }}.jpg" alt="{{ member.name }}" width="320" height="213">
+        <span class="name">{{ member.name }}</span>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
