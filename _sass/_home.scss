@@ -143,7 +143,9 @@
       margin: -7px 0;
     }
 
+    @include transition(background-color .2s);
     &:hover {
+      background-color: darken(#eee, 3);
     }
   }
 

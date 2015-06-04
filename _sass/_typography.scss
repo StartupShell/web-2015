@@ -55,11 +55,17 @@ p {
 
 a,
 a:visited {
+  @include transition(all .2s);
   color: $red;
   text-decoration: none;
   &:hover {
     color: $dark-red;
   }
+}
+
+input[type="submit"],
+button {
+  @include transition(all .2s);
 }
 
 // PARAGRAPH
