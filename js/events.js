@@ -227,12 +227,18 @@ $.ajax({
         }
     })
 
-
     // Sort by date
     .sort(function(a, b) {
         var first = a.start.dateTime || a.start.date;
         var second = b.start.dateTime || b.start.date;
         return new Date(first) - new Date(second);
+    })
+
+    // Get rid of private events
+    .filter(function(i) {
+        if(!i.visibility) {
+            return true;
+        }
     })
 
     // Check for limit class
