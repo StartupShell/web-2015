@@ -26,18 +26,42 @@
 
   .venture-item {
 
+    @include align-items(center);
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+
+    @include clearfix;
+
+    .venture-image {
+      @include flex(1);
+    }
+
+    .venture-detail {
+      @include flex(2);
+    }
+
     @include media($mobile) {
-      width: 46%;
+      width: 100%;
+
+      .venture-detail {
+        padding-left: 10px;
+      }
     }
     @include media($tablet) {
-      width: 21%;
+      width: 100%;
+
+      .venture-detail {
+        padding-left: 50px;
+      }
     }
     @include media($desktop) {
-      width: 21%;
+      width: 46%;
     }
     @include media($large) {
-      width: 21%;
+      width: 46%;
     }
+
   }
 
   .hero {

@@ -2,9 +2,12 @@
   <ul>
   {% for venture in site.data.ventures %}
     <li class="venture-item">
-      <a href="{{ venture.url }}" target="_blank">
-        <img src="/assets/ventures/logo_{{ venture.logo }}.svg" alt="{{ venture.name }}">
-      </a>
+      
+        <div class="venture-image"><a href="{{ venture.url }}" target="_blank"><img src="/assets/ventures/logo_{{ venture.logo }}.svg" alt="{{ venture.name }}"></div></a>
+		<div class="venture-detail">
+			<p>{{ venture.description }}</p>
+			<p>{{ venture.people }}</p>
+		</div>
     </li>
   {% endfor %}
   </ul>
