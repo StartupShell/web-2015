@@ -17,13 +17,13 @@ layout: default
   {% for venture in site.data.ventures %}
   	{% if venture.image %}
     <li class="venture-item">
-      <a href="{{ venture.url }}" target="_blank">
+      {% if venture.website %}<a href="{{ venture.website }}" target="_blank">{% endif %}
         <img src="/assets/ventures/logo_{{ venture.image }}.svg" alt="{{ venture.name }}">
         <p>
         {% if venture.status == "Grad" %}<span>Alumnus. </span>{% endif %}
         {% if venture.description %}{{ venture.description }}. {% endif %}{% if venture.brag %}{{ venture.brag }}.{% endif %}
         </p>
-      </a>
+      {% if venture.website %}</a>{% endif %}
     </li>
     {% endif %}
   {% endfor %}
