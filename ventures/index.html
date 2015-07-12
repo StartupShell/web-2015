@@ -20,7 +20,7 @@ layout: default
       <a href="{{ venture.url }}" target="_blank">
         <img src="/assets/ventures/logo_{{ venture.image }}.svg" alt="{{ venture.name }}">
         <p>
-        {% if venture.status == "grad" %}<span>Grad</span>{% endif %}
+        {% if venture.status == "Grad" %}<span>Alumnus. </span>{% endif %}
         {% if venture.description %}{{ venture.description }}. {% endif %}{% if venture.brag %}{{ venture.brag }}.{% endif %}
         </p>
       </a>
