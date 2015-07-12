@@ -1,53 +1,57 @@
-name,logo,url
-Austin Hou Photography,austinhou,https://500px.com/austinh
-Bethany's Organics,bethanysorganics,https://www.facebook.com/bethanysorganics
-bgoti,bgoti,http://bgoti.com
-Bitcamp,bitcamp,http://bitca.mp
-Blissic,blissic,http://blissic.com
-BodaBoda,bodaboda,http://bodaboda.org
-Custom Spray Solutions,customspraysolutions,http://customspraysolutions.com
-Cyber Skyline,cyberskyline,http://www.cyberskyline.com
-Daocloud,daocloud,http://daocloud.com
-Distrikt.,distrikt,http://distriktdc.com
-Elite Open Source Hardware,elite,http://www.eliteoshw.com
-Essential School Tools,essential,http://essentialschool.tools
-Food Recovery Network,frn,http://www.foodrecoverynetwork.org
-Grandy,grandy,http://grandy.io
-Hidden UMD,hiddenumd,http://hiddenumd.weebly.com
-Imaginex,imaginex,http://imaginex.co
-Javazen,javazen,http://drinkjavazen.com
-K. Sultana,ksultana,http://www.ksultana.com
-Kanga Trash and Energy Systems,kanga,https://www.facebook.com/kangabagz
-Kivvik,kivvik,http://kivvik.com
-Learn to Code Workshop,learntocode,http://makesomething.cool
-Limidax,limidax,http://www.limidax.com
-Locastro Design LLC,locastro,http://www.locastrodesign.com/
-MADE,made,http://www.madefinlit.org
-Mars Reel Media,marsreel,http://www.themarsreel.com 
-Mindforge Design,mindforge,http://mindforgedesign.com
-Mooki,mooki,http://www.mymooki.com
-OnCampusChef,oncampuschef,http://www.oncampuschef.com
-Parallel,parallel,http://parallel.fm
-Pixel,pixel,javascript:void(0)
-Project Delta,delta,http://projectdelta.io
-Proximity,proximity,javascript:void(0)
-Proxlock,proxlock,javascript:void(0)
-Puzzable,puzzable,http://puzzable.org
-Quickmailcheck,quickmailcheck,https://quickmailcheck.com
-Readybox,readybox,javascript:void(0)
-Rehappy,rehappy,http://www.arcadyns.com/Elena/wordpress
-Research Connection,researchconnection,http://researchconnection.com
-Rushgreek,rushgreek,http://rushgreek.com
-Sambition,sambition,http://sambitionphotos.com
-Savorfy,savorfy,http://savorfy.com
-SameBottle,samebottle,javascript:void(0)
-Spothauc,spothauc,http://spothauc.com
-Student Voice,studentvoice,http://stuvoice.org
-Sweet Buds,sweetbuds,http://facebook.com/sweetbudsjewelry
-Terp Gear,terpgear,http://terpgear.com
-Towards The Sun,towardsthesun,http://www.shoptowardsthesun.com
-Unwritten,unwritten,http://shopunwritten.com
-VentureBoard,ventureboard,http://ventureboard.co
-VentureU,ventureu,http://ventureuniversity.co
-Vumble,vumble,http://vumble.com
-Yolkd,yolkd,http://www.yolkd.com
+venture,image,status,team,website,description,brag,twitter,facebook
+AppCow,,Active,Charlie Hulcher,http://www.app-cow.com,Exclusive in-app deals,Recently breached one million AppCow cards shipped,,
+Austin Hou Photography,austinhou,Active,Austin Hou,https://500px.com/austinh,Worldwide photography,"Close to 25,000 photo portfolio views",,
+Bethany's Organics,bethanysorganics,Active,Bethany Monaghan,http://www.bethanysorganics.com/,"Food manufacturer creating organic, on-the-go sandwiches",Now sold at the UMD Co-op,@BethanysOrganic,https://www.facebook.com/bethanysorganics
+bgoti (Be Gold On The Inside),bgoti,Grad,Ari Melenciano,http://www.bgoti.com,Art collective seeking to make life more beautiful,,,
+Bitcamp,bitcamp,Active,"Mackenzie Burnett, Jeff Hilnbrand, Dan Gillespie, Brent Bovenzi, Shariq Hashme, Kunal Sharma, Josh Berenhaus, Colin King, Sean Bae, Waj Siddiqui",http://bitca.mp,Hackathon at University of Maryland,"Last event attracted over 1,000 students",@bitcmp,https://www.facebook.com/bitcmp
+BodaBoda,bodaboda,Active,"Moses Namara, Sam Van Horn",http://bodaboda.org,Platform to safely connect motorcycle riders and passengers in Uganda,,,
+CardBuddy,,Active,Sam Feldman,http://cardbuddy.co,Thin wallets that stick to the back of a phone or phone case,"Launched in January 2015, and already sold over 1,000 units",,https://www.facebook.com/CardBuddyWallet
+Cyber Skyline,cyberskyline,Active,Franz Payer,http://cyberskyline.com,Cybersecurity competition and education platform,Just signed deal with the National Cyber League to run their 2015 Fall Season for over 1000 students,,https://www.facebook.com/cyberskylinellc
+DaoCloud,daocloud,Grad,"Eric Green, Max Coleman",http://daocloud.com,Social wellness network to share trusted health resources,,@TeamDaoCloud,https://facebook.com/daocloud
+Demere,,Active,"David Engle, Seean Kim, Tony Liang",demere.co,Wardrobe recommendations based on computer vision technology,App is currently in private beta,@demereapp,https://www.facebook.com/demereapp
+Distrikt,distrikt,Active,"Ayana Cotton, Samson Binutu",http://www.distriktdc.com/,DC arts and culture magazine,,,
+Elite Open Source Hardware,elite,Active,Zachary Hipps,http://www.eliteoshw.com,Electronics products to lower the barrier to entry for students,,,
+Food Recovery Network,frn,Grad,Ben Simon,http://foodrecoverynetwork.org,Network of students recovering surplus food from college dining halls to feed the hungry,Expanded to over 150 chapters nation-wide,@FoodRecovery,https://www.facebook.com/FoodRecoveryNetwork
+Globoclub Fitness,,Active,Dan Stern,http://globoclubfitness.com,Mobile platform that provides convenient gym access for travelers,,@globoclub,
+Hidden UMD,hiddenumd,Grad,Mackenzie Burnett,http://hiddenumd.weebly.com,Website to reveal hidden nooks around campus and share adventures of fellow Terps,"2,800 Instagram followers",@hiddenumd,https://www.facebook.com/Hiddenumd
+ICOW,,Active,Haiwen Ding,,Online channel to help Chinese students apply for US higher education,,,
+Imaginex,imaginex,Grad,"Eric Mintzer, Kevin Kirk, Sam Way, Tony Ingelido, Jacob Torrence",http://imaginex.co,"Creative technology studio that produces immersive, multi-sensory experiences",Technology powered three music festivals this past summer,@imaginexco,
+Imperfect,,Grad,Ben Simon,http://www.imperfectproduce.com/,"Gives consumers the chance to buy delicious, wonky-looking produce at a 30-50% discount",Now shipping the first orders!,@imperfectfruit,https://www.facebook.com/imperfectfruit
+In Good Taste,,Active,Paul Yuan,http://www.ebay.com/usr/hundredpy,Secondhand sneaker flipping and sales,"Sold roughly $50,000 in product since its inception",,
+Javazen,javazen,Active,"Eric Golman, Ryan Scheuler, Aaron Wallach, Eric Green",http://www.drinkjavazen.com,Organic coffee blend line,Now in over 50 retail stores,@JAVAZEN,https://www.facebook.com/JAVAZEN
+K. Sultana,ksultana,Active,"Omar Goheer, Aisha Ali",http://www.ksultana.com,Breathable headscarf product line for Muslim women following a social enterprise model,,,https://www.facebook.com/pages/K-Sultana/305815362923587
+Kanga Trash and Energy Systems LLC,kanga,Active,Cody Branchaw,https://www.facebook.com/kangabagz,Stadium trash bag attachment for event maintenance,,,https://www.facebook.com/kangabagz
+Kivvik,kivvik,Grad,"Emmanuel Kaska, Chike Nawanko, Jeremy Horowitz, ... , ...",http://kivvik.com,Platform that bolsters the relationships between financial advisors and their clients,"Users include Charles Schwab, Morgan Stanley, JP Morgan, and Fidelity",@KivvikInc,
+Limidax,limidax,Active,Kaan Balimtas,http://www.limidax.com,"Safe all-natural ""study drug"" alternative brain supplement",,,
+Lionheart Studios,,Active,Ari Melenciano,,Creative studio and event space,,,
+Locastro Design LLC,locastro,Active,Matthew Locastro,http://www.locastrodesign.com,Video production firm,Earned six-figures in revenue last year,,
+MADE ,made,Active,"Atin Mittra, John Lee, Evert Lizama, Brian Thimmesch, Hermela Hailemeskel",http://www.madefinlit.org,Financial literacy education for college student,,@mademicro,https://www.facebook.com/mademicro
+Mars Reel Media Corp / The Mars Reel,marsreel,Active,"Brandon Deyo, Bradley Deyo",http://www.themarsreel.com,"The ""mobile"" equivalent of ESPN for Millennials",,@themarsreel,https://www.facebook.com/themarsreel
+Meditation Stone,,Active,Michael Perrotta,,Handheld device that helps acheive meditative state through EEG and haptic neurofeedback,,,
+MedPrint,,Active,"Lily Sooklal, Luke Peterken",,"MedPrint provides 3D medical modeling and printing solution for medical problems We were semifinalists at the world's largest biotech accelerator and finalists at RECESS, a national startup pitch competition",,,
+Mooki,mooki,Active,"Michael Rottman, Fahed Hijazi, Sami Hijazi",http://mooki.co,Professional social network & marketplace tailored to Americas Rising Talent,"Named Baltimore's Startup of The Year 2015 by TechCocktail",@mymooki1,https://www.facebook.com/MyMooki
+OasisVR,,Active,"Josh Taylor, Michael Bellistri, Sean Kelley",http://oasisvr.net,Virtual reality arcade,,@OasisVR,
+Pantschanger Prints,,Active,"Jeff Hilnbrand, Jackson Geller",http://pantschanger.co,Small batch shirt co,"We're casual, yo",@pantschanger,https://www.facebook.com/pantschanger
+Pixel,pixel,Active,Michael Gubbels,,Gesture-based programming environment,,,
+Project Delta,delta,Active,"Colin King, Hiroshi Furuya, Sean Bae",http://projectdelta.io,Connecting hackers and NGOs to create social change,,,
+Proximity,proximity,Active,David LoBosco,,"Location-based apps, all in one",,,
+Proxlock,proxlock,Active,Aaron Sirken,,Bluetooth-powered smart lock for bicycles,,,
+Puzzable,puzzable,Active,"Ghedalia Gold-Pastor, Zach Matz",http://puzzable.org,Mobile gaming application that creates social jigsaw puzzles,"Succesfully raised $20,000 on Kickstarter in June",@PuzzableApp,https://www.facebook.com/Puzzable
+Readybox,readybox,Active,Brett Potter,http://readybox.co,Fastest consumer 3D printer marketed to designers,"Beta testing underway, multiple printers sold",@Readybox3D,
+Redspread,,Grad,"Dan Gillespie, Mackenzie Burnett, Richard Higgins",http://redspread.com,Heroku for enterprise,,@redspread,https://www.facebook.com/GetRedspread
+RePowered,rehappy,Grad,"Becky Selle, Vasudha Kowtha, Elena Galbally, Jenny Vojtech, Anastasiya Belyaeva",http://www.arcadyns.com/Elena/wordpress/,Portable Upper Extremity Rehabilitation System with Real-Time EEG Biofeedback,,,
+Research Connection,researchconnection,Active,"Jake Fried, Joshua Geisler",http://researchconnection.com,A database for all research initiatives and jobs/opportunities in America ,"Massive traction including over 3,000 Twitter followers",@ResearchConn,
+RushGreek,rushgreek,Active,"Joshua Kamdjou, Sam Motamedi, Sherwin Heydarbeygi",http://rushgreek.com,Platform to help Greek organizations manage operations,,@rushgreek,
+Sambition Photos,sambition,Active,Samson Binutu,http://sambitionphotos.tumblr.com,Professional photography services,,,
+Savorfy,savorfy,Active,Erika Binsley,http://savorfy.com,Savory and all-natural protein bars,The only pizza-flavored protein bar; contains more protein than any comparably sized bar,,
+Starchild Studios,,Active,Ayana Cotton,,Membership-based studio space for creatives seeking art careers,,,
+Student Voice,studentvoice,Active,"David Campbell, Jessica Schram, Zak Malamed",http://stuvoice.org,Education equity around the world,,@stu_voice,
+Team BIKES (Red Bar Campus Bikeshare),,Active,Kyle King + others,http://teambikes.weebly.com,A campus-specific bikeshare aimed to make commuting between classes more enjoyable and easier,,@TeamBIKES1,
+Thickens,,Active,"Liban Saif, Tajbik Sheikh, Zakariya Salhan, Zaki Abdullah",,Automated fast food engineering (and chicken-donut food product),,,
+umd.io,,Active,,http://umd.io,,,,
+Unwritten,,Grad,"Michelle Shahparast, Sean Shahparast, Monica Lesar, Aly Meyer",http://shopunwritten.com,Online fashion and lifestyle community for millennials,,@shopunwritten,https://www.facebook.com/ShopUnwritten
+Venture U / Shared U,ventureu,Active,Travis Mitchell,http://ventureu.org,Nonprofit offline education platform for schools in developing nations,,@Venture_u,
+VentureBoard,ventureboard,Grad,"Justin Searles, Scott Block, Avi Eisenberger",https://ventureboard.co,"Empowers universitiy entrepreneurship centers to better track, manage, and advise student startups","Will be at over 15 schools by the end of 2015, collecting more than $100k in yearly revenue",@ventureboard,https://facebook.com/VentureBoard
+ViRtu,,Active,Mike Mandl,,Virtual reality campus tours,,,
+Vumble,vumble,Active,"Ryan Luu, Brendan Luu, Diego Quispe",http://vumble.com,Video platform with previews,,,
+WeCook,,Active,"Ryan Pillai, Abhas Arya",http://www.oncampuschef.com,Cooking service provides two-sided marketplace for chefs and consumers,,@ChefUMD,https://www.facebook.com/pages/On-Campus-Chef/1506580929590404

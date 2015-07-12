@@ -1,7 +1,7 @@
 .venture-item {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   margin: 0 2% $space/2;
-  float: left;
   opacity: .9;
 
   &:hover {
@@ -9,7 +9,7 @@
   }
 
   @include media($mobile) {
-    width: 21%;
+    width: 20%;
   }
   @include media($tablet) {
     width: 8.5%;
@@ -27,16 +27,22 @@
   .venture-item {
 
     @include media($mobile) {
-      width: 46%;
+      width: 45%;
     }
     @include media($tablet) {
-      width: 21%;
+      width: 20%;
     }
     @include media($desktop) {
-      width: 21%;
+      width: 20%;
     }
     @include media($large) {
-      width: 21%;
+      width: 20%;
+    }
+
+    p {
+      font-size: .8em;
+      color: $black;
+      text-align: center;
     }
   }
 

@@ -12,6 +12,23 @@ layout: default
     </div>
   </section> <!-- /.hero -->
 
-  {% include venture-grid.html %}
+<section class="venture-grid">
+  <ul>
+  {% for venture in site.data.ventures %}
+  	{% if venture.image %}
+    <li class="venture-item">
+      <a href="{{ venture.url }}" target="_blank">
+        <img src="/assets/ventures/logo_{{ venture.image }}.svg" alt="{{ venture.name }}">
+        <p>
+        {% if venture.status == "grad" %}<span>Grad</span>{% endif %}
+        {% if venture.description %}{{ venture.description }}. {% endif %}{% if venture.brag %}{{ venture.brag }}.{% endif %}
+        </p>
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</section>
+
 
 </div>

@@ -1,11 +1,33 @@
-// HERO PARALLAX
+// Shuffle
 
-// $(document).ready(function() {
-//     $(window).scroll(function() {
-//         var scrolled = window.pageYOffset;
-//         $('.hero').css("background-position", "50% " + (60 + (scrolled / 25)) + "%");
-//     })
-// });
+(function($){
+ 
+    $.fn.shuffle = function() {
+ 
+        var allElems = this.get(),
+            getRandom = function(max) {
+                return Math.floor(Math.random() * max);
+            },
+            shuffled = $.map(allElems, function(){
+                var random = getRandom(allElems.length),
+                    randEl = $(allElems[random]).clone(true)[0];
+                allElems.splice(random, 1);
+                return randEl;
+           });
+ 
+        this.each(function(i){
+            $(this).replaceWith($(shuffled[i]));
+        });
+ 
+        return $(shuffled);
+ 
+    };
+ 
+})(jQuery);
+
+$(document).ready(function() {
+    $('.venture-grid li.venture-item').shuffle();
+});
 
 // COLLAPSE MENU
 
