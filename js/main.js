@@ -27,6 +27,7 @@
 
 $(document).ready(function() {
     $('.venture-grid li.venture-item').shuffle();
+    $('.member-grid li.member-item').shuffle();
 });
 
 // COLLAPSE MENU
