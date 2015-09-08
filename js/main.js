@@ -43,6 +43,11 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
+	// spam-free email links (a#email)
+	var email = document.getElementById('email');
+    email.setAttribute('href', email.getAttribute('href').replace('nospam-at-', 'hello@'));
+	email.innerHTML = email.innerHTML.replace('nospam-at-', 'hello@');
+
     // Validate email
     function isEmail(email) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
