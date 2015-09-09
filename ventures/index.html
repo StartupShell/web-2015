@@ -21,7 +21,7 @@ layout: default
         <img src="/assets/ventures/logo_{{ venture.image }}.svg" alt="{{ venture.name }}">
         <p>
         {% if venture.status == "Grad" %}<span>Alumnus. </span>{% endif %}
-        {% if venture.description %}{{ venture.description }}. {% endif %}{% if venture.brag %}{{ venture.brag }}.{% endif %}
+        {% if venture.description %}{{ venture.description }}.
         </p>
       {% if venture.website %}</a>{% endif %}
     </li>
