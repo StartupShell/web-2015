@@ -1,28 +1,28 @@
 // Shuffle
 
-(function($){
- 
+(function($) {
+
     $.fn.shuffle = function() {
- 
+
         var allElems = this.get(),
             getRandom = function(max) {
                 return Math.floor(Math.random() * max);
             },
-            shuffled = $.map(allElems, function(){
+            shuffled = $.map(allElems, function() {
                 var random = getRandom(allElems.length),
                     randEl = $(allElems[random]).clone(true)[0];
                 allElems.splice(random, 1);
                 return randEl;
-           });
- 
-        this.each(function(i){
+            });
+
+        this.each(function(i) {
             $(this).replaceWith($(shuffled[i]));
         });
- 
+
         return $(shuffled);
- 
+
     };
- 
+
 })(jQuery);
 
 $(document).ready(function() {
@@ -43,15 +43,17 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-	// spam-free email links (a#email)
-	var email = document.getElementById('email');
-    email.setAttribute('href', email.getAttribute('href').replace('nospam-at-', 'hello@'));
-	email.innerHTML = email.innerHTML.replace('nospam-at-', 'hello@');
+    // spam-free email links (a#email)
+    var email = document.getElementById('email');
+    if (email) {
+        email.setAttribute('href', email.getAttribute('href').replace('nospam-at-', 'hello@'));
+        email.innerHTML = email.innerHTML.replace('nospam-at-', 'hello@');
 
-    // Validate email
-    function isEmail(email) {
-        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        return regex.test(email);
+        // Validate email
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
     }
 
     if ($('.subscribe form').length > 0) {
