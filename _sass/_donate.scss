@@ -6,10 +6,28 @@
     }
     .area {
     	.description {
-    		@include span-columns(6);
+    		@include media($mobile) {
+		        @include span-columns(4);
+		        margin-bottom: $space;
+		      }
+		      @include media($tablet) {
+		        @include span-columns(4);
+		        margin-bottom: 0;
+		      }
+		      @include media($desktop) {
+		        @include span-columns(6);
+		      }
     	}
     	.donate-box {
-    		@include span-columns(5);
+    		@include media($mobile) {
+        @include span-columns(4);
+      }
+      @include media($tablet) {
+        @include span-columns(3);
+      }
+      @include media($desktop) {
+        @include span-columns(5);
+      }
     	}
     }
 }
