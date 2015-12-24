@@ -1,0 +1,15 @@
+.page-donate {
+    .hero {
+        h1 {
+            color: $gray;
+        }
+    }
+    .area {
+    	.description {
+    		@include span-columns(6);
+    	}
+    	.donate-box {
+    		@include span-columns(5);
+    	}
+    }
+}
