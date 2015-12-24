@@ -199,6 +199,17 @@ var url = ['https://www.googleapis.com/calendar/v3/calendars',
     '.com/events?key=AIzaSyDd9bnLFkG8tyRgmjttiFRTT0MTtYpkZb8'
 ].join('');
 
+function noEvents(enable) {
+    if($('#noEvents')) {
+
+        if(enable == false) {
+            $('#noEvents').hide();
+        } else {
+            $('#noEvents').show();
+        }
+    }
+}
+
 var eventsCounter = 0;
 
 $.ajax({
@@ -208,7 +219,7 @@ $.ajax({
     data.items
 
     // Get rid of reoccuring
-        .filter(function(i) {
+    .filter(function(i) {
         if (i.hasOwnProperty('start') && i.hasOwnProperty('end')) {
             return true;
         }
@@ -243,9 +254,9 @@ $.ajax({
 
     // Check for limit class
     .filter(function(i) {
-        
         if ($('.events').hasClass('limit-3') && eventsCounter < 3) {
             eventsCounter++;
+            noEvents(false);
             return true;
         } else if (!$('.events').hasClass('limit-3')) {
             return true;
@@ -268,7 +279,7 @@ $.ajax({
                 $('.events .event:first-child').addClass('featured');
             }
 
-        })
+        });
 
     });
 
