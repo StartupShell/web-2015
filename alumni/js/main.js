@@ -82,7 +82,7 @@ function initAutocomplete() {
         "elementType": "all",
         "stylers": [
             {
-                "color": "#d74035" //d74035
+                "color": "#3498DB"
             },
             {
                 "visibility": "on"
