@@ -81,7 +81,7 @@ function register($form) {
     });
 
     $.ajax({
-        url: '//startupshell.us8.list-manage2.com/subscribe/post-json?u=ab309f640b0f94f8e5fd0a2e8&amp&id=af8824bb76&c=?',
+        url: 'http://startupshell.us8.list-manage2.com/subscribe/post-json?u=ab309f640b0f94f8e5fd0a2e8&amp&id=af8824bb76&c=?',
         data: data,
         dataType: 'jsonp',
         error: function(err) {
@@ -92,6 +92,7 @@ function register($form) {
                 alert("Submittion error. Please try again.");
             } else {
                 $('.subscribe form input[type=submit]').prop('value', 'Success!');
+                $('.subscribe form input[type=submit]').css('background', 'green');
             }
         }
     });
