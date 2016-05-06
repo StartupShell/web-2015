@@ -81,7 +81,7 @@ function register($form) {
     });
 
     $.ajax({
-        url: 'http://startupshell.us8.list-manage.com/subscribe/post-json?u=ab309f640b0f94f8e5fd0a2e8&amp&id=af8824bb76&c=?',
+        url: '//startupshell.us8.list-manage.com/subscribe/post-json?u=ab309f640b0f94f8e5fd0a2e8&amp&id=af8824bb76&c=?',
         data: data,
         dataType: 'jsonp',
         error: function(err) {
