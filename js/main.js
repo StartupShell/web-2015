@@ -85,6 +85,7 @@ function register($form) {
         data: data,
         dataType: 'jsonp',
         error: function(err) {
+            console.log(err);
             alert("Could not connect to the subscription server. Please try again later.");
         },
         success: function(data) {
