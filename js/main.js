@@ -90,7 +90,7 @@ function register($form) {
         },
         success: function(data) {
             if (data.result != "success") {
-                console.log(data.result);
+                console.log(data);
                 alert("Submittion error. Please try again.");
             } else {
                 $('.subscribe form input[type=submit]').prop('value', 'Success!');
