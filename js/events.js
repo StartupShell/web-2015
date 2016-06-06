@@ -193,10 +193,22 @@ function assembleStructure(data, index, callback) {
 
 }
 
+function ISODateString(d){
+ function pad(n){return n<10 ? '0'+n : n}
+ return d.getUTCFullYear()+'-'
+      + pad(d.getUTCMonth()+1)+'-'
+      + pad(d.getUTCDate())+'T'
+      + pad(d.getUTCHours())+':'
+      + pad(d.getUTCMinutes())+':'
+      + pad(d.getUTCSeconds())+'Z'}
+
+var curTime = ISODateString(new Date());
+
 // This is where to get the data from
 var url = ['https://www.googleapis.com/calendar/v3/calendars',
     '/7qvrobfs0js5799ebugodgc5go@group.calendar.google',
-    '.com/events?key=AIzaSyDd9bnLFkG8tyRgmjttiFRTT0MTtYpkZb8'
+    '.com/events?key=AIzaSyDd9bnLFkG8tyRgmjttiFRTT0MTtYpkZb8&timeMin=',
+    curTime
 ].join('');
 
 function noEvents(enable) {
@@ -222,19 +234,6 @@ $.ajax({
     .filter(function(i) {
         if (i.hasOwnProperty('start') && i.hasOwnProperty('end')) {
             return true;
-        }
-    })
-
-    
-
-    // Get the ones that havent happend yet
-    .filter(function(i) {
-        if (i.end.dateTime) {
-            return new Date(i.end.dateTime) >= new Date().getTime();
-        } else {
-            // The event is all-day, so use the start time
-            // We add 86400000 (24 hours) so that the event still displays throughout the entire day
-            return new Date(i.end.date) >= new Date().getTime();
         }
     })
 
