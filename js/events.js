@@ -158,7 +158,8 @@ function assembleStructure(data, index, callback) {
         if (!fbData.cover) {
             var cover = '<div class="image no-fb"><img src="../assets/shell-logo-wire.svg"></div>';
         } else {
-            var cover = '<div class="image"><img src="' + fbData.cover + '"></div>';
+            // var cover = '<div class="image"><img src="' + fbData.cover + '"></div>';
+            var cover = '<div class="image" style="background-image: url('+ fbData.cover +'); background-size:cover;"></div>';
         }
 
         // Display gCal description for featured event
